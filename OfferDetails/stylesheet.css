@@ -1,0 +1,451 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+ @import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap'); 
+.heading{
+width:100%;
+max-width: 1180px;
+margin: auto;
+}
+
+.heading-text h1{
+margin-bottom: 40px;
+font-weight: 600;
+font-size: 32px;
+color: #082346;
+line-height: 48px;
+}
+
+.property-details{
+display: flex;
+background-color: #FAFAFA;;
+}
+
+.property-image{
+width: 224px;
+height: 224px;
+border-radius: 4px 0px 0px 4px;
+}
+
+.property-info{
+margin-left: 40px;
+line-height: 0px;
+margin-top: -14px;
+}
+
+.property-name{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    color: #121212;
+    }
+
+.property-address{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+margin-top: -14px;
+color: #484848;
+}
+
+.landLord-details{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+color: #000000;
+margin-top: -5px;
+}
+
+.verifyImage{
+width: 14px;
+height: 14px;
+object-fit: contain;
+margin-left: 15px;
+}
+
+.verify{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+color: #42A54C;
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 1;
+
+}
+
+.subHeading{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+color: #484848;
+margin-top: -10px;
+}
+
+.subTitle{
+font-size: 16px;
+color: #000000;
+}
+
+.background-colour{
+    background-color: #FAFAFA;
+    height: 590px;
+}
+/* ------------------------------- */
+.row-Gap{
+margin-top: 40px;
+display: flex;
+align-items: center;
+position: relative;
+}
+
+.row-GapExtra{
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.row-GapExtraHeading {
+    padding-right: 150px;
+    margin-left: 40px;
+    position: absolute;
+    top: -70px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #000000;
+    }
+
+.row-Gap h5{
+padding-right: 150px;
+margin-left: 40px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+color: #000000;
+}
+
+
+.firstTitle{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+color: #141414;
+white-space: nowrap;
+}
+
+.secondTitle{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+position: absolute;
+bottom: -128px;
+color: #141414;
+white-space: nowrap;
+}
+
+.thirdTitle{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+position: absolute;
+top: -67px;
+color: #141414;
+white-space: nowrap;
+}
+
+.inputWidth{  
+height: 30px;  
+font-size: 15px;
+width: 340px ;
+position: absolute;
+bottom: -15px;
+}
+
+.placeholderTitle{ 
+  position: absolute;
+  bottom: -40px;
+  left: 280px;
+  font-weight: 400;
+  white-space: nowrap;
+  font-size: 12px;
+  background-color: white;
+  width: 60px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6D6D6D;
+}
+
+.selectWidth{
+    height: 35px; 
+    width: 350px;  
+    border-radius: 4px;
+    position: absolute;
+    bottom: -140px;
+}
+/*--------------------------------------------- */
+
+.firstDiv1{
+    position: absolute;
+    left: 240px;    
+}
+
+.secondDiv1{
+    position: absolute;
+    left: 615px;    
+}
+
+.thirdDiv1{
+    position: absolute;
+    left: 240px;   
+}
+.forthDiv1{
+    position: absolute;
+    left: 495px;  
+}
+
+.slashAlign{
+    position: absolute;
+    left: 460px; 
+    top: -27px;
+    font-size: 20px;
+}
+
+.thirdInput1{
+    width: 78px;
+    height: 30px;
+    font-size: 15px;
+    position: absolute;
+    top: -17px;
+    left: 110px;
+    }
+
+    .secondSelect{
+        height: 35px; 
+        width: 62px;
+        border-radius: 4px;
+        position: absolute;
+        top: -17px;
+    }
+    
+
+
+.flex{
+    display: flex;
+}
+
+
+.firstSelect{
+    margin-right: 28px;
+    height: 36px;
+    width: 78px;
+    border-radius: 4px;
+    position: absolute;
+    top: -17px;
+}
+
+
+.monthsCount{
+    margin-right: 30px;
+    height: 36px; 
+    width: 141px;
+    border-radius: 4px;
+    position: absolute;
+    top: 50px;
+}
+
+.lockin{
+position: absolute;
+left: 240px;
+}
+
+.notice{
+    position: absolute;
+    left: 500px; 
+}
+
+.daysCount{
+    height: 35px; 
+    width: 141px;
+    border-radius: 4px;
+    position: absolute;
+    top: 50px;
+}
+
+
+.offerBox1{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+width: 118.5px;
+height: 116.5px;
+line-height: 3px;
+position: absolute;
+bottom: -153px;
+left: 240px;
+border: 1px solid black;
+border-radius: 12px;
+background-color: white;
+}
+
+.termTitle{
+font-size: 17.89px;
+font-weight: 600;
+margin-bottom: 0;
+}
+
+ .termInterval{
+font-weight: 500;
+font-size: 12px ;
+color: #999999;
+margin-top: 24px;
+}
+
+.termCost{
+font-size: 15.8889px
+}
+
+
+/* ----------------------------------- */
+
+.rentAlign{
+display: flex;
+position: absolute;
+top: 50px;
+}
+
+        .rentTitle1{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        position: absolute;
+        top: -50px;
+        left: 240px;
+        color: #141414;
+        white-space: nowrap;
+        }
+
+        .rentTitle2{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        position: absolute;
+        top: -50px;
+        left: 500px;
+        color: #141414;
+        white-space: nowrap;
+        }
+
+.rentAbsolute{
+position: absolute;
+top: 150px;
+display: flex;
+align-items: center;
+}
+
+.rentDate{
+    margin-right: 30px;
+    height: 36px;
+    position: absolute;
+    left: 240px;
+    width: 57px;
+}
+
+.rentMonth{
+    position: absolute;
+    left: 310px;
+    height: 35px;
+    width: 57px;
+}
+
+.rentYear{
+    position: absolute;
+    left: 380px;
+    height: 35px;
+    width: 67px;
+}
+
+.rent-endDate{
+    position: absolute;
+    left: 500px;
+     height: 35px; 
+     width: 57px;
+}
+
+
+.rent-BackgroundColor{
+    background-color: #FAFAFA;
+    height: 250px;
+    width: 1040px;
+}
+
+
+/* ----------------------------------- */
+.underLine1{
+    margin-top: 30px;
+    height: 2px;
+    width: 863px;
+    background-color: black;
+}
+
+.buttonSet{
+    width: 863px;
+    margin-top: 45px;
+    margin-bottom:50px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+.buttonReset1{
+display: flex;
+justify-content: center;
+align-items: center;
+border: 1px solid #082346;
+border-radius: 12px;
+background: #FFFFFF;
+padding: 16px 24px;
+width: 185px;
+height: 62px;
+color: #082346;
+font-weight: 600;
+font-size: 20px;
+line-height: 30px;
+cursor: pointer;
+}
+
+.buttonContinue1{
+    /* position: absolute;
+    right: 0; */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #082346;
+    border-radius: 12px;
+    background: #082346;
+    padding: 16px 24px;
+    width: 185px;
+    height: 62px;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    cursor: pointer;
+    }
