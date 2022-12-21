@@ -12,6 +12,8 @@ font-weight: 600;
 font-size: 32px;
 color: #082346;
 line-height: 48px;
+font-family: 'Poppins';
+font-style: normal;
 }
 
 .property-details{
@@ -94,7 +96,7 @@ color: #000000;
 
 .background-colour{
     background-color: #FAFAFA;
-    height: 590px;
+    height: 340px;
 }
 /* ------------------------------- */
 .row-Gap{
@@ -104,11 +106,13 @@ align-items: center;
 position: relative;
 }
 
-.row-GapExtra{
-    margin-top: 200px;
+/* .row-GapExtra{
+    margin-top: 100px;
     display: flex;
     align-items: center;
     position: relative;
+    margin-bottom: 100px
+    ;
 }
 
 .row-GapExtraHeading {
@@ -121,7 +125,7 @@ position: relative;
     font-weight: 600;
     font-size: 16px;
     color: #000000;
-    }
+    } */
 
 .row-Gap h5{
 padding-right: 150px;
@@ -189,7 +193,8 @@ bottom: -15px;
   color: #6D6D6D;
 }
 
-.selectWidth{
+
+.selectWidthh{
     height: 35px; 
     width: 350px;  
     border-radius: 4px;
@@ -241,6 +246,11 @@ bottom: -15px;
         top: -17px;
     }
     
+    .firstAbsolute{
+        position: absolute;
+        top: 115px;
+        white-space: nowrap;
+    }
 
 
 .flex{
@@ -366,6 +376,14 @@ align-items: center;
     left: 240px;
     width: 57px;
 }
+.rentDate{
+    margin-right: 30px;
+    height: 36px;
+    position: absolute;
+    left: 240px;
+    width: 57px;
+}
+
 
 .rentMonth{
     position: absolute;
@@ -388,11 +406,90 @@ align-items: center;
      width: 57px;
 }
 
+.rentCalculator-title{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+color: #141414;
+}
 
+.rentCalculator-fade{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: -15px;
+    color: #6D6D6D;
+}
+
+.rentCalculator-dynamic{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #141414;
+    margin-bottom: 3px;
+}
+
+.rentCalculator-select{
+    margin-right: 30px;
+    height: 36px;
+    width: 57px;
+}
+
+.rentCalculator-input{  
+    height: 30px;  
+    font-size: 15px;
+    width: 110px ;
+}
+
+.rentCalculator-inputLength{
+    height: 30px;  
+    font-size: 15px;
+    width: 200px ;
+}
+
+
+
+.rentCalculator-placeholderTitle{
+    position: absolute;
+    bottom: -25px;
+    left: 145px;
+    font-weight: 400;
+    white-space: nowrap;
+    font-size: 12px;
+    background-color: white;
+    width: 60px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6D6D6D;
+}
+
+
+.column-underline{
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    width: 1px;
+    background-color:#D2D2D2 ;
+    height: 216px;
+}
+
+
+
+.rent-BackgroundColorr{
+    background-color: #FAFAFA;
+    height:400px;
+   
+    
+}
 .rent-BackgroundColor{
     background-color: #FAFAFA;
     height: 250px;
-    width: 1040px;
 }
 
 
@@ -400,18 +497,19 @@ align-items: center;
 .underLine1{
     margin-top: 30px;
     height: 2px;
-    width: 863px;
+    width: 1180px;
     background-color: black;
 }
 
 .buttonSet{
-    width: 863px;
+    width: 1180px;
     margin-top: 45px;
     margin-bottom:50px;
     display: flex;
     position: relative;
     justify-content: space-between;
 }
+
 
 .buttonReset1{
 display: flex;
@@ -431,9 +529,6 @@ cursor: pointer;
 }
 
 .buttonContinue1{
-    /* position: absolute;
-    right: 0; */
-    
     display: flex;
     justify-content: center;
     align-items: center;

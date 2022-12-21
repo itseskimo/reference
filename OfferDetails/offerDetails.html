@@ -8,8 +8,8 @@
     <title>Document</title>
 </head>
 <body>
+
     <div class='heading'>
-        <FormHeader/>
         <div class='heading-text'>
         <h1>Commercials</h1>
     
@@ -53,56 +53,59 @@
         <h5>Your Offer</h5>
     
         <div class='firstDiv1'>
-          <input class='inputWidth' ></input>
-          <h6 class='firstTitle'>Monthly Rent</h6>
+          <h6 class='firstTitle'>Monthly Rent*</h6>
+          <input autoFocus class='inputWidth' ></input>
+          <h6 class='placeholderTitle'>Per Month</h6>
         </div>
         <div  class='secondDiv1'>
           <input class='inputWidth'></input>
-          <h6 class='firstTitle'>Security Deposit</h6>
+          <h6 class='firstTitle'>Security Deposit*</h6>
         </div>
     
         <div class='thirdDiv1'>
-        <select class='selectWidth'>
+        <select class='selectWidthh'>
         <option>Select Term</option>
+        <option>6 month</option>
+        <option>12 month</option>
         </select>
         <h6 class='secondTitle'>Contract Period*</h6> 
         </div>
           
     </div>
-  
-    <div class='row-GapExtra'>
-        <h5 class='row-GapExtraHeading'>Rent Escalation</h5>
-        <div class="flex">
+  </div>
+
+
+    <div class="rent-BackgroundColorr">
+      <div class='row-Gap'>
+        <h5>Rent Escalation</h5>
         <div class='firstDiv1'>
-        <select class='firstSelect'>
-          <option>Flat</option>
-          <option>House</option>
-        </select>
-          <input class='thirdInput1' ></input>
-           <h6 class='thirdTitle'>Showcase Amount*</h6>
+          <h6 class='firstTitle'>Monthly Rent*</h6>
+          <input autoFocus class='inputWidth' ></input>
+          <h6 class='placeholderTitle'>Per Month</h6>
         </div>
-    
-        <div class='slashAlign'>
-        <h3>/</h3>
-        </div>
-    
-        <div class='forthDiv1'>
-          <select class='secondSelect'>
-          <option>5%</option>
-          <option>10%</option>
-          <option>12%</option>
-          <option>12</option>
-        </select>
-        <h6 class='thirdTitle'>Your Offer in Monthly Rent*</h6>
-        </div>
-        </div>
-        <div class='offerBox1'>
-          <h4 class='termTitle'>Term 1</h4>
-          <h6 class='termInterval'>Month 0-6</h6>
-          <h4 class='termCost'>450000</h4>
+
+       <div class="firstAbsolute">
+        <div class='firstDiv1'>
+          <div class="column-underline"></div>
+          <h4 class="rentCalculator-title">Year 1</h4>
+          <h6 class="rentCalculator-fade">Month (13-14)</h6>
+          <h6 class="rentCalculator-dynamic">Escalation*</h6>
+          <div>
+            <select class="rentCalculator-select">
+              <option>Flat</option>
+              <option>%</option>
+            </select>
+            <input class='rentCalculator-input'></input>
           </div>
+          <h6 class="rentCalculator-dynamic">Rent for Year 2</h6>
+          <input class="rentCalculator-inputLength"></input>
+          <h6 class='rentCalculator-placeholderTitle'>Per Month</h6>
+        </div>
+       </div>
+
     </div>
-    </div>
+    </div> 
+    
     
     <div class="rent-BackgroundColor">
      <div class='row-Gap'>
@@ -128,31 +131,29 @@
  <div class='rentAbsolute'>
 
       <div class="lockin">
-        <h6 class='firstTitle'>Monthly Rent*</h6>
+        <h6 class='firstTitle'>Lock In Period*</h6>
         <select class='monthsCount'>
         <option>No.of Months</option>
         </select>
       </div>
         
     <div class="notice">
-      <h6 class='firstTitle'>Monthly Rent*</h6>
+      <h6 class='firstTitle'>Notice Period*</h6>
       <select class='daysCount' >
       <option>No.of Days</option>
       </select>
     </div>
        
     </div>
-        </div>
+    </div>
     
     </div>
    
     
-    
-    
     <div class='underLine1'></div>
     <div class='buttonSet'>
-      <button class='buttonReset1' >Reset</button>
-      <button class='buttonContinue1' >Continue <ArrowForwardIcon class='left'/></button>
+        <button class='buttonReset1' >Reset</button>
+        <button class='buttonContinue1' >Continue <ArrowForwardIcon class='left'/></button>
     </div>
         </div>
     
