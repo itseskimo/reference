@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap'); 
 
     .heading{
     width:100%;
@@ -71,7 +72,7 @@
     display: flex;
     justify-content: flex-end;
     position: absolute;
-    left: 1140px;
+    left: 1060px;
     bottom: -39px;
     }
 
@@ -278,9 +279,9 @@
         /* ----------------------------------- */
         .underLine{
             margin-top: 50px;
-            height: 2px;
+            height: 1px;
             width: 1180px;
-            background-color: black;
+            background-color: #D9D9D9;
         }
         
         .button{
@@ -310,18 +311,22 @@
         
         .buttonMid{
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
             border: 1px solid #082346;
+            background: #FFFFFF;
             border-radius: 12px;
-            background: #6D6D6D;
             padding: 16px 24px;
-            width: 185px;
+            width: 144px;
             height: 62px;
-            color: #FFFFFF;
             font-weight: 600;
             font-size: 20px;
             line-height: 30px;
+            position: absolute;
+            right: 207px;
+            font-family: 'Poppins';
+        font-style: normal;
+        color: #082346;
         }
     
         .buttonContinue{
@@ -341,3 +346,105 @@
             font-size: 20px;
             line-height: 30px;
             }
+
+
+            input::placeholder{
+                font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+
+            }
+
+
+
+
+
+            .select {
+                position: relative;
+                width: 345px;
+                /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+                border: 1px solid grey ;
+                font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            color: #424242;
+            line-height: 20px;
+              }
+              .select .selectBtn {
+                background: var(--bg1);
+                padding: 10px;
+                box-sizing: border-box;
+                border-radius: 3px;
+                width: 100%;
+                height: 35px;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                position: relative;
+                -webkit-user-select: none;
+                   -moz-user-select: none;
+                    -ms-user-select: none;
+                        user-select: none;
+                background: #fff;
+              }
+              .select .selectBtn:after {
+                content: "";
+                position: absolute;
+                top: 45%;
+                right: 15px;
+                width: 6px;
+                height: 6px;
+                -webkit-transform: translateY(-50%) rotate(45deg);
+                        transform: translateY(-50%) rotate(45deg);
+                border-right: 2px solid #666;
+                border-bottom: 2px solid #666;
+                transition: 0.2s ease;
+              }
+              .select .selectBtn.toggle {
+                border-radius: 3px 3px 0 0;
+              }
+              .select .selectBtn.toggle:after {
+                -webkit-transform: translateY(-50%) rotate(-135deg);
+                        transform: translateY(-50%) rotate(-135deg);
+              }
+              .select .selectDropdown {
+                position: absolute;
+                top: 100%;
+                width: 100%;
+                border-radius: 0 0 3px 3px;
+                overflow: hidden;
+                background: var(--bg1);
+                border-top: 1px solid #eee;
+                z-index: 1;
+                background: #fff;
+                -webkit-transform: scale(1, 0);
+                        transform: scale(1, 0);
+                -webkit-transform-origin: top center;
+                        transform-origin: top center;
+                visibility: hidden;
+                transition: 0.2s ease;
+                box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+              }
+              .select .selectDropdown .option {
+                padding: 10px;
+                box-sizing: border-box;
+                cursor: pointer;
+                border-bottom: 1px solid #E0E0E0;
+                
+              }
+              .select .selectDropdown .option:hover {
+                background: #f8f8f8;
+              }
+              .select .selectDropdown.toggle {
+                visibility: visible;
+                -webkit-transform: scale(1, 1);
+                        transform: scale(1, 1);
+              }
+
+              .selector{ 
+                position: absolute;
+                bottom: -15px;
+            }
+    

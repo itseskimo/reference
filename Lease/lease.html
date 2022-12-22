@@ -27,16 +27,20 @@
     
     <div class="leaseBackground">
     <div class='row-Gap'>
-        <h5>Owner's Ask</h5>
+        <h5>Company</h5>
         <div class='firstDiv'>
-          <h6 class='firstTitle'>Monthly Rent*</h6>
-          <input autoFocus class='inputWidth' ></input>
+          <h6 class='firstTitle'>Company Name*</h6>
+          <input placeholder="Enter Name.." autoFocus class='inputWidth' ></input>
         </div>
 
         <div  class='secondDiv'>
-        <h6 class='firstTitle'>Security Deposit*</h6>
+        <h6 class='firstTitle'>Company Type*</h6>
             <select class='lease-companyText'>
                 <option>Select Type</option>
+                <option>Sole Proprietorship</option>
+                <option>Partnership</option>
+                <option>LLP</option>
+                <option>PVT LTD</option>
             </select>
         </div>
 
@@ -45,7 +49,7 @@
 
             <div class='firstDiv'>
                 <h6 class='firstTitle'>Full Registered Address*</h6>
-                <input autoFocus class='inputWidth' ></input>
+                <input placeholder="Enter Address.." class='inputWidth' ></input>
               </div>
     
               <div  class='secondDiv'>
@@ -61,7 +65,7 @@
               </div>
 
               <div class='forthDiv'>
-                    <input class='lease-input'></input>
+                    <input placeholder="Pin Code"  class='lease-input'></input>
               </div>
 
         </div>
@@ -71,7 +75,7 @@
 
     <div class='firstDiv'>
         <h6 class='firstTitle'>PAN Number*</h6>
-        <input autoFocus class='inputWidth' ></input>
+        <input placeholder="Enter Company PAN.." class='inputWidth' ></input>
       </div>
 
     </div>
@@ -87,19 +91,19 @@
         <h5>Contact Person Details</h5>
         <div class='firstDiv'>
           <h6 class='firstTitle'>Name *</h6>
-          <input autoFocus class='inputWidth' ></input>
+          <input placeholder="Enter Contact Person’s Name.." class='inputWidth' ></input>
         </div>
 
         <div class="secondrowAbsolute">
 
             <div class='firstDiv'>
                 <h6 class='firstTitle'>Mobile Number*</h6>
-                <input autoFocus class='inputWidth' ></input>
+                <input placeholder="Enter Contact Person’s Mobile No.. " class='inputWidth' ></input>
               </div>
     
               <div  class='secondDiv'>
                 <h6 class='firstTitle'>Email ID*</h6>
-                <input autoFocus class='inputWidth' ></input>
+                <input placeholder="Enter Contact Person’s Email ID " class='inputWidth' ></input>
               </div>
 
         </div>
@@ -119,12 +123,60 @@
 
             <div class='firstDiv'>
                 <h6 class='firstTitle'>Enter GST Number*</h6>
-                <input autoFocus class='inputWidth' ></input>
+                <input placeholder="Enter GSTN.."  class='inputWidth' ></input>
               </div>
     
         </div>
 
     </div>
+</div>
+
+
+<div class="leaseBackground2">
+
+    <div class='row-Gap'>
+        <h5>Use of Premise</h5>
+        <div class='firstDiv'>
+          <h6 class='firstTitle'>Occupancy Type *</h6>
+          <!-- <select class='selectLength'>
+            <option></option>
+        </select> -->
+        <div class="selector">
+        <div class="select">
+            <div class="selectBtn" data-type="firstOption">Select</div>
+            <div class="selectDropdown">
+              <div class="option" data-type="firstOption">Single</div>
+              <div class="option" data-type="secondOption">Family</div>
+              <div class="option" data-type="thirdOption">Sharing</div>
+              <div class="option" data-type="thirdOption">GuestHouse</div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <div  class='secondDiv'>
+            <h6 class='firstTitle'>No of Occupant’s*</h6>
+            <input placeholder="Enter Number of Occupants" class='inputWidth' ></input>
+        </div>
+
+
+        <div class="secondrowAbsolute">
+
+            <div class='firstDiv'>
+                <h6 class='firstTitle'>Pets*</h6>
+                <input placeholder="Yes / No " class='inputWidth' ></input>
+              </div>
+    
+              <div  class='secondDiv'>
+                <h6 class='firstTitle'>Pet Details*</h6>
+                <input placeholder="Enter your Pet Details" class='inputWidth' ></input>
+              </div>
+
+        </div>
+
+    </div>
+    
+    
 </div>
 
 
@@ -140,6 +192,6 @@
     
     
     </div>
-
+    <script src="lease.js"></script>
 </body>
 </html>

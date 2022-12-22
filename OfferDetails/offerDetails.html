@@ -40,11 +40,11 @@
         <h5>Owner's Ask</h5>
         <div class='firstDiv1'>
           <h6 class='firstTitle'>Monthly Rent*</h6>
-          <input autoFocus class='inputWidth' ></input>
+          <input autoFocus class='inputWidth' value="₹ 450000" ></input>
           <h6 class='placeholderTitle'>Per Month</h6>
         </div>
         <div  class='secondDiv1'>
-          <input class='inputWidth'></input>
+          <input class='inputWidth' value="₹ 450000"></input>
           <h6 class='firstTitle'>Security Deposit*</h6>
         </div>
     </div>
@@ -54,20 +54,62 @@
     
         <div class='firstDiv1'>
           <h6 class='firstTitle'>Monthly Rent*</h6>
-          <input autoFocus class='inputWidth' ></input>
+          <input placeholder="Enter Amount" class='inputWidth' ></input>
           <h6 class='placeholderTitle'>Per Month</h6>
         </div>
         <div  class='secondDiv1'>
-          <input class='inputWidth'></input>
+          <input class='inputWidth' placeholder="Enter Amount"></input>
           <h6 class='firstTitle'>Security Deposit*</h6>
         </div>
     
         <div class='thirdDiv1'>
-        <select class='selectWidthh'>
+        <!-- <select class='selectWidthh'>
         <option>Select Term</option>
         <option>6 month</option>
         <option>12 month</option>
-        </select>
+        </select> -->
+
+
+        <!-- <details class="custom-select">
+          <summary class="radios">
+            <input type="radio" name="item" id="default" title="Select Term" checked>
+            <input type="radio" name="item" id="item1" title="Item 1">
+            <input type="radio" name="item" id="item2" title="Item 2">
+            <input type="radio" name="item" id="item3" title="Item 3">
+            <input type="radio" name="item" id="item4" title="Item 4">
+            <input type="radio" name="item" id="item5" title="Item 5">
+          </summary>
+          <ul class="list">
+            <li>
+              <label for="item1">6 months<span></span></label>
+            </li>
+            <li>
+              <label for="item2">1 year</label>
+            </li>
+            <li>
+              <label for="item3">1 year 6 months</label>
+            </li>
+            <li>
+              <label for="item4">2 year</label>
+            </li>
+            <li>
+              <label for="item5">2 year 6 months</label>
+            </li>
+          </ul>
+        </details> -->
+<div class="selector">
+        <div class="select">
+          <div class="selectBtn" data-type="firstOption">Select Term</div>
+          <div class="selectDropdown">
+            <div class="option" data-type="firstOption">6 months</div>
+            <div class="option" data-type="secondOption">1 year</div>
+            <div class="option" data-type="thirdOption">1 year 6 months</div>
+            <div class="option" data-type="thirdOption">2 year</div>
+            <div class="option" data-type="thirdOption">2 year 6 months</div>
+          </div>
+        </div>
+</div>
+
         <h6 class='secondTitle'>Contract Period*</h6> 
         </div>
           
@@ -80,7 +122,7 @@
         <h5>Rent Escalation</h5>
         <div class='firstDiv1'>
           <h6 class='firstTitle'>Monthly Rent*</h6>
-          <input autoFocus class='inputWidth' ></input>
+          <input placeholder="Enter Amount" class='inputWidth' ></input>
           <h6 class='placeholderTitle'>Per Month</h6>
         </div>
 
@@ -95,10 +137,10 @@
               <option>Flat</option>
               <option>%</option>
             </select>
-            <input class='rentCalculator-input'></input>
+            <input class='rentCalculator-input' placeholder="Enter Amount"></input>
           </div>
           <h6 class="rentCalculator-dynamic">Rent for Year 2</h6>
-          <input class="rentCalculator-inputLength"></input>
+          <input class="rentCalculator-inputLength" placeholder="Enter Amount"></input>
           <h6 class='rentCalculator-placeholderTitle'>Per Month</h6>
         </div>
        </div>
@@ -161,6 +203,6 @@
         </div>
 
 
-
+<script src="offerDetails.js"></script>
 </body>
 </html>
