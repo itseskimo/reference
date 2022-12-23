@@ -97,23 +97,18 @@ left:600px ;
 
 
 .selectButton{
-    height: 30px;
-    margin-top: 50px;
-    margin-left: 30px;
-    
-    background: #FFFFFF;
-/* Primary Blue */
-
+width: 176px;
+height: 37px;
+margin-top: 50px;
+margin-left: 30px;
+background: #FFFFFF;
 border: 1px solid #082346;
-border-radius: 12px;
+border-radius: 4px;
 font-weight: 500;
 font-size: 14px;
 line-height: 21px;
-/* identical to box height */
-
-
-/* Primary Blue */
-
+font-family: 'Poppins';
+font-style: normal;
 color: #082346;
 }
 

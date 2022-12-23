@@ -73,7 +73,16 @@
     justify-content: flex-end;
     position: absolute;
     left: 1060px;
-    bottom: -39px;
+    bottom: -79px;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height */
+cursor: pointer;
+
+color: #FE6161;
     }
 
     
@@ -250,6 +259,10 @@
             align-items: center;
             padding: 12px 23px;
             gap: 8px;
+            font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
          }
 
         .leaseBackground3{
