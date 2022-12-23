@@ -216,6 +216,18 @@
         color: #424242;
         line-height: 20px;
           }
+        .select-Special {
+            position: relative;
+            width: 245px;
+            /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+            border: 1px solid grey ;
+            font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        color: #424242;
+        line-height: 20px;
+          }
           .select .selectBtn {
             background: var(--bg1);
             padding: 10px;
