@@ -23,14 +23,19 @@ on('click', '.option', item => {
 
 
 // --------------------------------------------------------------------
-const progress= document.getElementById('progress')
+
 const prev= document.getElementById('prev')
 const next= document.getElementById('next')
 const circles= document.querySelectorAll('.formCircle')
-let currentActive=0
+
+var currentActive=0
+
 
 next.addEventListener('click',()=>{
 	currentActive++
+	window.location.href='/Lease/lease.html'
+	localStorage.clear()
+	localStorage.setItem('value',currentActive)
 	if(currentActive>circles.length){
 		currentActive=circles.length
 	}
