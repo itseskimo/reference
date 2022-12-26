@@ -50,16 +50,14 @@ function update(){
 	
     if(idx<currentActive){
     	circle.classList.add('greenCircle')
+		circle.classList.remove('activeCircle')
     }else if(idx===currentActive){
 		circle.classList.add('activeCircle')
-    }
-	
-	
-	else{
+		circle.classList.remove('greenCircle')
+    }else{
 		circle.classList.remove('activeCircle')
 	}
-const actives=document.querySelectorAll('.greenCircle')
-console.log(currentActive,actives.length,circles.length)
-
+// const actives=document.querySelectorAll('.greenCircle')
+// console.log(currentActive,actives.length,circles.length)
 	})
 }
