@@ -1,92 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap'); 
 
-    .heading{
-    width:100%;
-    max-width: 1180px;
-    margin: auto;
-    }
+.heading{
+width:100%;
+max-width: 1180px;
+margin: auto;
+}
     
-    .heading-text h1{
-    margin-bottom: 40px;
-    font-weight: 600;
-    font-size: 32px;
-    color: #082346;
-    line-height: 48px;
-    font-family: 'Poppins';
-    font-style: normal;
-    }
+.heading-text h1{
+margin-bottom: 40px;
+font-weight: 600;
+font-size: 32px;
+color: #082346;
+line-height: 48px;
+font-family: 'Poppins';
+font-style: normal;
+}
     
-       .lessGap{
-        margin-top: 10px ;
-        display: flex;
-        align-items: center;
-        position: relative;
-        }
+.lessGap{
+margin-top: 10px ;
+display: flex;
+align-items: center;
+position: relative;
+}
         
-        .lessGap h5{
-        padding-right: 150px;
-        white-space: nowrap;
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 16px;
-        color: #000000;
-        }
+.lessGap h5{
+padding-right: 150px;
+white-space: nowrap;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+color: #000000;
+}
         
-        .row-Gap{
-            margin-top: 40px;
-            display: flex;
-            align-items: center;
-            position: relative;
-            }
+.row-Gap{
+margin-top: 40px;
+display: flex;
+align-items: center;
+position: relative;
+}
 
-
-        .row-Gap h5{
-            padding-right: 150px;
-             margin-left: 40px;
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 16px;
-            color: #000000;
-            }
-        /* .more-Gap{
-            margin-top: 30px;
-            display: flex;
-            align-items: center;
-            position: relative;
-            }
-
-
-        .more-Gap h5{
-            padding-right: 150px;
-             margin-left: 40px;
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 16px;
-            color: #000000;
-            }
-
-        .mid-Gap{
-            margin-top: 30px;
-            display: flex;
-            align-items: center;
-            position: relative;
-            }
-
-
-        .mid-Gap h5{
-            padding-right: 150px;
-             margin-left: 40px;
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 16px;
-            color: #000000;
-            } */
-           
+.row-Gap h5{
+padding-right: 150px;
+margin-left: 40px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+color: #000000;
+}
+        
         .firstTitle{
             font-family: 'Inter';
             font-style: normal;
@@ -104,7 +68,6 @@
             bottom: -15px;
             }
 
-                        
         /* ------------------------------------ */
         .specialDiv{
             position: absolute;
@@ -207,27 +170,15 @@
         .select {
             position: relative;
             width: 345px;
-            /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
             border: 1px solid grey ;
             font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        color: #424242;
-        line-height: 20px;
-          }
-        .select-Special {
-            position: relative;
-            width: 245px;
-            /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
-            border: 1px solid grey ;
-            font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        color: #424242;
-        line-height: 20px;
-          }
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            color: #424242;
+            line-height: 20px;
+        }
+        
           .select .selectBtn {
             background: var(--bg1);
             padding: 10px;
@@ -301,16 +252,16 @@
           
         /* ----------------------------------- */
         .underLine{
-            margin-top: 50px;
-            height: 1px;
-            width: 1180px;
-            background-color: #D9D9D9;
+        margin-top: 50px;
+        height: 1px;
+        width: 1180px;
+        background-color: #D9D9D9;
         }
         
         .button{
-            width: 1180px;
-            margin-top: 45px;
-            margin-bottom:50px;
+        width: 1180px;
+        margin-top: 45px;
+        margin-bottom:50px;
         display: flex;
         justify-content: space-between;
         position: relative;
@@ -333,28 +284,26 @@
         }
         
         .buttonMid{
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            border: 1px solid #082346;
-            background: #FFFFFF;
-            border-radius: 12px;
-            padding: 16px 24px;
-            width: 144px;
-            height: 62px;
-            font-weight: 600;
-            font-size: 20px;
-            line-height: 30px;
-            position: absolute;
-            right: 207px;
-            font-family: 'Poppins';
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        border: 1px solid #082346;
+        background: #FFFFFF;
+        border-radius: 12px;
+        padding: 16px 24px;
+        width: 144px;
+        height: 62px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        position: absolute;
+        right: 207px;
+        font-family: 'Poppins';
         font-style: normal;
         color: #082346;
         }
     
         .buttonContinue{
-            /* position: absolute;
-            right: 0; */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -370,12 +319,109 @@
             line-height: 30px;
             }
 
-
-
-            input::placeholder{
-                font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-
+        input::placeholder{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
             }
+
+
+/* ----------------------------------------------------------------- */
+.formHeader{
+    height: 60px;
+    width: 100%;
+    max-width: 1180px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #F1F5F7;
+}
+
+.formProgress{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.formRow{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    position: relative;
+}
+
+.formHeading{
+   font-family: 'Poppins';
+   font-style: normal;
+   margin-right: 30px;
+   font-weight: 500;
+   color: #6D6D6D;  
+   cursor: pointer;
+}
+.formHeadingLast{
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 500;
+   color: #6D6D6D;  
+   cursor: pointer;
+}
+
+.activeWord{
+    font-weight: 600;
+    color: #082346;
+}
+
+.activeCircle{
+    background: #082346;
+    color: white !important;
+    transition: 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #082346;
+    height: 20px;
+    width: 20px;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.greenCircle{
+    background: #42A54C;
+    border: 1px solid #42A54C;
+    color: white !important;
+    transition: 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.active{
+    height: 2.7px !important;  
+  }
+
+.formCircle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #082346;
+    height: 20px;
+    width: 20px;
+    font-weight: 700;
+    font-size: 13px;
+    color: #082346;
+}
+
+.formUnderline{
+    height: 1.4px;
+    width: 60px;
+    background-color: #6D6D6D;
+}

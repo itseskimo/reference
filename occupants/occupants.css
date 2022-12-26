@@ -1,186 +1,128 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
 
-    .heading{
-    width:100%;
-    max-width: 1180px;
-    margin: auto;
-    }
+.heading{
+width:100%;
+max-width: 1180px;
+margin: auto;
+}
     
-    .heading-text h1{
-    margin-bottom: 40px;
-    font-weight: 600;
-    font-size: 32px;
-    color: #082346;
-    line-height: 48px;
-    font-family: 'Poppins';
-    font-style: normal;
-    }
+.heading-text h1{
+margin-bottom: 40px;
+font-weight: 600;
+font-size: 32px;
+color: #082346;
+line-height: 48px;
+font-family: 'Poppins';
+font-style: normal;
+}
     
-       .subTitle{
-        margin-top: -20px ;
-        display: flex;
-        align-items: center;
-        position: relative;
-        }
+.subTitle{
+margin-top: -20px ;
+display: flex;
+align-items: center;
+position: relative;
+}
         
-        .subTitle h4{
-        white-space: nowrap;
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 20px;
-        color: #082346;
-        }
+.subTitle h4{
+white-space: nowrap;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+color: #082346;
+}
         
 .fadedText{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    margin-top: -29px;
-    color: #808080;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+margin-top: -29px;
+color: #808080;
 }
 
 .alignCheckbox{
-    position: absolute;
-    bottom: -35px;
-    display: flex;
+position: absolute;
+bottom: -35px;
+display: flex;
 }
+
 .alignCheckbox h6{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    margin-left: 5px;
-    color: #082346;
-    
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+margin-left: 5px;
+color: #082346;
 }
 
 .occupantDate{
-    height: 36px;
-    width: 57px;
-    position: absolute;
-    bottom: -15px;
+height: 36px;
+width: 57px;
+position: absolute;
+bottom: -15px;
 left: 0;
 }
 
 .occupantMonth{
-    position: absolute;
-    bottom: -15px;
-    left: 80px;
-
-    height: 35px;
-    width: 57px;
+position: absolute;
+bottom: -15px;
+left: 80px;
+height: 35px;
+width: 57px;
 }
 
 .occupantYear{
-        position: absolute;
-        bottom: -15px;
-        left:160px ;
-
-    height: 35px;
-    width: 67px;
+position: absolute;
+bottom: -15px;
+left:160px ;
+height: 35px;
+width: 67px;
 }
 
-.addTenant{
-    position: absolute;
-    bottom: -95px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 36px;
-    color: #082346;
+
+.row-Gap{
+margin-top: 40px;
+display: flex;
+align-items: center;
+position: relative;
 }
 
-.deleteIcon{
-    width: 14px;
-    height: 16px;
-    display: flex;
-    justify-content: flex-end;
-    position: absolute;
-    left: 1140px;
-    bottom: -39px;
-    }
+.more-Gap{
+margin-top: 70px;
+display: flex;
+align-items: center;
+position: relative;
+}
 
-    
-        .row-Gap{
-            margin-top: 40px;
-            display: flex;
-            align-items: center;
-            position: relative;
-            }
+.more-Gap h5{
+padding-right: 150px;
+margin-left: 40px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+color: #000000;
+}
+        
+.firstTitle{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+color: #141414;
+white-space: nowrap;
+}
 
-
-        .row-Gap h5{
-            padding-right: 150px;
-             margin-left: 40px;
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 16px;
-            color: #000000;
-            }
-         .more-Gap{
-            margin-top: 70px;
-            display: flex;
-            align-items: center;
-            position: relative;
-            }
-
-
-        .more-Gap h5{
-            padding-right: 150px;
-             margin-left: 40px;
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 16px;
-            color: #000000;
-            }
-
-          
-
-
-
-
-      /*  .mid-Gap{
-            margin-top: 30px;
-            display: flex;
-            align-items: center;
-            position: relative;
-            }
-
-
-        .mid-Gap h5{
-            padding-right: 150px;
-             margin-left: 40px;
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 16px;
-            color: #000000;
-            } */
-           
-        .firstTitle{
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 12px;
-            color: #141414;
-            white-space: nowrap;
-            }
-
-        .inputWidth{  
-            height: 30px;  
-            font-size: 15px;
-            width: 340px ;
-            position: absolute;
-            bottom: -15px;
-            }
-
-                        
+.inputWidth{  
+height: 30px;  
+font-size: 15px;
+width: 340px ;
+position: absolute;
+bottom: -15px;
+}
+              
         /* ------------------------------------ */
         .specialDiv{
             position: absolute;
@@ -227,57 +169,14 @@ left: 0;
             bottom: -300px;
         }
 
-        .selectWidth{
-            margin-right: 30px;
-            height: 36px;
-            width: 141px;
-        }
-
         .selectLength{
             height: 36px;  
             font-size: 15px;
             width: 350px ;
             position: absolute;
             bottom: -15px;
-        }
+        } 
 
-
-        .lease-companyText{
-            margin-right: 30px;
-            height: 36px;
-            width: 141px;
-            position: absolute;
-            bottom: -15px;
-        }
-        .lease-companyNoText{
-            margin-right: 30px;
-            height: 36px;
-            width: 141px;
-            position: absolute;
-            bottom: -85px;
-        }
-        .lease-input{
-            margin-right: 30px;
-            height: 30px;
-            width: 121px;
-            position: absolute;
-            bottom: -85px;
-        }
-
-        .button1{
-            margin-right: 30px;
-            height: 36px;
-            width: 87px;
-        }
-        .button2{
-            height: 36px;
-            background: #082346;
-            border: 1px solid #082346;
-            border-radius: 4px;
-            color: #FFFFFF;
-            width: 87px;
-         }
-        
          .specialButton{
             background: #FFFFFF;            
             border: 1px solid #082346;
@@ -303,79 +202,54 @@ left: 0;
             height: 420px;
             margin-bottom: 32px;
         }
-      
 
-
-
-
-
-
-
-         .select{ 
+        .select{ 
             display: none;
-            }
+        }
         
-            input[type="file"] {
+        input[type="file"] {
             display: none;
-            }
+        }
         
-            .labelIcon{
+        .labelIcon{
         display: flex;
         justify-content: flex-end;
         padding-left: 157px;
-
         width: 16px;
         height: 16px;
-            }
+        }
         
-        
-            .inputLabel{
-                font-family: 'Inter';
-                font-style: normal;
-                font-weight: 400;
-                cursor: pointer;
-                box-sizing: border-box;
-                position: absolute;
-                bottom: -15px;
-                height: 35px; 
-                width: 298px;
-                border: 1px solid #082346;
-                /* border-radius: 4px; */
-                padding: 10px;
-                font-size: 14px;
-                display: flex;
-                align-items: center;
-                justify-content: flex-start;
-                background-color: white;
-            } 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        .inputLabel{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        cursor: pointer;
+        box-sizing: border-box;
+        position: absolute;
+        bottom: -15px;
+        height: 35px; 
+        width: 298px;
+        border: 1px solid #082346;
+        padding: 10px;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: white;
+        } 
 
         /* ----------------------------------- */
         .underLine{
-            margin-top: 50px;
-            height: 1px;
-            width: 1180px;
-            background-color: #D9D9D9;
+        margin-top: 50px;
+        height: 1px;
+        width: 1180px;
+        background-color: #D9D9D9;
         }
         
         .button{
-            width: 1180px;
-            margin-top: 45px;
-            margin-bottom:50px;
+        width: 1180px;
+        margin-top: 45px;
+        margin-bottom:50px;
         display: flex;
         justify-content: space-between;
         position: relative;
@@ -413,13 +287,11 @@ left: 0;
             position: absolute;
             right: 207px;
             font-family: 'Poppins';
-        font-style: normal;
-        color: #082346;
+            font-style: normal;
+            color: #082346;
         }
     
         .buttonContinue{
-            /* position: absolute;
-            right: 0; */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -435,13 +307,11 @@ left: 0;
             line-height: 30px;
             }
 
-            .select
-             {
-                position: relative;
-                width: 345px;
-                /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
-                border: 1px solid grey ;
-                font-family: 'Inter';
+            .select{
+            position: relative;
+            width: 345px;
+            border: 1px solid grey ;
+            font-family: 'Inter';
             font-style: normal;
             font-weight: 400;
             font-size: 14px;
@@ -523,5 +393,103 @@ left: 0;
               .selector{ 
                 position: absolute;
                 bottom: -15px;
-            }
+              }
     
+    /* ----------------------------------------------------------------- */
+  .formHeader{
+    height: 60px;
+    width: 100%;
+    max-width: 1180px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #F1F5F7;
+}
+
+.formProgress{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.formRow{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    position: relative;
+}
+
+.formHeading{
+   font-family: 'Poppins';
+   font-style: normal;
+   margin-right: 30px;
+   font-weight: 500;
+   color: #6D6D6D;  
+   cursor: pointer;
+}
+.formHeadingLast{
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 500;
+   color: #6D6D6D;  
+   cursor: pointer;
+}
+
+.activeWord{
+    font-weight: 600;
+    color: #082346;
+}
+
+.activeCircle{
+    background: #082346;
+    color: white !important;
+    transition: 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #082346;
+    height: 20px;
+    width: 20px;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.greenCircle{
+    background: #42A54C;
+    border: 1px solid #42A54C;
+    color: white !important;
+    transition: 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.active{
+    height: 2.7px !important;  
+  }
+
+.formCircle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #082346;
+    height: 20px;
+    width: 20px;
+    font-weight: 700;
+    font-size: 13px;
+    color: #082346;
+}
+
+.formUnderline{
+    height: 1.4px;
+    width: 60px;
+    background-color: #6D6D6D;
+}

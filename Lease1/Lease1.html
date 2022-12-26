@@ -5,11 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="lease1.css">
-
     <title>Document</title>
 </head>
 <body>
     <div class='heading'>
+
+      <div class='formHeader'>
+        <div class='formProgress'>           
+                <div class='formRow'>
+                <h1  class='formCircle'>1</h1>
+                <h5  class='formHeading'>Commercials</h5>
+                <div class='formUnderline' ></div> 
+                </div>
+                <div class='formRow'>
+                <h1  class='formCircle'>2</h1>
+                <h5  class='formHeading'>Requests</h5>
+                <div class='formUnderline' ></div> 
+                </div>
+                <div class='formRow'>
+                <h1  class='formCircle'>3</h1>
+                <h5  class='formHeading'>Lease Details</h5>
+                <div class='formUnderline' ></div> 
+                </div>
+                <div class='formRow'>
+                <h1  class='formCircle'>4</h1>
+                <h5  class='formHeading'>Occupant Details</h5>
+                <div class='formUnderline' ></div> 
+                </div>
+                <div class='formRow'>
+                <h1  class='formCircle'>5</h1>
+                <h5  class='formHeadingLast'>Review & Submit</h5>
+                </div>
+           </div>
+        </div>
+
+
         <div class='heading-text'>
         <h1>Lease Details</h1>
     
@@ -17,23 +47,20 @@
     <div class='lessGap'>
         <h5>Type of Lease</h5>
         <div class='specialDiv'>
-           <!-- <select class='selectWidth'>
-            <option>Select Option</option>
-            <option>Personal</option>
-            <option>Company</option>
-        </select>  -->
 
         <div class="selector">
           <div class="select" style="width: 141px;">
               <div class="selectBtn" data-type="firstOption">Select</div>
               <div class="selectDropdown">
-                <div class="option" data-type="firstOption">Personal</div>
-                <div class="option" data-type="secondOption">Company</div>
+              <div class="option" data-type="firstOption">Personal</div>
+              <div class="option" data-type="secondOption">Company</div>
               </div>
             </div>
           </div>
         </div>
     </div>
+
+    <!-- ------------------------------------------------------------------------------------------ -->
     
     <div class='lessGap'>
         <h5>Number of Tenant</h5>
@@ -43,20 +70,24 @@
         </div>
     </div>
 
+    <!-- ------------------------------------------------------------------------------------------ -->
+
     <div class='lessGap'>
         <h4>Tenant Details</h4>
         <h6 class="addText">Please only add details of the persons signing the contract. Occupant’s details can be added in the next step.</h6>
     </div>
 
-<div class='lessGap'>
+   <div class='lessGap'>
     <h6 class="addTenant">Tenant 1</h6>
     <h6 class="deleteIcon">Clear</h6> 
-</div>
+   </div>
 
+    <!-- ------------------------------------------------------------------------------------------ -->
 
     <div class="leaseBackground">
     <div class='more-Gap'>
         <h5>Personal Details</h5>
+
         <div class='firstDiv'>
           <h6 class='firstTitle'>First Name*</h6>
           <input autoFocus placeholder='Enter First Name'  class='inputWidth' ></input>
@@ -73,31 +104,30 @@
             <div class='firstDiv'>
                 <h6 class='firstTitle'>Email ID*</h6>
                 <input class='inputWidth' placeholder='Enter Email ID'></input>
-              </div>
+            </div>
     
-              <div  class='secondDiv'>
+            <div  class='secondDiv'>
                 <h6 class='firstTitle'>Phone Number*</h6>
                 <input class='inputWidth' placeholder='Enter Phone Number' ></input>
-              </div>
+            </div>
 
         </div>
 
-
     <div class="thirdrowAbsolute">
 
-    <div class='firstDiv'>
+        <div class='firstDiv'>
         <h6 class='firstTitle'>Marital Status*</h6>
         <select class='selectLength'>
             <option>Select</option>
         </select>
-      </div>
+        </div>
 
     </div>
 
     </div>
     </div>
 
-
+    <!-- ------------------------------------------------------------------------------------------ -->
 
     <div class="leaseBackground2">
 
@@ -117,9 +147,8 @@
                   <div class="option" data-type="thirdOption">Retired</div>
                  <div class="option" data-type="thirdOption">Other</div>
                 </div>
-              </div>
             </div>
-
+           </div>
 
         </div>
 
@@ -136,7 +165,7 @@
                 <input class='inputWidth' placeholder='Enter Company Name' ></input>
               </div>
     
-              <div  class='secondDiv'>
+              <div class='secondDiv'>
                 <h6 class='firstTitle'>Company Type*</h6>
                 
                 <div class="selector">
@@ -146,25 +175,25 @@
                         <div class="option" data-type="firstOption">LLP</div>
                         <div class="option" data-type="secondOption">Partnership</div>
                         <div class="option" data-type="thirdOption">Private Limited</div>
-                         <div class="option" data-type="thirdOption">Sole Proprietorship</div>
-                       
+                        <div class="option" data-type="thirdOption">Sole Proprietorship</div> 
                       </div>
                     </div>
                   </div>
-
               </div>
 
         </div>
 
     </div>
     </div>
+    <!-- ------------------------------------------------------------------------------------------ -->
 
 <div class='row-Gap'>
-    <button class="specialButton">+   Add Another Title</button>
+    <button class="specialButton">+ Add Another Title</button>
 </div>
 
 <div class='row-underLine'></div>
 
+    <!-- ------------------------------------------------------------------------------------------ -->
 
 <div class="leaseBackground2">
 
@@ -187,12 +216,10 @@
 
         </div>
 
-
         <div  class='secondDiv'>
             <h6 class='firstTitle'>No of Occupant’s*</h6>
             <input class='inputWidth' placeholder='Enter Number of Occupant’s' ></input>
         </div>
-
 
         <div class="secondrowAbsolute">
 
@@ -210,6 +237,7 @@
 
     </div>
     </div>
+    <!-- ------------------------------------------------------------------------------------------ -->
 
 <div class='underLine'></div>
 <div class='button'>
@@ -219,7 +247,6 @@
 </div> 
 
     </div>
-    
     
     </div>
     <script src="lease1.js"></script>

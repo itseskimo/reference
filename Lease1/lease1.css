@@ -1,90 +1,87 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap'); 
 
-    .heading{
-    width:100%;
-    max-width: 1180px;
-    margin: auto;
-    }
+.heading{
+width:100%;
+max-width: 1180px;
+margin: auto;
+}
     
-    .heading-text h1{
-    margin-bottom: 40px;
-    font-weight: 600;
-    font-size: 32px;
-    color: #082346;
-    line-height: 48px;
-    font-family: 'Poppins';
-    font-style: normal;
-    }
+.heading-text h1{
+margin-bottom: 40px;
+font-weight: 600;
+font-size: 32px;
+color: #082346;
+line-height: 48px;
+font-family: 'Poppins';
+font-style: normal;
+}
     
-       .lessGap{
-        margin-top: 10px ;
-        display: flex;
-        align-items: center;
-        position: relative;
-        }
+.lessGap{
+margin-top: 10px ;
+display: flex;
+align-items: center;
+position: relative;
+}
         
-        .lessGap h5{
-        padding-right: 150px;
-        white-space: nowrap;
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 16px;
-        color: #000000;
-        }
-        .lessGap h4{
-        
-        white-space: nowrap;
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 36px;
-        color: #082346;
-        }
+.lessGap h5{
+padding-right: 150px;
+white-space: nowrap;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+color: #000000;
+}
+
+.lessGap h4{
+white-space: nowrap;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 36px;
+color: #082346;
+}
         
 .addText{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    position: absolute;
-    bottom: -35px;
-    color: #808080;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+position: absolute;
+bottom: -35px;
+color: #808080;
 }
 
 .addTenant{
-    position: absolute;
-    bottom: -95px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 36px;
-    color: #082346;
+position: absolute;
+bottom: -95px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 36px;
+color: #082346;
 }
 
 .deleteIcon{
-    width: 14px;
-    height: 16px;
-    display: flex;
-    justify-content: flex-end;
-    position: absolute;
-    left: 1060px;
-    bottom: -79px;
-    font-family: 'Poppins';
+width: 14px;
+height: 16px;
+display: flex;
+justify-content: flex-end;
+position: absolute;
+left: 1060px;
+bottom: -79px;
+font-family: 'Poppins';
 font-style: normal;
 font-weight: 600;
 font-size: 20px;
 line-height: 30px;
-/* identical to box height */
 cursor: pointer;
-
 color: #FE6161;
-    }
-
+}
     
         .row-Gap{
             margin-top: 40px;
@@ -92,7 +89,6 @@ color: #FE6161;
             align-items: center;
             position: relative;
             }
-
 
         .row-Gap h5{
             padding-right: 150px;
@@ -120,29 +116,6 @@ color: #FE6161;
             font-size: 16px;
             color: #000000;
             }
-
-          
-
-
-
-
-      /*  .mid-Gap{
-            margin-top: 30px;
-            display: flex;
-            align-items: center;
-            position: relative;
-            }
-
-
-        .mid-Gap h5{
-            padding-right: 150px;
-             margin-left: 40px;
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 16px;
-            color: #000000;
-            } */
            
         .firstTitle{
             font-family: 'Inter';
@@ -198,41 +171,12 @@ color: #FE6161;
             bottom: -118px;
         }
       
-        .selectWidth{
-            margin-right: 30px;
-            height: 36px;
-            width: 141px;
-        }
-
         .selectLength{
             height: 36px;  
             font-size: 15px;
             width: 350px ;
             position: absolute;
             bottom: -15px;
-        }
-
-
-        .lease-companyText{
-            margin-right: 30px;
-            height: 36px;
-            width: 141px;
-            position: absolute;
-            bottom: -15px;
-        }
-        .lease-companyNoText{
-            margin-right: 30px;
-            height: 36px;
-            width: 141px;
-            position: absolute;
-            bottom: -85px;
-        }
-        .lease-input{
-            margin-right: 30px;
-            height: 30px;
-            width: 121px;
-            position: absolute;
-            bottom: -85px;
         }
 
         .button1{
@@ -260,9 +204,9 @@ color: #FE6161;
             padding: 12px 23px;
             gap: 8px;
             font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
          }
 
         .leaseBackground3{
@@ -283,12 +227,11 @@ font-size: 14px;
 
 
         .row-underLine{
- background-color: #D9D9D9;
- width: 1080px;
- height: 1px;
- margin-top: 20px;
+            background-color: #D9D9D9;
+            width: 1080px;
+            height: 1px;
+            margin-top: 20px;
         }
-
         /* ----------------------------------- */
         .underLine{
             margin-top: 50px;
@@ -298,9 +241,9 @@ font-size: 14px;
         }
         
         .button{
-            width: 1180px;
-            margin-top: 45px;
-            margin-bottom:50px;
+        width: 1180px;
+        margin-top: 45px;
+        margin-bottom:50px;
         display: flex;
         justify-content: space-between;
         position: relative;
@@ -338,13 +281,11 @@ font-size: 14px;
             position: absolute;
             right: 207px;
             font-family: 'Poppins';
-        font-style: normal;
-        color: #082346;
+            font-style: normal;
+            color: #082346;
         }
     
         .buttonContinue{
-            /* position: absolute;
-            right: 0; */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -360,32 +301,26 @@ font-size: 14px;
             line-height: 30px;
             }
 
-
-            input::placeholder{
-                font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-
+        input::placeholder{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
             }
 
-
-
-
-
             .select {
-                position: relative;
-                width: 345px;
-                /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
-                border: 1px solid grey ;
-                font-family: 'Inter';
+            position: relative;
+            width: 345px;
+            border: 1px solid grey ;
+            font-family: 'Inter';
             font-style: normal;
             font-weight: 400;
             font-size: 14px;
             color: #424242;
             line-height: 20px;
-              }
-              .select .selectBtn {
+            }
+
+            .select .selectBtn {
                 background: var(--bg1);
                 padding: 10px;
                 box-sizing: border-box;
@@ -401,7 +336,8 @@ font-size: 12px;
                     -ms-user-select: none;
                         user-select: none;
                 background: #fff;
-              }
+            }
+
               .select .selectBtn:after {
                 content: "";
                 position: absolute;
@@ -415,13 +351,16 @@ font-size: 12px;
                 border-bottom: 2px solid #666;
                 transition: 0.2s ease;
               }
+
               .select .selectBtn.toggle {
                 border-radius: 3px 3px 0 0;
               }
+
               .select .selectBtn.toggle:after {
                 -webkit-transform: translateY(-50%) rotate(-135deg);
                         transform: translateY(-50%) rotate(-135deg);
               }
+
               .select .selectDropdown {
                 position: absolute;
                 top: 100%;
@@ -440,16 +379,18 @@ font-size: 12px;
                 transition: 0.2s ease;
                 box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
               }
+
               .select .selectDropdown .option {
                 padding: 10px;
                 box-sizing: border-box;
                 cursor: pointer;
                 border-bottom: 1px solid #E0E0E0;
-                
               }
+
               .select .selectDropdown .option:hover {
                 background: #f8f8f8;
               }
+
               .select .selectDropdown.toggle {
                 visibility: visible;
                 -webkit-transform: scale(1, 1);
@@ -459,5 +400,103 @@ font-size: 12px;
               .selector{ 
                 position: absolute;
                 bottom: -15px;
-            }
+              }
     
+/* ----------------------------------------------------------------- */
+.formHeader{
+    height: 60px;
+    width: 100%;
+    max-width: 1180px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #F1F5F7;
+}
+
+.formProgress{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.formRow{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    position: relative;
+}
+
+.formHeading{
+   font-family: 'Poppins';
+   font-style: normal;
+   margin-right: 30px;
+   font-weight: 500;
+   color: #6D6D6D;  
+   cursor: pointer;
+}
+.formHeadingLast{
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 500;
+   color: #6D6D6D;  
+   cursor: pointer;
+}
+
+.activeWord{
+    font-weight: 600;
+    color: #082346;
+}
+
+.activeCircle{
+    background: #082346;
+    color: white !important;
+    transition: 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #082346;
+    height: 20px;
+    width: 20px;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.greenCircle{
+    background: #42A54C;
+    border: 1px solid #42A54C;
+    color: white !important;
+    transition: 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.active{
+    height: 2.7px !important;  
+  }
+
+.formCircle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #082346;
+    height: 20px;
+    width: 20px;
+    font-weight: 700;
+    font-size: 13px;
+    color: #082346;
+}
+
+.formUnderline{
+    height: 1.4px;
+    width: 60px;
+    background-color: #6D6D6D;
+}

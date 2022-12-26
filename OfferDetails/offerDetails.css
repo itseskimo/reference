@@ -18,7 +18,7 @@ font-style: normal;
 
 .property-details{
 display: flex;
-background-color: #FAFAFA;;
+background-color: #FAFAFA;
 }
 
 .property-image{
@@ -34,12 +34,12 @@ margin-top: -14px;
 }
 
 .property-name{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 32px;
-    color: #121212;
-    }
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+color: #121212;
+}
 
 .property-address{
 font-family: 'Inter';
@@ -72,12 +72,6 @@ font-style: normal;
 font-weight: 500;
 font-size: 16px;
 color: #42A54C;
-/* Inside auto layout */
-
-flex: none;
-order: 1;
-flex-grow: 1;
-
 }
 
 .subHeading{
@@ -95,8 +89,8 @@ color: #000000;
 }
 
 .background-colour{
-    background-color: #FAFAFA;
-    height: 340px;
+background-color: #FAFAFA;
+height: 340px;
 }
 /* ------------------------------- */
 .row-Gap{
@@ -105,27 +99,6 @@ display: flex;
 align-items: center;
 position: relative;
 }
-
-/* .row-GapExtra{
-    margin-top: 100px;
-    display: flex;
-    align-items: center;
-    position: relative;
-    margin-bottom: 100px
-    ;
-}
-
-.row-GapExtraHeading {
-    padding-right: 150px;
-    margin-left: 40px;
-    position: absolute;
-    top: -70px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    color: #000000;
-    } */
 
 .row-Gap h5{
 padding-right: 150px;
@@ -158,16 +131,6 @@ color: #141414;
 white-space: nowrap;
 }
 
-.thirdTitle{
-    font-family: 'Inter';
-font-style: normal;
-font-weight: 500;
-font-size: 12px;
-position: absolute;
-top: -67px;
-color: #141414;
-white-space: nowrap;
-}
 
 .inputWidth{  
 height: 30px;  
@@ -175,6 +138,13 @@ font-size: 15px;
 width: 340px ;
 position: absolute;
 bottom: -15px;
+}
+
+input::placeholder{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
 }
 
 .placeholderTitle{ 
@@ -193,93 +163,56 @@ bottom: -15px;
   color: #6D6D6D;
 }
 
-
-.selectWidthh{
-    height: 35px; 
-    width: 350px;  
-    border-radius: 4px;
-    position: absolute;
-    bottom: -140px;
-}
 .selector{
-    
-    position: absolute;
-    bottom: -143px;
+  position: absolute;
+  bottom: -143px;
 }
 /*--------------------------------------------- */
 
 .firstDiv1{
-    position: absolute;
-    left: 240px;    
+  position: absolute;
+  left: 240px;    
 }
 
 .secondDiv1{
-    position: absolute;
-    left: 615px;    
+  position: absolute;
+  left: 615px;    
 }
 
 .thirdDiv1{
-    position: absolute;
-    left: 240px;   
-}
-.forthDiv1{
-    position: absolute;
-    left: 495px;  
+  position: absolute;
+  left: 240px;   
 }
 
-.slashAlign{
-    position: absolute;
-    left: 460px; 
-    top: -27px;
-    font-size: 20px;
+.firstAbsolute{
+  position: absolute;
+  top: 115px;
+  white-space: nowrap;
 }
-
-.thirdInput1{
-    width: 78px;
-    height: 30px;
-    font-size: 15px;
-    position: absolute;
-    top: -17px;
-    left: 110px;
-    }
-
-    .secondSelect{
-        height: 35px; 
-        width: 62px;
-        border-radius: 4px;
-        position: absolute;
-        top: -17px;
-    }
-    
-    .firstAbsolute{
-        position: absolute;
-        top: 115px;
-        white-space: nowrap;
-    }
 
 
 .flex{
-    display: flex;
+  display: flex;
 }
 
 
 .firstSelect{
-    margin-right: 28px;
-    height: 36px;
-    width: 78px;
-    border-radius: 4px;
-    position: absolute;
-    top: -17px;
+  margin-right: 28px;
+  height: 36px;
+  width: 78px;
+  border-radius: 4px;
+  position: absolute;
+  top: -17px;
 }
 
 
 .monthsCount{
-    margin-right: 30px;
-    height: 36px; 
-    width: 141px;
-    border-radius: 4px;
-    position: absolute;
-    top: 50px;
+  margin-right: 30px;
+  height: 36px; 
+  width: 141px;
+  border-radius: 4px;
+  position: absolute;
+  top: 50px;
 }
 
 .lockin{
@@ -288,50 +221,16 @@ left: 240px;
 }
 
 .notice{
-    position: absolute;
-    left: 500px; 
+position: absolute;
+left: 500px; 
 }
 
 .daysCount{
-    height: 35px; 
-    width: 141px;
-    border-radius: 4px;
-    position: absolute;
-    top: 50px;
-}
-
-
-.offerBox1{
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-width: 118.5px;
-height: 116.5px;
-line-height: 3px;
+height: 35px; 
+width: 141px;
+border-radius: 4px;
 position: absolute;
-bottom: -153px;
-left: 240px;
-border: 1px solid black;
-border-radius: 12px;
-background-color: white;
-}
-
-.termTitle{
-font-size: 17.89px;
-font-weight: 600;
-margin-bottom: 0;
-}
-
- .termInterval{
-font-weight: 500;
-font-size: 12px ;
-color: #999999;
-margin-top: 24px;
-}
-
-.termCost{
-font-size: 15.8889px
+top: 50px;
 }
 
 
@@ -343,29 +242,29 @@ position: absolute;
 top: 50px;
 }
 
-        .rentTitle1{
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 12px;
-        position: absolute;
-        top: -50px;
-        left: 240px;
-        color: #141414;
-        white-space: nowrap;
-        }
+.rentTitle1{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+position: absolute;
+top: -50px;
+left: 240px;
+color: #141414;
+white-space: nowrap;
+}
 
-        .rentTitle2{
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 12px;
-        position: absolute;
-        top: -50px;
-        left: 500px;
-        color: #141414;
-        white-space: nowrap;
-        }
+.rentTitle2{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+position: absolute;
+top: -50px;
+left: 500px;
+color: #141414;
+white-space: nowrap;
+}
 
 .rentAbsolute{
 position: absolute;
@@ -375,44 +274,36 @@ align-items: center;
 }
 
 .rentDate{
-    margin-right: 30px;
-    height: 36px;
-    position: absolute;
-    left: 240px;
-    width: 57px;
+margin-right: 30px;
+height: 36px;
+position: absolute;
+left: 240px;
+width: 57px;
 }
-.rentDate{
-    margin-right: 30px;
-    height: 36px;
-    position: absolute;
-    left: 240px;
-    width: 57px;
-}
-
 
 .rentMonth{
-    position: absolute;
-    left: 310px;
-    height: 35px;
-    width: 57px;
+position: absolute;
+left: 310px;
+height: 35px;
+width: 57px;
 }
 
 .rentYear{
-    position: absolute;
-    left: 380px;
-    height: 35px;
-    width: 67px;
+position: absolute;
+left: 380px;
+height: 35px;
+width: 67px;
 }
 
 .rent-endDate{
-    position: absolute;
-    left: 500px;
-     height: 35px; 
-     width: 57px;
+position: absolute;
+left: 500px;
+height: 35px; 
+width: 57px;
 }
 
 .rentCalculator-title{
-    font-family: 'Inter';
+font-family: 'Inter';
 font-style: normal;
 font-weight: 600;
 font-size: 16px;
@@ -489,9 +380,8 @@ color: #141414;
 .rent-BackgroundColorr{
     background-color: #FAFAFA;
     height:400px;
-   
-    
 }
+
 .rent-BackgroundColor{
     background-color: #FAFAFA;
     height: 250px;
@@ -550,173 +440,19 @@ cursor: pointer;
     cursor: pointer;
     }
 
-
 /* ------------------------------- */
-
-
-/* details {
-	position: relative;
-	margin-right: 1rem;
-    height: 40px; 
-    width: 350px;  
-    border-radius: 4px;
-    position: absolute;
-    bottom: -145px;
-}
-
-details[open] {
-	z-index: 1;
-}
-
-summary {
-	height: 35px;
-	cursor: pointer;
-	background-color: white;
-    border: 1px solid gray;
-	list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-right: 12px;
-}
-
-summary::-webkit-details-marker {
-	display: none;
-}
-
-details[open] summary:before {
-	content: '';
-	display: block;
-	width: 100vw;
-	height: 100vh;
-	background: transparent;
-	position: fixed;
-	top: 0;
-	left: 0;
-}
-
-summary:after {
-	content: '';
-	display: inline-block;
-	float: right;
-	width: .5rem;
-	height: .5rem;
-	border-bottom: 1px solid currentColor;
-	border-left: 1px solid currentColor;
-	border-bottom-left-radius: 2px;
-	transform: rotate(45deg) translate(50%, 0%);
-	transform-origin: center center;
-	transition: transform ease-in-out 100ms
-}
-
-summary:focus {
-	outline: none;
-}
-
-details[open] summary:after {
-	transform: rotate(-45deg) translate(0%, 0%);
-}
-
-ul {
-	width: 100%;
-	background: white;
-	position: absolute;
-	top: calc(100% + .5rem);
-	left: 0;
-	padding: 1rem;
-	margin: 0;
-	box-sizing: border-box;
-	border-radius: 5px;
-	max-height: 200px;
-	overflow-y: auto;
-    list-style-type: none;
-}
-
-li {
-	margin: 0;
-	padding: 1rem 0;
-	border-bottom: 1px solid #ccc;
-    font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-
-color: #424242;
-}
-li:hover,li:focus {
-	background-color: #fbfbfb
-}
-
-li:first-child {
-	padding-top: 0;
-}
-
-li:last-child {
-	padding-bottom: 0;
-	border-bottom: none;
-}
-
-/* FAKE SELECT */
-
-/* summary.radios {
-	counter-reset: radios;
-}
-
-summary.radios:before {
-	content: var(--selection);
-}
-
-input[type=radio] {
-	counter-increment: radios;
-	appearance: none;
-	display: none;
-}
-
-input[type=radio]:checked {
-	display: inline;
-	--display: block;
-}
-
-input[type=radio]:after {
-	content: attr(title);
-	display: inline;
-	font-size: 1rem;
-}
-
-ul.list {
-	counter-reset: labels;
-    border: 1px solid #ccc;
-}
-
-label {
-	width: 100%;
-	display: flex;
-	cursor: pointer;
-	justify-content: space-between;
-}
-
-label span {
-	--display: none;
-	display: var(--display);
-	width: 1rem;
-	height: 1rem;
-	border: 1px solid #727272;
-	border-radius: 3px;
-} */ 
-
-/* _------------------------- */
 .select {
     position: relative;
     width: 345px;
-    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
     border: 1px solid grey ;
     font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-color: #424242;
-line-height: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #424242;
+    line-height: 20px;
   }
+
   .select .selectBtn {
     background: var(--bg1);
     padding: 10px;
@@ -734,6 +470,7 @@ line-height: 20px;
             user-select: none;
     background: #fff;
   }
+
   .select .selectBtn:after {
     content: "";
     position: absolute;
@@ -747,13 +484,16 @@ line-height: 20px;
     border-bottom: 2px solid #666;
     transition: 0.2s ease;
   }
+
   .select .selectBtn.toggle {
     border-radius: 3px 3px 0 0;
   }
+
   .select .selectBtn.toggle:after {
     -webkit-transform: translateY(-50%) rotate(-135deg);
             transform: translateY(-50%) rotate(-135deg);
   }
+
   .select .selectDropdown {
     position: absolute;
     top: 100%;
@@ -788,11 +528,101 @@ line-height: 20px;
             transform: scale(1, 1);
   }
   
+  /* ----------------------------------------------------------------- */
+  .formHeader{
+    height: 60px;
+    width: 100%;
+    max-width: 1180px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #F1F5F7;
+}
 
-  input::placeholder{
-    font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
+.formProgress{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+}
 
+.formRow{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    position: relative;
+}
+
+.formHeading{
+   font-family: 'Poppins';
+   font-style: normal;
+   margin-right: 30px;
+   font-weight: 500;
+   color: #6D6D6D;  
+   cursor: pointer;
+}
+.formHeadingLast{
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 500;
+   color: #6D6D6D;  
+   cursor: pointer;
+}
+
+.activeWord{
+    font-weight: 600;
+    color: #082346;
+}
+
+.activeCircle{
+    background: #082346;
+    color: white !important;
+    transition: 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #082346;
+    height: 20px;
+    width: 20px;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.greenCircle{
+    background: #42A54C;
+    border: 1px solid #42A54C;
+    color: white !important;
+    transition: 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.active{
+    height: 2.7px !important;  
+  }
+
+.formCircle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #082346;
+    height: 20px;
+    width: 20px;
+    font-weight: 700;
+    font-size: 13px;
+    color: #082346;
+}
+
+.formUnderline{
+    height: 1.4px;
+    width: 60px;
+    background-color: #6D6D6D;
 }
