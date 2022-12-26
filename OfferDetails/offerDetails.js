@@ -47,24 +47,19 @@ prev.addEventListener('click',()=>{
 
 function update(){
 	circles.forEach((circle,idx)=>{
-		
-		if(idx===currentActive){
-			 position='activeCircle'
-		}
-		if(idx<currentActive){
-			position='greenCircle'
-		}
-
 	
     if(idx<currentActive){
-    	circle.classList.add(position)
+    	circle.classList.add('greenCircle')
     }else if(idx===currentActive){
-		circle.classList.add(position)
-    }else{
-		circle.classList.remove(position)
+		circle.classList.add('activeCircle')
+    }
+	
+	
+	else{
+		circle.classList.remove('activeCircle')
 	}
 const actives=document.querySelectorAll('.greenCircle')
-console.log(actives.length,circles.length)
+console.log(currentActive,actives.length,circles.length)
 
 	})
 }
