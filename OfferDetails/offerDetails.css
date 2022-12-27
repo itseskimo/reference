@@ -186,14 +186,17 @@ font-size: 12px;
 
 .secondDiv-Calculator{
   position: absolute;
-  left: 492px;    
+  left: 468px;    
 }
 .thirdDiv-Calculator{
   position: absolute;
-  left: 747px;    
+  left: 707px;    
 }
 
-
+.forthDiv-Calculator{
+  position: absolute;
+  left: 948px;   
+}
 
 .firstAbsolute{
   position: absolute;
@@ -382,7 +385,7 @@ color: #141414;
 .column-underline{
     position: absolute;
     top: 20px;
-    left: 222px;
+    left: 215px;
     width: 1px;
     background-color:#D2D2D2 ;
     height: 214px;
