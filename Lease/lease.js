@@ -31,7 +31,6 @@ window.addEventListener('DOMContentLoaded',()=>{
 const value=parseInt(localStorage.getItem('value'))
 var currentActive=value;
 
-console.log(currentActive)
 
 next.addEventListener('click',()=>{
 	currentActive++
@@ -66,3 +65,21 @@ function update(){
 	}
 	})
 }
+
+// -----------------------------------------------------------------------
+ const btns= document.querySelectorAll('.buttonInactive')
+ var digit=null
+
+btns.forEach((btn,idx)=>{
+btn.addEventListener('click',(e)=>{
+	// let styles=e.currentTarget.innerText
+	 digit=e.currentTarget.id
+
+	console.log(digit)
+	 btn.classList.add('buttonActive')
+		
+	
+
+	
+})
+})

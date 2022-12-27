@@ -131,20 +131,19 @@ color: #000000;
             bottom: -85px;
         }
 
-        .button1{
+        .buttonInactive{
             margin-right: 30px;
             height: 36px;
             width: 87px;
             
         }
-        .button2{
-            height: 36px;
-            
+        .buttonActive{
+            height: 36px;     
             background: #082346;
-    border: 1px solid #082346;
-    border-radius: 4px;
-    color: #FFFFFF;
-    width: 87px;
+            border: 1px solid #082346;
+            border-radius: 4px;
+            color: #FFFFFF;
+            width: 87px;
         }
         
         .leaseBackground3{
