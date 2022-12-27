@@ -25,12 +25,11 @@ const prev= document.getElementById('prev')
 const next= document.getElementById('next')
 const circles= document.querySelectorAll('.formCircle')
 
-document.addEventListener('DOMContentLoaded',()=>{
-	
-})
+window.addEventListener('DOMContentLoaded',()=>{
 
-let value=parseInt(localStorage.getItem('value'))
-var currentActive=value
+})
+const value=parseInt(localStorage.getItem('value'))
+var currentActive=value;
 
 console.log(currentActive)
 
@@ -45,6 +44,7 @@ next.addEventListener('click',()=>{
 })
 
 prev.addEventListener('click',()=>{
+	// window.location.href='/OfferDetails/offerDetails.html'
 	currentActive--
 	if(currentActive < 0){
 		currentActive = 0
@@ -54,7 +54,7 @@ prev.addEventListener('click',()=>{
 
 function update(){
 	circles.forEach((circle,idx)=>{
-	
+		
     if(idx<currentActive){
     	circle.classList.add('greenCircle')
 		circle.classList.remove('activeCircle')
@@ -64,7 +64,5 @@ function update(){
     }else{
 		circle.classList.remove('activeCircle')
 	}
-// const actives=document.querySelectorAll('.greenCircle')
-// console.log(currentActive,actives.length,circles.length)
 	})
 }

@@ -28,7 +28,7 @@ border-radius: 4px 0px 0px 4px;
 }
 
 .property-info{
-margin-left: 40px;
+margin-left: 20px;
 line-height: 0px;
 margin-top: -14px;
 }
@@ -171,18 +171,29 @@ font-size: 12px;
 
 .firstDiv1{
   position: absolute;
-  left: 240px;    
+  left: 245px;    
 }
 
 .secondDiv1{
   position: absolute;
-  left: 615px;    
+  left: 620px;    
 }
 
-.thirdDiv1{
+.firstDiv-Calculator{
   position: absolute;
-  left: 240px;   
+  left: 230px;
 }
+
+.secondDiv-Calculator{
+  position: absolute;
+  left: 492px;    
+}
+.thirdDiv-Calculator{
+  position: absolute;
+  left: 747px;    
+}
+
+
 
 .firstAbsolute{
   position: absolute;
@@ -240,6 +251,7 @@ top: 50px;
 display: flex;
 position: absolute;
 top: 50px;
+left: 10px;
 }
 
 .rentTitle1{
@@ -269,6 +281,7 @@ white-space: nowrap;
 .rentAbsolute{
 position: absolute;
 top: 150px;
+left: 10px;
 display: flex;
 align-items: center;
 }
@@ -330,21 +343,21 @@ color: #141414;
 }
 
 .rentCalculator-select{
-    margin-right: 30px;
+    margin-right: 3px;
     height: 36px;
-    width: 57px;
+    width: 78px;
 }
 
 .rentCalculator-input{  
     height: 30px;  
     font-size: 15px;
-    width: 110px ;
+    width: 100px ;
 }
 
 .rentCalculator-inputLength{
     height: 30px;  
     font-size: 15px;
-    width: 200px ;
+    width: 186px ;
 }
 
 
@@ -352,7 +365,7 @@ color: #141414;
 .rentCalculator-placeholderTitle{
     position: absolute;
     bottom: -25px;
-    left: 145px;
+    left: 129px;
     font-weight: 400;
     white-space: nowrap;
     font-size: 12px;
@@ -369,10 +382,10 @@ color: #141414;
 .column-underline{
     position: absolute;
     top: 20px;
-    left: 250px;
+    left: 222px;
     width: 1px;
     background-color:#D2D2D2 ;
-    height: 216px;
+    height: 214px;
 }
 
 

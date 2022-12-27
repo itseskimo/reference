@@ -28,14 +28,14 @@ const prev= document.getElementById('prev')
 const next= document.getElementById('next')
 const circles= document.querySelectorAll('.formCircle')
 
-var currentActive=0
-
+let currentActive=0
 
 next.addEventListener('click',()=>{
-	currentActive++
-	window.location.href='/Lease/lease.html'
-	localStorage.clear()
-	localStorage.setItem('value',currentActive)
+	++currentActive
+     //window.location.href='/Lease/lease.html'
+	 localStorage.setItem('value',currentActive)
+     localStorage.clear()
+	 
 	if(currentActive>circles.length){
 		currentActive=circles.length
 	}
@@ -52,7 +52,7 @@ prev.addEventListener('click',()=>{
 
 function update(){
 	circles.forEach((circle,idx)=>{
-	
+
     if(idx<currentActive){
     	circle.classList.add('greenCircle')
 		circle.classList.remove('activeCircle')
@@ -66,3 +66,5 @@ function update(){
 // console.log(currentActive,actives.length,circles.length)
 	})
 }
+
+// --------------------------------------------------------------------
