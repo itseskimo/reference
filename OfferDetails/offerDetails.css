@@ -363,7 +363,13 @@ color: #141414;
     width: 186px ;
 }
 
-
+.none-Available{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 11px;
+}
 
 .rentCalculator-placeholderTitle{
     position: absolute;
