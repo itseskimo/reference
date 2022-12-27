@@ -70,16 +70,23 @@ function update(){
  const btns= document.querySelectorAll('.buttonInactive')
  var digit=null
 
-btns.forEach((btn,idx)=>{
+btns.forEach((btn)=>{
 btn.addEventListener('click',(e)=>{
 	// let styles=e.currentTarget.innerText
 	 digit=e.currentTarget.id
-
-	console.log(digit)
-	 btn.classList.add('buttonActive')
-		
-	
-
-	
+	 btn.classList.add('buttonActive')	
 })
 })
+
+
+
+
+// -----------------------------------------------------------------------
+function myFunction() {
+	var x = document.getElementById("myDIV");
+	if (x.style.display === "none") {
+	  x.style.display = "block";
+	} else {
+	  x.style.display = "none";
+	}
+  }
