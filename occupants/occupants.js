@@ -46,6 +46,8 @@ next.addEventListener('click',()=>{
 })
 
 prev.addEventListener('click',()=>{
+	window.location.href='/Lease1/Lease1.html'
+
 	currentActive--
 	if(currentActive < 0){
 		currentActive = 0
