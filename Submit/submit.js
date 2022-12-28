@@ -12,7 +12,6 @@ currentActive=value
 
 next.addEventListener('click',()=>{
 	++currentActive
-     window.location.href='/Lease/lease.html'
 	 sessionStorage.setItem('value',currentActive)
     //  localStorage.clear()
 	 
