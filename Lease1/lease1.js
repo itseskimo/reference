@@ -36,7 +36,8 @@ const circles= document.querySelectorAll('.formCircle')
 
 
 next.addEventListener('click',()=>{
-	
+	window.location.href='/occupants/occupants.html'
+
 	 currentActive++
 	 localStorage.setItem('value',currentActive)
 	if(currentActive>circles.length){

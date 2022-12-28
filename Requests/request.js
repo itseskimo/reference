@@ -58,14 +58,18 @@ window.addEventListener('load',()=>{
 const prev= document.getElementById('prev')
 const next= document.getElementById('next')
 const circles= document.querySelectorAll('.formCircle')
-let value=parseInt(localStorage.getItem('value'))
+
+
+var value=parseInt(sessionStorage.getItem('value'))
+
 currentActive=value
+
 // let currentActive=0
 
 next.addEventListener('click',()=>{
 	++currentActive
-     window.location.href='/Lease1/Lease1.html'
-	 localStorage.setItem('value',currentActive)
+     window.location.href='/Lease/lease.html'
+	 sessionStorage.setItem('value',currentActive)
     //  localStorage.clear()
 	 
 	if(currentActive>circles.length){

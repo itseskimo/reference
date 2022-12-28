@@ -33,7 +33,7 @@ let currentActive=0
 next.addEventListener('click',()=>{
 	++currentActive
        window.location.href='/Requests/request.html'
-	 localStorage.setItem('value',currentActive)
+	 sessionStorage.setItem('value',currentActive)
      //localStorage.clear()
 	 
 	if(currentActive>circles.length){
