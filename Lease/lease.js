@@ -68,16 +68,33 @@ function update(){
 }
 
 // -----------------------------------------------------------------------
- const btns= document.querySelectorAll('.buttonInactive')
- var digit=null
+//  const inActiveBtn= document.querySelector('.buttonInactive')
+//  const activeBtn= document.querySelector('.buttonInactive')
+ 
 
-btns.forEach((btn)=>{
-btn.addEventListener('click',(e)=>{
-	// let styles=e.currentTarget.innerText
-	 digit=e.currentTarget.id
-	 btn.classList.add('buttonActive')	
+
+
+// activeBtn.addEventListener('click',(e)=>{
+// 	 let styles=e.currentTarget.innerText
+// 	 digit=e.currentTarget.id
+// 	 console.log(activeBtn.classList.value)
+// 	 btn.classList.add('buttonActive')	
+// })
+// btn.addEventListener('click',(e)=>{
+// 	let styles=e.currentTarget.innerText
+// 	 digit=e.currentTarget.id
+// 	btn.classList.add('buttonActive')	
+// })
+ const buttons= document.querySelectorAll('.buttonInactive')
+ 
+
+buttons.forEach(button=>{
+button.addEventListener('click',()=>{
+buttons.forEach(btn=>btn.classList.remove('buttonActive'));
+button.classList.add('buttonActive');
 })
 })
+
 
 
 
@@ -85,6 +102,7 @@ btn.addEventListener('click',(e)=>{
 // -----------------------------------------------------------------------
 function myFunction() {
 	var x = document.getElementById("myDIV");
+	
 	var element = document.getElementById("backgroundHeight");
        
 	if (x.style.display === "none") {
@@ -92,7 +110,7 @@ function myFunction() {
 	  element.style.height = "200px";
 	} else {
 	  x.style.display = "none";
-	   element.style.height = "85px";
+	  element.style.height = "85px";
 	}
   }
 
