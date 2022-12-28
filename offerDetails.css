@@ -1,0 +1,651 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+ @import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap'); 
+.heading{
+width:100%;
+max-width: 1180px;
+margin: auto;
+}
+
+.heading-text h1{
+margin-bottom: 40px;
+font-weight: 600;
+font-size: 32px;
+color: #082346;
+line-height: 48px;
+font-family: 'Poppins';
+font-style: normal;
+}
+
+.property-details{
+display: flex;
+background-color: #FAFAFA;
+}
+
+.property-image{
+width: 224px;
+height: 224px;
+border-radius: 4px 0px 0px 4px;
+}
+
+.property-info{
+margin-left: 20px;
+line-height: 0px;
+margin-top: -14px;
+}
+
+.property-name{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+color: #121212;
+}
+
+.property-address{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+margin-top: -14px;
+color: #484848;
+white-space: nowrap;
+}
+
+.landLord-details{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+color: #000000;
+margin-top: -5px;
+}
+
+.verifyImage{
+width: 14px;
+height: 14px;
+object-fit: contain;
+margin-left: 15px;
+}
+
+.verify{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+color: #42A54C;
+}
+
+.subHeading{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+color: #484848;
+margin-top: -10px;
+}
+
+.subTitle{
+font-size: 16px;
+color: #000000;
+}
+
+.background-colour{
+background-color: #FAFAFA;
+height: 340px;
+}
+/* ------------------------------- */
+.row-Gap{
+margin-top: 40px;
+display: flex;
+align-items: center;
+position: relative;
+}
+
+.row-Gap h5{
+padding-right: 150px;
+margin-left: 40px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+color: #000000;
+}
+
+
+.firstTitle{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+color: #141414;
+white-space: nowrap;
+}
+
+.secondTitle{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+position: absolute;
+bottom: -128px;
+color: #141414;
+white-space: nowrap;
+}
+
+
+.inputWidth{  
+height: 30px;  
+font-size: 15px;
+width: 340px ;
+position: absolute;
+bottom: -15px;
+}
+
+input::placeholder{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+}
+
+.placeholderTitle{ 
+  position: absolute;
+  bottom: -40px;
+  left: 280px;
+  font-weight: 400;
+  white-space: nowrap;
+  font-size: 12px;
+  background-color: white;
+  width: 60px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6D6D6D;
+}
+
+.selector{
+  position: absolute;
+  bottom: -143px;
+}
+/*--------------------------------------------- */
+
+.firstDiv1{
+  position: absolute;
+  left: 245px;    
+}
+
+.secondDiv1{
+  position: absolute;
+  left: 620px;    
+}
+
+.firstDiv-Calculator{
+  position: absolute;
+  left: 230px;
+}
+
+.secondDiv-Calculator{
+  position: absolute;
+  left: 468px;    
+}
+.thirdDiv-Calculator{
+  position: absolute;
+  left: 707px;    
+}
+
+.forthDiv-Calculator{
+  position: absolute;
+  left: 948px;   
+}
+
+.firstAbsolute{
+  position: absolute;
+  top: 115px;
+  white-space: nowrap;
+}
+
+
+.flex{
+  display: flex;
+}
+
+
+.firstSelect{
+  margin-right: 28px;
+  height: 36px;
+  width: 78px;
+  border-radius: 4px;
+  position: absolute;
+  top: -17px;
+}
+
+
+.monthsCount{
+  margin-right: 30px;
+  height: 36px; 
+  width: 141px;
+  border-radius: 4px;
+  position: absolute;
+  top: 50px;
+}
+
+.lockin{
+position: absolute;
+left: 240px;
+}
+
+.notice{
+position: absolute;
+left: 500px; 
+}
+
+.daysCount{
+height: 35px; 
+width: 141px;
+border-radius: 4px;
+position: absolute;
+top: 50px;
+}
+
+
+/* ----------------------------------- */
+
+.rentAlign{
+display: flex;
+position: absolute;
+top: 50px;
+left: 10px;
+}
+
+.rentTitle1{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+position: absolute;
+top: -50px;
+left: 240px;
+color: #141414;
+white-space: nowrap;
+}
+
+.rentTitle2{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+position: absolute;
+top: -50px;
+left: 500px;
+color: #141414;
+white-space: nowrap;
+}
+
+.rentAbsolute{
+position: absolute;
+top: 150px;
+left: 10px;
+display: flex;
+align-items: center;
+}
+
+.rentDate{
+margin-right: 30px;
+height: 36px;
+position: absolute;
+left: 240px;
+width: 57px;
+}
+
+.rentMonth{
+position: absolute;
+left: 310px;
+height: 35px;
+width: 57px;
+}
+
+.rentYear{
+position: absolute;
+left: 380px;
+height: 35px;
+width: 67px;
+}
+
+.rent-endDate{
+position: absolute;
+left: 500px;
+height: 35px; 
+width: 57px;
+}
+
+.rentCalculator-title{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+color: #141414;
+}
+
+.rentCalculator-fade{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: -15px;
+    color: #6D6D6D;
+}
+
+.rentCalculator-dynamic{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #141414;
+    margin-bottom: 3px;
+}
+
+.rentCalculator-select{
+    margin-right: 3px;
+    height: 36px;
+    width: 78px;
+}
+
+.rentCalculator-input{  
+    height: 30px;  
+    font-size: 15px;
+    width: 100px ;
+}
+
+.rentCalculator-inputLength{
+    height: 30px;  
+    font-size: 15px;
+    width: 186px ;
+}
+
+.none-Available{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 11px;
+}
+
+.rentCalculator-placeholderTitle{
+    position: absolute;
+    bottom: -25px;
+    left: 129px;
+    font-weight: 400;
+    white-space: nowrap;
+    font-size: 12px;
+    background-color: white;
+    width: 60px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6D6D6D;
+}
+
+
+.column-underline{
+    position: absolute;
+    top: 20px;
+    left: 215px;
+    width: 1px;
+    background-color:#D2D2D2 ;
+    height: 214px;
+}
+
+
+
+.rent-BackgroundColorr{
+    background-color: #FAFAFA;
+    height:400px;
+}
+
+.rent-BackgroundColor{
+    background-color: #FAFAFA;
+    height: 250px;
+}
+
+
+/* ----------------------------------- */
+.underLine1{
+    margin-top: 30px;
+    height: 1px;
+    background-color: #D9D9D9;
+    width: 1180px;
+}
+
+.buttonSet{
+    width: 1180px;
+    margin-top: 45px;
+    margin-bottom:50px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+
+.buttonReset1{
+display: flex;
+justify-content: center;
+align-items: center;
+border: 1px solid #082346;
+border-radius: 12px;
+background: #FFFFFF;
+padding: 16px 24px;
+width: 185px;
+height: 62px;
+color: #082346;
+font-weight: 600;
+font-size: 20px;
+line-height: 30px;
+cursor: pointer;
+}
+
+.buttonContinue1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #082346;
+    border-radius: 12px;
+    background: #082346;
+    padding: 16px 24px;
+    width: 185px;
+    height: 62px;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    cursor: pointer;
+    }
+
+/* ------------------------------- */
+.select {
+    position: relative;
+    width: 345px;
+    border: 1px solid grey ;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #424242;
+    line-height: 20px;
+  }
+
+  .select .selectBtn {
+    background: var(--bg1);
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    width: 100%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background: #fff;
+  }
+
+  .select .selectBtn:after {
+    content: "";
+    position: absolute;
+    top: 45%;
+    right: 15px;
+    width: 6px;
+    height: 6px;
+    -webkit-transform: translateY(-50%) rotate(45deg);
+            transform: translateY(-50%) rotate(45deg);
+    border-right: 2px solid #666;
+    border-bottom: 2px solid #666;
+    transition: 0.2s ease;
+  }
+
+  .select .selectBtn.toggle {
+    border-radius: 3px 3px 0 0;
+  }
+
+  .select .selectBtn.toggle:after {
+    -webkit-transform: translateY(-50%) rotate(-135deg);
+            transform: translateY(-50%) rotate(-135deg);
+  }
+
+  .select .selectDropdown {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    border-radius: 0 0 3px 3px;
+    overflow: hidden;
+    background: var(--bg1);
+    border-top: 1px solid #eee;
+    z-index: 1;
+    background: #fff;
+    -webkit-transform: scale(1, 0);
+            transform: scale(1, 0);
+    -webkit-transform-origin: top center;
+            transform-origin: top center;
+    visibility: hidden;
+    transition: 0.2s ease;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  }
+  .select .selectDropdown .option {
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-bottom: 1px solid #E0E0E0;
+    
+  }
+  .select .selectDropdown .option:hover {
+    background: #f8f8f8;
+  }
+  .select .selectDropdown.toggle {
+    visibility: visible;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  
+  /* ----------------------------------------------------------------- */
+  .formHeader{
+    height: 60px;
+    width: 100%;
+    max-width: 1180px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #F1F5F7;
+}
+
+.formProgress{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.formRow{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    position: relative;
+}
+
+.formHeading{
+   font-family: 'Poppins';
+   font-style: normal;
+   margin-right: 30px;
+   font-weight: 500;
+   color: #6D6D6D;  
+   cursor: pointer;
+}
+.formHeadingLast{
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 500;
+   color: #6D6D6D;  
+   cursor: pointer;
+}
+
+.activeWord{
+    font-weight: 600;
+    color: #082346;
+}
+
+.activeCircle{
+    background: #082346;
+    color: white !important;
+    transition: 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #082346;
+    height: 20px;
+    width: 20px;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.greenCircle{
+    background: #42A54C;
+    border: 1px solid #42A54C;
+    color: white !important;
+    transition: 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.active{
+    height: 2.7px !important;  
+  }
+
+.formCircle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #082346;
+    height: 20px;
+    width: 20px;
+    font-weight: 700;
+    font-size: 13px;
+    color: #082346;
+}
+
+.formUnderline{
+    height: 1.4px;
+    width: 60px;
+    background-color: #6D6D6D;
+}
