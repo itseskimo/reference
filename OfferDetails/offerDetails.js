@@ -32,9 +32,9 @@ let currentActive=0
 
 next.addEventListener('click',()=>{
 	++currentActive
-     window.location.href='/Requests/request.html'
+       window.location.href='/Requests/request.html'
 	 localStorage.setItem('value',currentActive)
-     localStorage.clear()
+     //localStorage.clear()
 	 
 	if(currentActive>circles.length){
 		currentActive=circles.length
