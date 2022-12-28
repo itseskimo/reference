@@ -60,17 +60,17 @@ const next= document.getElementById('next')
 const circles= document.querySelectorAll('.formCircle')
 
 
-var value=parseInt(sessionStorage.getItem('value'))
+//var value=parseInt(sessionStorage.getItem('value'))
+//let currentActive=value
 
-currentActive=value
-
-// let currentActive=0
+  const urlParams = new URLSearchParams(window.location.search);
+  const greetingValue = urlParams.get('value');
+  let currentActive=parseInt(greetingValue)
 
 next.addEventListener('click',()=>{
 	++currentActive
-     window.location.href='/Lease/lease.html'
-	 sessionStorage.setItem('value',currentActive)
-    //  localStorage.clear()
+    window.location.href='/Lease/lease.html'
+	 //sessionStorage.setItem('value',currentActive)
 	 
 	if(currentActive>circles.length){
 		currentActive=circles.length
