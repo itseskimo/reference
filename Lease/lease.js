@@ -85,10 +85,14 @@ btn.addEventListener('click',(e)=>{
 // -----------------------------------------------------------------------
 function myFunction() {
 	var x = document.getElementById("myDIV");
+	var element = document.getElementById("backgroundHeight");
+       
 	if (x.style.display === "none") {
 	  x.style.display = "block";
+	  element.style.height = "200px";
 	} else {
 	  x.style.display = "none";
+	   element.style.height = "85px";
 	}
   }
 
@@ -110,7 +114,7 @@ function myFunction() {
 
   var x = document.getElementById("DIV");
   const select= document.querySelectorAll('.option')
-  let styles;
+  
   select.forEach((id)=>{
 	id.addEventListener('click',(e)=>{
 		console.log( e.currentTarget.innerText)
@@ -120,7 +124,7 @@ function myFunction() {
 			x.style.display = "none";
 		  }
 		  styles=e.currentTarget.innerText
-		console.log(styles,x)	  
+		console.log(x)	  
 	   })
 	})
 
