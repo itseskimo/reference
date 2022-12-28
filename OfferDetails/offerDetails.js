@@ -32,7 +32,7 @@ let currentActive=0
 
 next.addEventListener('click',()=>{
 	++currentActive
-     //window.location.href='/Lease/lease.html'
+     window.location.href='/Requests/request.html'
 	 localStorage.setItem('value',currentActive)
      localStorage.clear()
 	 

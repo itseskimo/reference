@@ -90,3 +90,43 @@ function myFunction() {
 	  x.style.display = "none";
 	}
   }
+
+  // -----------------------------------------------------------------------
+  function showDetails() {
+	var x = document.getElementById("DIV");
+	if (x.style.display === "none") {
+	  x.style.display = "block";
+	} else {
+	  x.style.display = "none";
+	}
+  }
+
+//   window.addEventListener('DOMContentLoaded',()=>{
+// 	var x = document.getElementById("DIV");
+// 	if (x.style.display === "none") {
+// 	  x.style.display = "block";
+// 	} else {
+// 	  x.style.display = "none";
+// 	}
+//   }
+// )
+
+
+
+
+
+
+//   const select= document.querySelectorAll('.option')
+//   let styles=null
+// console.log(styles)
+//   select.forEach((id)=>{
+// 	id.addEventListener('click',(e)=>{
+// 		if (id.style.display === "none") {
+// 			id.style.display = "block";
+// 		  } else {
+// 			id.style.display = "none";
+// 		  }
+// 		  styles=e.currentTarget.innerText
+// 		  console.log(styles)
+// 	})
+// 	})
