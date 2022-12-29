@@ -151,7 +151,7 @@ button.classList.add('button-On');
 		moreGap.classList.add('more-Gap');
         leaseBackground.appendChild(moreGap)
 
-		const h5 = document.createElement('h5');
+		let h5 = document.createElement('h5');
 		h5.innerText='Personal Details'
 		moreGap.appendChild(h5)
 
@@ -239,9 +239,61 @@ button.classList.add('button-On');
 	   selectLength.classList.add('selectLength');
 	   firstDiv.appendChild(selectLength)
 
-	   const option=document.createElement('option');
+	   let option=document.createElement('option');
 	   option.innerText='Select'
 	   selectLength.appendChild(option)
+
+
+
+       // ------------------------
+	   //const tenantListSec = document.querySelector("#addComponent-Sec");
+	   
+
+
+	    const leaseBackground2=document.createElement('div');
+		leaseBackground2.classList.add('leaseBackground2');
+		tenantList.appendChild(leaseBackground2)
+
+		const rowGap=document.createElement('div');
+		rowGap.classList.add('row-Gap');
+        leaseBackground2.appendChild(rowGap)
+
+
+	    h5 = document.createElement('h5');
+		h5.innerText='Occupation'
+		rowGap.appendChild(h5)
+
+	    firstDiv=document.createElement('div');
+		firstDiv.classList.add('firstDiv');
+        rowGap.appendChild(firstDiv)
+
+	    firstTitle = document.createElement('h6');
+		firstTitle.classList.add('firstTitle');
+		firstTitle.innerText='Employment Status *'
+		firstDiv.appendChild(firstTitle)
+
+		let selector=document.createElement('div');
+		selector.classList.add('selector');
+        firstDiv.appendChild(selector)
+
+		let select=document.createElement('div');
+		select.classList.add('select');
+        selector.appendChild(select)
+
+		let selectBtn=document.createElement('div');
+		selectBtn.classList.add('selectBtn');
+		selectBtn.innerText='Select'
+        select.appendChild(selectBtn)
+
+		let selectDropdown=document.createElement('div');
+		selectDropdown.classList.add('selectDropdown');
+        select.appendChild(selectDropdown)
+
+		 option=document.createElement('div');
+		 option.classList.add('option');
+		 option.innerText='Employed'
+         selectDropdown.appendChild(option)
+		
 	})
 	
   
