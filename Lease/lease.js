@@ -85,7 +85,7 @@ function update(){
 // 	 digit=e.currentTarget.id
 // 	btn.classList.add('buttonActive')	
 // })
- const buttons= document.querySelectorAll('.buttonInactive')
+const buttons= document.querySelectorAll('.buttonInactive')
  
 
 buttons.forEach(button=>{
@@ -113,6 +113,7 @@ function myFunction() {
 	  element.style.height = "85px";
 	}
   }
+
 
   // -----------------------------------------------------------------------
 
