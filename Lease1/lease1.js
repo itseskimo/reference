@@ -112,3 +112,9 @@ leaseButtons.forEach(btn=>btn.classList.remove('button-On'));
 button.classList.add('button-On');
 })
 })
+
+  // -----------------------------------------------------------------------
+  function removeFunction() {
+	const element = document.getElementById("removeComponent");
+	element.remove();
+  }
