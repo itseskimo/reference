@@ -186,7 +186,7 @@ button.classList.add('button-On');
 
 		// ------------------------
 
-		const secondrowAbsolute=document.createElement('div');
+		let secondrowAbsolute=document.createElement('div');
 		secondrowAbsolute.classList.add('secondrowAbsolute');
         moreGap.appendChild(secondrowAbsolute)
 
@@ -283,17 +283,54 @@ button.classList.add('button-On');
 		let selectBtn=document.createElement('div');
 		selectBtn.classList.add('selectBtn');
 		selectBtn.innerText='Select'
+		selectBtn.dataset.type='firstOption'
         select.appendChild(selectBtn)
 
 		let selectDropdown=document.createElement('div');
 		selectDropdown.classList.add('selectDropdown');
         select.appendChild(selectDropdown)
 
-		 option=document.createElement('div');
-		 option.classList.add('option');
-		 option.innerText='Employed'
-         selectDropdown.appendChild(option)
+		 let optionn=document.createElement('div');
+		 optionn.classList.add('option');
+		 optionn.innerText='Employed'
+		 optionn.setAttribute("data-type",'firstOption')
+         selectDropdown.appendChild(optionn)
+
+		//  ------------------------------------
+		 secondDiv=document.createElement('div');
+		 secondDiv.classList.add('secondDiv');
+		 rowGap.appendChild(secondDiv)
+ 
+		  firstTitle = document.createElement('h6');
+		 firstTitle.classList.add('firstTitle');
+		 firstTitle.innerText='LinkedIn*'
+		 secondDiv.appendChild(firstTitle)
+ 
+		  inputWidth = document.createElement('input');
+		 inputWidth.classList.add('inputWidth');
+		 inputWidth.placeholder='Enter URL' 
+		 secondDiv.appendChild(inputWidth)
 		
+		 // ------------------------
+
+	    secondrowAbsolute=document.createElement('div');
+		secondrowAbsolute.classList.add('secondrowAbsolute');
+        rowGap.appendChild(secondrowAbsolute)
+
+
+		 firstDiv=document.createElement('div');
+		 firstDiv.classList.add('firstDiv');
+         secondrowAbsolute.appendChild(firstDiv)
+
+	    firstTitle = document.createElement('h6');
+		firstTitle.classList.add('firstTitle');
+		firstTitle.innerText='Company Name*'
+		firstDiv.appendChild(firstTitle)
+
+		 inputWidth = document.createElement('input');
+		inputWidth.classList.add('inputWidth');
+		inputWidth.placeholder='Enter Company Name'
+		firstDiv.appendChild(inputWidth)
 	})
 	
   
