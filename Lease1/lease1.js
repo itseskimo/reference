@@ -118,3 +118,130 @@ button.classList.add('button-On');
 	const element = document.getElementById("removeComponent");
 	element.remove();
   }
+
+  // -----------------------------------------------------------------------
+
+    let counter=1
+	const tenantPlus = document.getElementById("new-tenant");
+	const tenantList = document.querySelector("#addComponent");
+
+	
+	tenantPlus.addEventListener('click',()=>{
+		const lessGap = document.createElement('div');
+		lessGap.classList.add('lessGap');
+	
+		const addTenant = document.createElement('h6');
+		addTenant.classList.add('addTenant');
+		addTenant.innerText=`Tenant ${++counter}`
+		lessGap.appendChild(addTenant)
+	
+		const deleteIcon = document.createElement('h6');
+		deleteIcon.classList.add('deleteIcon')
+		deleteIcon.innerText='Clear'
+		lessGap.appendChild(deleteIcon)
+	
+		tenantList.appendChild(lessGap)
+		// ----------------------------------------------------
+
+		const leaseBackground=document.createElement('div');
+		leaseBackground.classList.add('leaseBackground');
+		tenantList.appendChild(leaseBackground)
+
+		const moreGap=document.createElement('div');
+		moreGap.classList.add('more-Gap');
+        leaseBackground.appendChild(moreGap)
+
+		const h5 = document.createElement('h5');
+		h5.innerText='Personal Details'
+		moreGap.appendChild(h5)
+
+		let firstDiv=document.createElement('div');
+		firstDiv.classList.add('firstDiv');
+        moreGap.appendChild(firstDiv)
+
+		let firstTitle = document.createElement('h6');
+		firstTitle.classList.add('firstTitle');
+		firstTitle.innerText='First Name*'
+		firstDiv.appendChild(firstTitle)
+
+		let inputWidth = document.createElement('input');
+		inputWidth.classList.add('inputWidth');
+		inputWidth.placeholder='Enter First Name'
+		firstDiv.appendChild(inputWidth)
+
+		// ------------------------
+		let secondDiv=document.createElement('div');
+		secondDiv.classList.add('secondDiv');
+        moreGap.appendChild(secondDiv)
+
+		 firstTitle = document.createElement('h6');
+		firstTitle.classList.add('firstTitle');
+		firstTitle.innerText='Last Name*'
+		secondDiv.appendChild(firstTitle)
+
+		 inputWidth = document.createElement('input');
+		inputWidth.classList.add('inputWidth');
+		inputWidth.placeholder='Enter Last Name'
+		secondDiv.appendChild(inputWidth)
+
+		// ------------------------
+
+		const secondrowAbsolute=document.createElement('div');
+		secondrowAbsolute.classList.add('secondrowAbsolute');
+        moreGap.appendChild(secondrowAbsolute)
+
+
+		 firstDiv=document.createElement('div');
+		 firstDiv.classList.add('firstDiv');
+         secondrowAbsolute.appendChild(firstDiv)
+
+	    firstTitle = document.createElement('h6');
+		firstTitle.classList.add('firstTitle');
+		firstTitle.innerText='Email ID*'
+		firstDiv.appendChild(firstTitle)
+
+		 inputWidth = document.createElement('input');
+		inputWidth.classList.add('inputWidth');
+		inputWidth.placeholder='Enter Email ID'
+		firstDiv.appendChild(inputWidth)
+
+		// ------------------------
+		 secondDiv=document.createElement('div');
+		secondDiv.classList.add('secondDiv');
+        secondrowAbsolute.appendChild(secondDiv)
+
+		 firstTitle = document.createElement('h6');
+		firstTitle.classList.add('firstTitle');
+		firstTitle.innerText='Phone Number*'
+		secondDiv.appendChild(firstTitle)
+
+		 inputWidth = document.createElement('input');
+		inputWidth.classList.add('inputWidth');
+		inputWidth.placeholder='Enter Phone Number' 
+		secondDiv.appendChild(inputWidth)
+// ------------------------
+
+        const thirdrowAbsolute=document.createElement('div');
+        thirdrowAbsolute.classList.add('thirdrowAbsolute');
+        moreGap.appendChild(thirdrowAbsolute)
+
+
+		firstDiv=document.createElement('div');
+		firstDiv.classList.add('firstDiv');
+		thirdrowAbsolute.appendChild(firstDiv)
+
+	   firstTitle = document.createElement('h6');
+	   firstTitle.classList.add('firstTitle');
+	   firstTitle.innerText='Marital Status*'
+	   firstDiv.appendChild(firstTitle)
+
+	   const selectLength = document.createElement('select');
+	   selectLength.classList.add('selectLength');
+	   firstDiv.appendChild(selectLength)
+
+	   const option=document.createElement('option');
+	   option.innerText='Select'
+	   selectLength.appendChild(option)
+	})
+	
+  
