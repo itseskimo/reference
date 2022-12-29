@@ -70,3 +70,45 @@ function update(){
 	}
 	})
 }
+ // -----------------------------------------------------------------------
+
+
+ window.addEventListener('DOMContentLoaded',()=>{
+	var x = document.getElementById("LeaseHide");
+	if (x.style.display === "none") {
+	  x.style.display = "block";
+	} else {
+	  x.style.display = "none";
+	}
+  }
+)
+
+  // -----------------------------------------------------------------------
+  
+  var toggleHide = document.getElementById("LeaseHide");
+  const dynamicBtns= document.querySelectorAll('.button-Off')
+  
+  dynamicBtns.forEach((id)=>{
+	id.addEventListener('click',(e)=>{
+		console.log( e.currentTarget.innerText)
+		if (e.currentTarget.innerText==='Multiple') {
+			toggleHide.style.display = "block";
+		  } else {
+			toggleHide.style.display = "none";
+		  }  
+	   })
+	})
+
+
+  // -----------------------------------------------------------------------
+
+
+const leaseButtons= document.querySelectorAll('.button-Off')
+ 
+
+leaseButtons.forEach(button=>{
+button.addEventListener('click',()=>{
+leaseButtons.forEach(btn=>btn.classList.remove('button-On'));
+button.classList.add('button-On');
+})
+})
