@@ -124,9 +124,10 @@ button.classList.add('button-On');
     let counter=1
 	const tenantPlus = document.getElementById("new-tenant");
 	const tenantList = document.querySelector("#addComponent");
-
+    
 	
 	tenantPlus.addEventListener('click',()=>{
+    if(counter<4){
 		const lessGap = document.createElement('div');
 		lessGap.classList.add('lessGap');
 	
@@ -331,6 +332,10 @@ button.classList.add('button-On');
 		inputWidth.classList.add('inputWidth');
 		inputWidth.placeholder='Enter Company Name'
 		firstDiv.appendChild(inputWidth)
+    }else{
+		console.log('Max 4 Tenants Added')
+	}
+		
 	})
 	
   
