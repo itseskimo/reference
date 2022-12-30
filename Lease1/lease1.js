@@ -131,6 +131,10 @@ button.classList.add('button-On');
 	tenantPlus.addEventListener('click',()=>{
     if(counter<4){
 
+		const underLine = document.createElement('div');
+		underLine.classList.add('row-underLinemid');
+		tenantList.appendChild(underLine)
+
 		const lessGap = document.createElement('div');
 		lessGap.classList.add('lessGap');
 	

@@ -232,6 +232,13 @@ color: #FE6161;
             height: 1px;
             margin-top: 20px;
         }
+
+        .row-underLinemid{
+            background-color: #D9D9D9;
+            width: 1080px;
+            height: 1px;
+            margin-top: 40px;
+        }
         /* ----------------------------------- */
         .underLine{
             margin-top: 50px;
