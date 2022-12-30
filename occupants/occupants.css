@@ -219,6 +219,14 @@ bottom: -15px;
         width: 16px;
         height: 16px;
         }
+        .labelIconWide{
+        display: flex;
+        justify-content: flex-end;
+        padding-left: 195px;
+        width: 16px;
+        height: 16px;
+        }
+        
         
         .inputLabel{
         font-family: 'Inter';
@@ -228,7 +236,7 @@ bottom: -15px;
         box-sizing: border-box;
         position: absolute;
         bottom: -15px;
-        height: 35px; 
+        height: 36px; 
         width: 298px;
         border: 1px solid #082346;
         padding: 10px;
@@ -241,6 +249,26 @@ bottom: -15px;
         border: 1px solid grey;
         } 
 
+        .inputLabelWide{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            cursor: pointer;
+            box-sizing: border-box;
+            position: absolute;
+            bottom: -15px;
+            height: 35px; 
+            width: 345px;
+            border: 1px solid #082346;
+            padding: 10px;
+            font-size: 13px;
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            background-color: white;
+            border: 1px solid grey;
+        }
         /* ----------------------------------- */
         .underLine{
         margin-top: 50px;
