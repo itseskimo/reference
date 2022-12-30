@@ -143,10 +143,10 @@ button.classList.add('button-On');
 		deleteIcon.classList.add('deleteIcon')
 		deleteIcon.innerText='Clear'
 
-		deleteIcon.onclick= function removeFunctionDyamic() {
-			const elem = document.getElementById("addComponent");
-			elem.remove();
-		  }
+		// deleteIcon.onclick= function removeFunctionDyamic() {
+		// 	const elem = document.getElementById("addComponent");
+		// 	elem.remove();
+		//   }
 
 		lessGap.appendChild(deleteIcon)
 	
