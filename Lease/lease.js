@@ -68,23 +68,7 @@ function update(){
 }
 
 // -----------------------------------------------------------------------
-//  const inActiveBtn= document.querySelector('.buttonInactive')
-//  const activeBtn= document.querySelector('.buttonInactive')
- 
 
-
-
-// activeBtn.addEventListener('click',(e)=>{
-// 	 let styles=e.currentTarget.innerText
-// 	 digit=e.currentTarget.id
-// 	 console.log(activeBtn.classList.value)
-// 	 btn.classList.add('buttonActive')	
-// })
-// btn.addEventListener('click',(e)=>{
-// 	let styles=e.currentTarget.innerText
-// 	 digit=e.currentTarget.id
-// 	btn.classList.add('buttonActive')	
-// })
 const buttons= document.querySelectorAll('.buttonInactive')
  
 
@@ -96,22 +80,25 @@ button.classList.add('buttonActive');
 })
 
 
-
-
-
 // -----------------------------------------------------------------------
 function myFunction() {
+	const GSTN= document.querySelectorAll('.buttonInactive')
 	var x = document.getElementById("myDIV");
-	
 	var element = document.getElementById("backgroundHeight");
-       
-	if (x.style.display === "none") {
-	  x.style.display = "block";
-	  element.style.height = "200px";
-	} else {
-	  x.style.display = "none";
-	  element.style.height = "85px";
-	}
+
+	GSTN.forEach((item)=>{
+		item.addEventListener('click',(e)=>{
+			if (e.currentTarget.innerText==='Yes') {
+				x.style.display = "block";
+	            element.style.height = "200px";
+			  } else {
+				x.style.display = "none";
+				element.style.height = "85px";
+			  }
+			  styles=e.currentTarget.innerText
+			console.log(styles)	  
+		   })
+		})
   }
 
 
@@ -136,7 +123,6 @@ function myFunction() {
   
   select.forEach((id)=>{
 	id.addEventListener('click',(e)=>{
-		console.log( e.currentTarget.innerText)
 		if (e.currentTarget.innerText!==undefined) {
 			x.style.display = "block";
 		  } else {
