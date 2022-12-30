@@ -117,7 +117,9 @@ button.classList.add('button-On');
   function removeFunction() {
 	const element = document.getElementById("removeComponent");
 	element.remove();
+	//element.parentNode.removeChild(element);;
   }
+
 
   // -----------------------------------------------------------------------
 
@@ -128,6 +130,7 @@ button.classList.add('button-On');
 	
 	tenantPlus.addEventListener('click',()=>{
     if(counter<4){
+
 		const lessGap = document.createElement('div');
 		lessGap.classList.add('lessGap');
 	
@@ -139,6 +142,12 @@ button.classList.add('button-On');
 		const deleteIcon = document.createElement('h6');
 		deleteIcon.classList.add('deleteIcon')
 		deleteIcon.innerText='Clear'
+
+		deleteIcon.onclick= function removeFunctionDyamic() {
+			const elem = document.getElementById("addComponent");
+			elem.remove();
+		  }
+
 		lessGap.appendChild(deleteIcon)
 	
 		tenantList.appendChild(lessGap)
