@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap'); 
 
 .heading{
 width:100%;
@@ -214,7 +215,7 @@ bottom: -15px;
         .labelIcon{
         display: flex;
         justify-content: flex-end;
-        padding-left: 157px;
+        padding-left: 150px;
         width: 16px;
         height: 16px;
         }
@@ -231,11 +232,13 @@ bottom: -15px;
         width: 298px;
         border: 1px solid #082346;
         padding: 10px;
-        font-size: 14px;
+        font-size: 13px;
+        white-space: nowrap;
         display: flex;
         align-items: center;
         justify-content: flex-start;
         background-color: white;
+        border: 1px solid grey;
         } 
 
         /* ----------------------------------- */
