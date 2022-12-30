@@ -26,18 +26,11 @@ const prev= document.getElementById('prev')
 const next= document.getElementById('next')
 const circles= document.querySelectorAll('.formCircle')
 
+ let currentActive=0
 
-var value=parseInt(sessionStorage.getItem('value'))
-
-currentActive=value
-
-// let currentActive=0
-
-next.addEventListener('click',()=>{
+    next.addEventListener('click',()=>{
 	++currentActive
      window.location.href='/Submit/submit.html'
-	 sessionStorage.setItem('value',currentActive)
-    //  localStorage.clear()
 	 
 	if(currentActive>circles.length){
 		currentActive=circles.length
@@ -45,7 +38,7 @@ next.addEventListener('click',()=>{
     update()
 })
 
-prev.addEventListener('click',()=>{
+    prev.addEventListener('click',()=>{
 	window.location.href='/Lease1/Lease1.html'
 
 	currentActive--
@@ -67,9 +60,11 @@ function update(){
     }else{
 		circle.classList.remove('activeCircle')
 	}
-// const actives=document.querySelectorAll('.greenCircle')
-// console.log(currentActive,actives.length,circles.length)
 	})
 }
 
 // --------------------------------------------------------------------
+  const urlParams = new URLSearchParams(window.location.search);
+  const greetingValue = urlParams.get('value');
+  let occupantNTimes=parseInt(greetingValue)
+  console.log(occupantNTimes)

@@ -33,7 +33,6 @@ let currentActive=0
 next.addEventListener('click',()=>{
 	++currentActive
     window.location.href='/Requests/request.html?value=1'
-	//sessionStorage.setItem('value',currentActive)
 
 	if(currentActive>circles.length){
 		currentActive=circles.length
@@ -61,8 +60,6 @@ function update(){
     }else{
 		circle.classList.remove('activeCircle')
 	}
-// const actives=document.querySelectorAll('.greenCircle')
-// console.log(currentActive,actives.length,circles.length)
 	})
 }
 

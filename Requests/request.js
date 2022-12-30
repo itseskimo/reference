@@ -59,18 +59,13 @@ const prev= document.getElementById('prev')
 const next= document.getElementById('next')
 const circles= document.querySelectorAll('.formCircle')
 
-
-//var value=parseInt(sessionStorage.getItem('value'))
-//let currentActive=value
-
   const urlParams = new URLSearchParams(window.location.search);
   const greetingValue = urlParams.get('value');
   let currentActive=parseInt(greetingValue)
 
-next.addEventListener('click',()=>{
+    next.addEventListener('click',()=>{
 	++currentActive
     window.location.href='/Lease/lease.html'
-	 //sessionStorage.setItem('value',currentActive)
 	 
 	if(currentActive>circles.length){
 		currentActive=circles.length
@@ -78,7 +73,7 @@ next.addEventListener('click',()=>{
     update()
 })
 
-prev.addEventListener('click',()=>{
+    prev.addEventListener('click',()=>{
 	window.location.href='/OfferDetails/offerDetails.html'
 
 	currentActive--
@@ -88,7 +83,7 @@ prev.addEventListener('click',()=>{
 	update()
 })
 
-function update(){
+    function update(){
 	circles.forEach((circle,idx)=>{
 
     if(idx<currentActive){

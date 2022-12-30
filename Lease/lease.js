@@ -25,11 +25,8 @@ const prev= document.getElementById('prev')
 const next= document.getElementById('next')
 const circles= document.querySelectorAll('.formCircle')
 
-window.addEventListener('DOMContentLoaded',()=>{
-
-})
-const value=parseInt(localStorage.getItem('value'))
-var currentActive=value;
+// const value=parseInt(localStorage.getItem('value'))
+var currentActive=0;
 
 
 next.addEventListener('click',()=>{

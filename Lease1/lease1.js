@@ -1,3 +1,4 @@
+
 let index = 1;
 
 const on = (listener, query, fn) => {
@@ -26,17 +27,14 @@ on('click', '.option', item => {
 const prev= document.getElementById('prev')
 const next= document.getElementById('next')
 const circles= document.querySelectorAll('.formCircle')
-// const {currentActive} = require('../OfferDetails/offerDetails');
-// window.addEventListener('DOMContentLoaded',()=>{
 
-// })
 
  let value=parseInt(localStorage.getItem('value'))
  currentActive=value
 
 
-next.addEventListener('click',()=>{
-	window.location.href='/occupants/occupants.html'
+    next.addEventListener('click',()=>{
+	window.location.href=`/occupants/occupants.html?value=${counter}`
 
 	 currentActive++
 	 localStorage.setItem('value',currentActive)
@@ -117,13 +115,10 @@ button.classList.add('button-On');
   function removeFunction() {
 	const element = document.getElementById("removeComponent");
 	element.remove();
-	//element.parentNode.removeChild(element);;
   }
-
-
   // -----------------------------------------------------------------------
 
-    let counter=1
+    var counter=1;
 	const tenantPlus = document.getElementById("new-tenant");
 	const tenantList = document.querySelector("#addComponent");
     
@@ -193,7 +188,7 @@ button.classList.add('button-On');
 		firstTitle.innerText='Last Name*'
 		secondDiv.appendChild(firstTitle)
 
-		 inputWidth = document.createElement('input');
+		inputWidth = document.createElement('input');
 		inputWidth.classList.add('inputWidth');
 		inputWidth.placeholder='Enter Last Name'
 		secondDiv.appendChild(inputWidth)
@@ -257,13 +252,8 @@ button.classList.add('button-On');
 	   option.innerText='Select'
 	   selectLength.appendChild(option)
 
-
-
        // ------------------------
-	   //const tenantListSec = document.querySelector("#addComponent-Sec");
 	   
-
-
 	    const leaseBackground2=document.createElement('div');
 		leaseBackground2.classList.add('leaseBackground2');
 		tenantList.appendChild(leaseBackground2)
@@ -271,7 +261,6 @@ button.classList.add('button-On');
 		const rowGap=document.createElement('div');
 		rowGap.classList.add('row-Gap');
         leaseBackground2.appendChild(rowGap)
-
 
 	    h5 = document.createElement('h5');
 		h5.innerText='Occupation'
@@ -348,7 +337,6 @@ button.classList.add('button-On');
     }else{
 		console.log('Max 4 Tenants Added')
 	}
-		
 	})
 	
   
