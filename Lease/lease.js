@@ -81,25 +81,24 @@ button.classList.add('buttonActive');
 
 
 // -----------------------------------------------------------------------
-function myFunction() {
 	const GSTN= document.querySelectorAll('#btnColor')
-	var x = document.getElementById("myDIV");
+	var GSTNWrapper = document.getElementById("myDIV");
 	var element = document.getElementById("backgroundHeight");
 
 	GSTN.forEach((item)=>{
 		item.addEventListener('click',(e)=>{
 			if (e.currentTarget.innerText==='Yes') {
-				x.style.display = "block";
+				GSTNWrapper.style.display = "block";
 	            element.style.height = "200px";
 			  } else{
-				x.style.display = "none";
+				GSTNWrapper.style.display = "none";
 				element.style.height = "85px";
 			  }
 			  styles=e.currentTarget.innerText
 			  console.log(styles)	  
 		   })
 		})
-  }
+  
 
 
   // -----------------------------------------------------------------------
