@@ -108,6 +108,7 @@ line-height: 21px;
 font-family: 'Poppins';
 font-style: normal;
 color: #082346;
+cursor: pointer;
 }
 
 
@@ -142,9 +143,11 @@ color: #082346;
 font-weight: 600;
 font-size: 20px;
 line-height: 30px;
+cursor: pointer;
 }
 
 .buttonMid{
+cursor: pointer;
 display: flex;
 justify-content: flex-start;
 align-items: center;
@@ -177,6 +180,7 @@ color: #082346;
     font-weight: 600;
     font-size: 20px;
     line-height: 30px;
+    cursor: pointer;
 }
 
 /* ----------------------------------------------------------------- */

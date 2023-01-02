@@ -189,6 +189,7 @@ bottom: -15px;
             padding: 12px 23px;
             gap: 8px;
             margin-right: 25px;
+            cursor: pointer;
          }
 
         .first-occupantBackground{
@@ -300,6 +301,7 @@ bottom: -15px;
         font-weight: 600;
         font-size: 20px;
         line-height: 30px;
+        cursor: pointer;
         }
         
         .buttonMid{
@@ -320,9 +322,11 @@ bottom: -15px;
             font-family: 'Poppins';
             font-style: normal;
             color: #082346;
+            cursor: pointer;
         }
     
         .buttonContinue{
+            cursor: pointer;
             display: flex;
             justify-content: center;
             align-items: center;

@@ -183,8 +183,10 @@ color: #FE6161;
             margin-right: 30px;
             height: 36px;
             width: 87px;
+            cursor: pointer;
         }
         .button-On{
+            cursor: pointer;
             margin-right: 30px;
             height: 36px;
             background: #082346;
@@ -195,6 +197,7 @@ color: #FE6161;
          }
         
          .specialButton{
+            cursor: pointer;
             background: #FFFFFF;            
             border: 1px solid #082346;
             border-radius: 4px;
@@ -271,6 +274,7 @@ color: #FE6161;
         font-weight: 600;
         font-size: 20px;
         line-height: 30px;
+        cursor: pointer;
         }
         
         .buttonMid{
@@ -291,9 +295,11 @@ color: #FE6161;
             font-family: 'Poppins';
             font-style: normal;
             color: #082346;
+            cursor: pointer;
         }
     
         .buttonContinue{
+            cursor: pointer;
             display: flex;
             justify-content: center;
             align-items: center;

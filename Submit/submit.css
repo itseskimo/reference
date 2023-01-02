@@ -88,11 +88,16 @@ color: #000000;
 
 
 
-.formButtons{display: flex;position: absolute;bottom:-55px;left: 240px;
+.formButtons{
+    display: flex;
+    position: absolute;
+    bottom:-55px;
+    left: 240px;
 }
 
 
 .formButton{
+cursor: pointer;
 border: 1px solid #082346;
 border-radius: 12px;
 background: #FFFFFF;
@@ -170,6 +175,7 @@ color: #082346;
 font-weight: 600;
 font-size: 20px;
 line-height: 30px;
+cursor: pointer;
 }
 
 .buttonMid{
@@ -190,6 +196,7 @@ line-height: 30px;
     font-family: 'Poppins';
     font-style: normal;
     color: #082346;
+    cursor: pointer;
 }
 
 .buttonContinue{
@@ -206,6 +213,7 @@ line-height: 30px;
     font-weight: 600;
     font-size: 20px;
     line-height: 30px;
+    cursor: pointer;
     }
 /* ----------------------------------------------------------------- */
 .formHeader{
