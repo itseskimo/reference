@@ -1,5 +1,5 @@
 
-let index = 1;
+	let index = 1;
 
 const on = (listener, query, fn) => {
 	document.querySelectorAll(query).forEach(item => {
@@ -21,6 +21,8 @@ on('click', '.option', item => {
 	parent.setAttribute('data-type', item.target.getAttribute('data-type'));
 	parent.innerText = item.target.innerText;
 })
+
+
 
 //---------------------------------------------------------------------
 
@@ -284,6 +286,34 @@ button.classList.add('button-On');
 
 		let select=document.createElement('div');
 		select.classList.add('select');
+
+
+		 select.onclick= function toggleSelect(params) {
+		
+	     let index = 1;
+
+        const on = (listener, query, fn) => {
+	    document.querySelectorAll(query).forEach(item => {
+		item.addEventListener(listener, el => {
+			fn(el);
+		  })
+	     })
+        }
+
+        on('click', '.selectBtn', item => {
+        	const next = item.target.nextElementSibling;
+        	next.classList.toggle('toggle');
+        	next.style.zIndex = index++;
+        });
+        on('click', '.option', item => {
+        	item.target.parentElement.classList.remove('toggle');
+        
+        	const parent = item.target.closest('.select').children[0];
+        	parent.setAttribute('data-type', item.target.getAttribute('data-type'));
+	        parent.innerText = item.target.innerText;
+        })
+        }
+
         selector.appendChild(select)
         console.log(select)
 
@@ -312,6 +342,24 @@ button.classList.add('button-On');
 		 optionn=document.createElement('div');
 		 optionn.classList.add('option');
 		 optionn.innerText='Student'
+		 optionn.dataset.type='thirdOption'
+         selectDropdown.appendChild(optionn)
+
+		 optionn=document.createElement('div');
+		 optionn.classList.add('option');
+		 optionn.innerText='Housewife'
+		 optionn.dataset.type='thirdOption'
+         selectDropdown.appendChild(optionn)
+
+		 optionn=document.createElement('div');
+		 optionn.classList.add('option');
+		 optionn.innerText='Retired'
+		 optionn.dataset.type='thirdOption'
+         selectDropdown.appendChild(optionn)
+
+		 optionn=document.createElement('div');
+		 optionn.classList.add('option');
+		 optionn.innerText='Other'
 		 optionn.dataset.type='thirdOption'
          selectDropdown.appendChild(optionn)
 
@@ -351,6 +399,86 @@ button.classList.add('button-On');
 		inputWidth.classList.add('inputWidth');
 		inputWidth.placeholder='Enter Company Name'
 		firstDiv.appendChild(inputWidth)
+
+
+
+		 secondDiv=document.createElement('div');
+		 secondDiv.classList.add('secondDiv');
+		 secondrowAbsolute.appendChild(secondDiv)
+ 
+		  firstTitle = document.createElement('h6');
+		 firstTitle.classList.add('firstTitle');
+		 firstTitle.innerText='Company Type*'
+		 secondDiv.appendChild(firstTitle)
+
+
+	    selector=document.createElement('div');
+		selector.classList.add('selector');
+        secondDiv.appendChild(selector)
+
+	    select=document.createElement('div');
+		select.classList.add('select');
+
+		select.onclick= function toggleSelect(params) {
+		
+	    let index = 1;
+
+        const on = (listener, query, fn) => {
+	    document.querySelectorAll(query).forEach(item => {
+		item.addEventListener(listener, el => {
+			fn(el);
+		  })
+	     })
+        }
+
+        on('click', '.selectBtn', item => {
+        	const next = item.target.nextElementSibling;
+        	next.classList.toggle('toggle');
+        	next.style.zIndex = index++;
+        });
+        on('click', '.option', item => {
+        	item.target.parentElement.classList.remove('toggle');
+        
+        	const parent = item.target.closest('.select').children[0];
+        	parent.setAttribute('data-type', item.target.getAttribute('data-type'));
+	        parent.innerText = item.target.innerText;
+        })
+        }
+        selector.appendChild(select)
+
+	    selectBtn=document.createElement('div');
+		selectBtn.classList.add('selectBtn');
+		selectBtn.innerText='Enter Comany Type'
+		selectBtn.dataset.type='firstOption'
+        select.appendChild(selectBtn)
+
+	    selectDropdown=document.createElement('div');
+		selectDropdown.classList.add('selectDropdown');
+        select.appendChild(selectDropdown)
+
+		 optionn=document.createElement('div');
+		 optionn.classList.add('option');
+		 optionn.innerText='LLP'
+		 optionn.dataset.type='firstOption'
+         selectDropdown.appendChild(optionn)
+
+		 optionn=document.createElement('div');
+		 optionn.classList.add('option');
+		 optionn.innerText='Partnership'
+		 optionn.dataset.type='secondOption'
+         selectDropdown.appendChild(optionn)
+
+		 optionn=document.createElement('div');
+		 optionn.classList.add('option');
+		 optionn.innerText='Private Limited'
+		 optionn.dataset.type='thirdOption'
+         selectDropdown.appendChild(optionn)
+
+		 optionn=document.createElement('div');
+		 optionn.classList.add('option');
+		 optionn.innerText='Sole Proprietorship'
+		 optionn.dataset.type='thirdOption'
+         selectDropdown.appendChild(optionn)
     }else{
 		console.log('Max 4 Tenants Added')
 	}
