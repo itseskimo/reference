@@ -448,7 +448,7 @@ button.classList.add('button-On');
 
 	    selectBtn=document.createElement('div');
 		selectBtn.classList.add('selectBtn');
-		selectBtn.innerText='Enter Comany Type'
+		selectBtn.innerText='Enter Company Type'
 		selectBtn.dataset.type='firstOption'
         select.appendChild(selectBtn)
 
