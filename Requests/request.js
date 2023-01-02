@@ -58,6 +58,7 @@ window.addEventListener('load',()=>{
 const prev= document.getElementById('prev')
 const next= document.getElementById('next')
 const circles= document.querySelectorAll('.formCircle')
+const formHeading= document.querySelectorAll('.formHeading')
 
   const urlParams = new URLSearchParams(window.location.search);
   const greetingValue = urlParams.get('value');
@@ -81,7 +82,9 @@ const circles= document.querySelectorAll('.formCircle')
 		currentActive = 0
 	}
 	update()
+	titleUpdate()
 })
+
 
     function update(){
 	circles.forEach((circle,idx)=>{
@@ -100,4 +103,14 @@ const circles= document.querySelectorAll('.formCircle')
 	})
 }
 
+
+function titleUpdate(){
+	formHeading.forEach((title,idx)=>{
+     if(idx===currentActive){
+		title.classList.add('activeWord')
+    }else{
+		title.classList.remove('activeWord')
+	}
+	})
+}
 // --------------------------------------------------------------------
