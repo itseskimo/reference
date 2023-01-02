@@ -80,7 +80,7 @@ function update(){
   
 	for(let i=0; i<occupantNTimes-1;i++){
 	const h6 = document.createElement('h6');
-	h6.innerText='jjjjjjj'
+	h6.innerText='......'
 	occupantList.appendChild(h6)
 	}
 
