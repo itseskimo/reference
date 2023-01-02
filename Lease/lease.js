@@ -66,12 +66,15 @@ function update(){
 
 // -----------------------------------------------------------------------
 
-const buttons= document.querySelectorAll('.buttonInactive')
+const buttons= document.querySelectorAll('#btnColor')
  
 
 buttons.forEach(button=>{
 button.addEventListener('click',()=>{
-buttons.forEach(btn=>btn.classList.remove('buttonActive'));
+buttons.forEach((btn)=>{
+	btn.classList.remove('buttonActive')
+	btn.classList.add('buttonInactive')
+});
 button.classList.add('buttonActive');
 })
 })
@@ -79,7 +82,7 @@ button.classList.add('buttonActive');
 
 // -----------------------------------------------------------------------
 function myFunction() {
-	const GSTN= document.querySelectorAll('.buttonInactive')
+	const GSTN= document.querySelectorAll('#btnColor')
 	var x = document.getElementById("myDIV");
 	var element = document.getElementById("backgroundHeight");
 
@@ -88,12 +91,12 @@ function myFunction() {
 			if (e.currentTarget.innerText==='Yes') {
 				x.style.display = "block";
 	            element.style.height = "200px";
-			  } else {
+			  } else{
 				x.style.display = "none";
 				element.style.height = "85px";
 			  }
 			  styles=e.currentTarget.innerText
-			console.log(styles)	  
+			  console.log(styles)	  
 		   })
 		})
   }
@@ -124,9 +127,7 @@ function myFunction() {
 			x.style.display = "block";
 		  } else {
 			x.style.display = "none";
-		  }
-		  styles=e.currentTarget.innerText
-		console.log(x)	  
+		  }  
 	   })
 	})
 

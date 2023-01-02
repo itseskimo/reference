@@ -84,7 +84,7 @@ function update(){
   // -----------------------------------------------------------------------
   
   var toggleHide = document.getElementById("LeaseHide");
-  const dynamicBtns= document.querySelectorAll('.button-Off')
+  const dynamicBtns= document.querySelectorAll('#tenantCount')
   
   dynamicBtns.forEach((id)=>{
 	id.addEventListener('click',(e)=>{
@@ -101,12 +101,15 @@ function update(){
   // -----------------------------------------------------------------------
 
 
-const leaseButtons= document.querySelectorAll('.button-Off')
+const leaseButtons= document.querySelectorAll('#tenantCount')
  
 
 leaseButtons.forEach(button=>{
 button.addEventListener('click',()=>{
-leaseButtons.forEach(btn=>btn.classList.remove('button-On'));
+leaseButtons.forEach((btn)=>{
+	btn.classList.remove('button-On')
+	btn.classList.add('button-Off')
+});
 button.classList.add('button-On');
 })
 })
