@@ -153,20 +153,16 @@ button.classList.add('button-On');
 		deleteIcon.innerText='Clear'
 
 		deleteIcon.onclick= function removeFunctionDyamic() {
-			const elem = document.querySelectorAll(`#cancel${idSetter}`);
-			elem.forEach((ele)=>{ele.remove()})
+			const deletedElem = document.querySelectorAll('.lessGap');
+			console.log(deletedElem)
+			deletedElem.forEach((del)=>{
+				del.addEventListener('click',(e)=>{
+					const elem = document.querySelectorAll(`#${e.currentTarget.id}`);
+					elem.forEach((ele)=>{ele.remove()})
+					console.log(e.currentTarget.id)
+				})
+			})
 		  }
-
-		//   deleteIcon.onclick= function removeFunctionDyamic() {
-		// 	const elem = document.querySelectorAll('.deleteIcon');
-		// 	console.log(elem)
-		// 	elem.forEach((ele)=>{
-		// 		ele.addEventListener('click',(e)=>{
-		// 		console.log(e.currentTarget.id)
-		// 		})
-		// 	})
-		//   }
-
 
 
 		lessGap.appendChild(deleteIcon)
