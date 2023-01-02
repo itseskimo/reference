@@ -285,6 +285,7 @@ button.classList.add('button-On');
 		let select=document.createElement('div');
 		select.classList.add('select');
         selector.appendChild(select)
+        console.log(select)
 
 		let selectBtn=document.createElement('div');
 		selectBtn.classList.add('selectBtn');
@@ -299,7 +300,19 @@ button.classList.add('button-On');
 		 let optionn=document.createElement('div');
 		 optionn.classList.add('option');
 		 optionn.innerText='Employed'
-		 //optionn.setAttribute("data-type",'firstOption')
+		 optionn.dataset.type='firstOption'
+         selectDropdown.appendChild(optionn)
+
+		 optionn=document.createElement('div');
+		 optionn.classList.add('option');
+		 optionn.innerText='Self-Employed'
+		 optionn.dataset.type='secondOption'
+         selectDropdown.appendChild(optionn)
+
+		 optionn=document.createElement('div');
+		 optionn.classList.add('option');
+		 optionn.innerText='Student'
+		 optionn.dataset.type='thirdOption'
          selectDropdown.appendChild(optionn)
 
 
