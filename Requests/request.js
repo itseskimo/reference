@@ -58,7 +58,8 @@ window.addEventListener('load',()=>{
 const prev= document.getElementById('prev')
 const next= document.getElementById('next')
 const circles= document.querySelectorAll('.formCircle')
-const formHeading= document.querySelectorAll('.formHeading')
+const formHeading= document.querySelectorAll('.formHeading, .formHeadingLast')
+const formUnderline=document.querySelectorAll('.formUnderline')
 
   const urlParams = new URLSearchParams(window.location.search);
   const greetingValue = urlParams.get('value');
@@ -66,12 +67,14 @@ const formHeading= document.querySelectorAll('.formHeading')
 
     next.addEventListener('click',()=>{
 	++currentActive
-    window.location.href='/Lease/lease.html'
+    //window.location.href='/Lease/lease.html'
 	 
 	if(currentActive>circles.length){
 		currentActive=circles.length
 	}
     update()
+	titleUpdate()
+	underlineUpdate()
 })
 
     prev.addEventListener('click',()=>{
@@ -83,6 +86,7 @@ const formHeading= document.querySelectorAll('.formHeading')
 	}
 	update()
 	titleUpdate()
+	underlineUpdate()
 })
 
 
@@ -110,6 +114,16 @@ function titleUpdate(){
 		title.classList.add('activeWord')
     }else{
 		title.classList.remove('activeWord')
+	}
+	})
+}
+
+function underlineUpdate(){
+	formUnderline.forEach((line,idx)=>{
+     if(idx===currentActive){
+		line.classList.add('active')
+    }else{
+		line.classList.remove('active')
 	}
 	})
 }

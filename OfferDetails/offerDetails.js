@@ -27,7 +27,7 @@ on('click', '.option', item => {
 const prev= document.getElementById('prev')
 const next= document.getElementById('next')
 const circles= document.querySelectorAll('.formCircle')
-const formHeading= document.querySelectorAll('.formHeading')
+const formHeading= document.querySelectorAll('.formHeading, .formHeadingLast')
 const formUnderline=document.querySelectorAll('.formUnderline')
 let currentActive=0
 
