@@ -299,8 +299,9 @@ button.classList.add('button-On');
 		 let optionn=document.createElement('div');
 		 optionn.classList.add('option');
 		 optionn.innerText='Employed'
-		 optionn.setAttribute("data-type",'firstOption')
+		 //optionn.setAttribute("data-type",'firstOption')
          selectDropdown.appendChild(optionn)
+
 
 		//  ------------------------------------
 		 secondDiv=document.createElement('div');
