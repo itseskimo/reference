@@ -27,6 +27,7 @@ on('click', '.option', item => {
 const prev= document.getElementById('prev')
 const next= document.getElementById('next')
 const circles= document.querySelectorAll('.formCircle')
+const formHeading= document.querySelectorAll('.formHeading')
 
 let currentActive=0
 
@@ -39,6 +40,7 @@ next.addEventListener('click',()=>{
 		currentActive=circles.length
 	}
     update()
+	 titleUpdate()
 })
 
 prev.addEventListener('click',()=>{
@@ -47,6 +49,7 @@ prev.addEventListener('click',()=>{
 		currentActive = 0
 	}
 	update()
+	titleUpdate()
 })
 
 function update(){
@@ -66,4 +69,14 @@ function update(){
 	})
 }
 
+
+function titleUpdate(){
+	formHeading.forEach((title,idx)=>{
+     if(idx===currentActive){
+		title.classList.add('activeWord')
+    }else{
+		title.classList.remove('activeWord')
+	}
+	})
+}
 // --------------------------------------------------------------------
