@@ -67,7 +67,7 @@ const formUnderline=document.querySelectorAll('.formUnderline')
 
     next.addEventListener('click',()=>{
 	++currentActive
-    //window.location.href='/Lease/lease.html'
+    window.location.href='/Lease/lease.html'
 	 
 	if(currentActive>circles.length){
 		currentActive=circles.length
