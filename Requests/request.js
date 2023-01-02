@@ -74,7 +74,7 @@ const circles= document.querySelectorAll('.formCircle')
 })
 
     prev.addEventListener('click',()=>{
-	window.location.href='/OfferDetails/offerDetails.html'
+	window.location.href='/index.html'
 
 	currentActive--
 	if(currentActive < 0){
