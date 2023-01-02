@@ -104,7 +104,7 @@ function update(){
 
 
 const leaseButtons= document.querySelectorAll('#tenantCount')
- 
+
 
 leaseButtons.forEach(button=>{
 button.addEventListener('click',()=>{
@@ -123,7 +123,9 @@ button.classList.add('button-On');
   }
   // -----------------------------------------------------------------------
 
-    var counter=1;
+    let counter=1;
+    let idSetter=0;
+    
 	const tenantPlus = document.getElementById("new-tenant");
 	const tenantList = document.querySelector("#addComponent");
     
@@ -133,11 +135,14 @@ button.classList.add('button-On');
 
 		const underLine = document.createElement('div');
 		underLine.classList.add('row-underLinemid');
+		underLine.setAttribute('id', `cancel${++idSetter}`)
 		tenantList.appendChild(underLine)
-
+		
 		const lessGap = document.createElement('div');
 		lessGap.classList.add('lessGap');
-	
+		lessGap.setAttribute('id', `cancel${idSetter}`)
+		// ----------------------------------------------------
+
 		const addTenant = document.createElement('h6');
 		addTenant.classList.add('addTenant');
 		addTenant.innerText=`Tenant ${++counter}`
@@ -147,18 +152,30 @@ button.classList.add('button-On');
 		deleteIcon.classList.add('deleteIcon')
 		deleteIcon.innerText='Clear'
 
-		// deleteIcon.onclick= function removeFunctionDyamic() {
-		// 	const elem = document.getElementById("addComponent");
-		// 	elem.remove();
+		deleteIcon.onclick= function removeFunctionDyamic() {
+			const elem = document.querySelectorAll(`#cancel${idSetter}`);
+			elem.forEach((ele)=>{ele.remove()})
+		  }
+
+		//   deleteIcon.onclick= function removeFunctionDyamic() {
+		// 	const elem = document.querySelectorAll('.deleteIcon');
+		// 	console.log(elem)
+		// 	elem.forEach((ele)=>{
+		// 		ele.addEventListener('click',(e)=>{
+		// 		console.log(e.currentTarget.id)
+		// 		})
+		// 	})
 		//   }
 
+
+
 		lessGap.appendChild(deleteIcon)
-	
 		tenantList.appendChild(lessGap)
 		// ----------------------------------------------------
 
 		const leaseBackground=document.createElement('div');
 		leaseBackground.classList.add('leaseBackground');
+		leaseBackground.setAttribute('id', `cancel${idSetter}`)
 		tenantList.appendChild(leaseBackground)
 
 		const moreGap=document.createElement('div');
@@ -261,7 +278,9 @@ button.classList.add('button-On');
 	   
 	    const leaseBackground2=document.createElement('div');
 		leaseBackground2.classList.add('leaseBackground2');
+		leaseBackground2.setAttribute('id', `cancel${idSetter}`)
 		tenantList.appendChild(leaseBackground2)
+        console.log(underLine,leaseBackground,lessGap,leaseBackground2)
 
 		const rowGap=document.createElement('div');
 		rowGap.classList.add('row-Gap');
@@ -315,7 +334,7 @@ button.classList.add('button-On');
         }
 
         selector.appendChild(select)
-        console.log(select)
+        
 
 		let selectBtn=document.createElement('div');
 		selectBtn.classList.add('selectBtn');
