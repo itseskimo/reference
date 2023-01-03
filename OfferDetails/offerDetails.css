@@ -134,11 +134,18 @@ white-space: nowrap;
 
 
 .inputWidth{  
-height: 30px;  
+box-sizing: border-box;
+padding: 10px;
+gap: 12px;
+height: 41px;  
 font-size: 15px;
 width: 340px ;
 position: absolute;
-bottom: -15px;
+bottom: -20px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
 }
 
 input::placeholder{
@@ -149,13 +156,15 @@ font-size: 12px;
 }
 
 .placeholderTitle{ 
+  font-family: 'Poppins';
+  font-style: normal;
   position: absolute;
-  bottom: -40px;
-  left: 280px;
+  bottom: -43px;
+  left: 270px;
   font-weight: 400;
   white-space: nowrap;
   font-size: 12px;
-  background-color: white;
+  background-color:transparent;
   width: 60px;
   height: 30px;
   display: flex;
@@ -164,10 +173,6 @@ font-size: 12px;
   color: #6D6D6D;
 }
 
-.selector{
-  position: absolute;
-  bottom: -143px;
-}
 /*--------------------------------------------- */
 
 .firstDiv1{
@@ -177,7 +182,7 @@ font-size: 12px;
 
 .secondDiv1{
   position: absolute;
-  left: 620px;    
+  left: 610px;    
 }
 
 .firstDiv-Calculator{
@@ -223,11 +228,16 @@ font-size: 12px;
 
 .monthsCount{
   margin-right: 30px;
-  height: 36px; 
   width: 141px;
+  height: 40px;
   border-radius: 4px;
   position: absolute;
   top: 50px;
+  padding: 10px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
 }
 
 .lockin{
@@ -241,11 +251,16 @@ left: 500px;
 }
 
 .daysCount{
-height: 35px; 
 width: 141px;
+height: 40px;
+padding: 10px;
 border-radius: 4px;
 position: absolute;
 top: 50px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
 }
 
 
@@ -292,31 +307,55 @@ align-items: center;
 
 .rentDate{
 margin-right: 30px;
-height: 36px;
 position: absolute;
 left: 240px;
-width: 57px;
+width: 61px;
+height: 40px;
+padding: 7px;
+border-radius: 4px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
 }
 
 .rentMonth{
 position: absolute;
 left: 310px;
-height: 35px;
-width: 57px;
+width: 61px;
+height: 40px;
+padding: 5px;
+border-radius: 4px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
 }
 
 .rentYear{
 position: absolute;
 left: 380px;
-height: 35px;
-width: 67px;
+width: 86px;
+height: 40px;
+padding: 7px;
+border-radius: 4px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
 }
 
 .rent-endDate{
 position: absolute;
 left: 500px;
-height: 35px; 
-width: 57px;
+width: 61px;
+height: 40px;
+padding: 7px;
+border-radius: 4px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
 }
 
 .rentCalculator-title{
@@ -348,20 +387,26 @@ color: #141414;
 
 .rentCalculator-select{
     margin-right: 3px;
-    height: 36px;
+    height: 40px;
     width: 78px;
+    border-radius: 4px;
+    padding: 10px;
 }
 
 .rentCalculator-input{  
-    height: 30px;  
-    font-size: 15px;
+    box-sizing: border-box;
+    height: 41px;    
+    font-size: 14px;
     width: 100px ;
+    padding-left: 5px;
 }
 
 .rentCalculator-inputLength{
-    height: 30px;  
-    font-size: 15px;
+    box-sizing: border-box;
+    height: 41px;  
+    font-size: 14px;
     width: 186px ;
+    padding: 10px;
 }
 
 .none-Available{
@@ -369,23 +414,25 @@ color: #141414;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  margin-top: 11px;
+  margin-top: 16px;
 }
 
 .rentCalculator-placeholderTitle{
     position: absolute;
-    bottom: -25px;
-    left: 129px;
+    bottom: -22px;
+    left: 118px;
     font-weight: 400;
     white-space: nowrap;
     font-size: 12px;
-    background-color: white;
+    background-color: transparent;
     width: 60px;
     height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #6D6D6D;
+    font-family: 'Poppins';
+    font-style: normal;
 }
 
 
@@ -395,7 +442,7 @@ color: #141414;
     left: 215px;
     width: 1px;
     background-color:#D2D2D2 ;
-    height: 214px;
+    height: 223px;
 }
 
 
@@ -427,7 +474,6 @@ color: #141414;
     position: relative;
     justify-content: space-between;
 }
-
 
 .buttonReset1{
 display: flex;
@@ -466,9 +512,16 @@ cursor: pointer;
     }
 
 /* ------------------------------- */
+.selector{
+  position: absolute;
+  bottom: -148px;
+}
+
 .select {
+  box-sizing: border-box;
     position: relative;
-    width: 345px;
+    width: 340px;
+    height: 41px;
     border: 1px solid grey ;
     font-family: 'Inter';
     font-style: normal;
@@ -484,7 +537,7 @@ cursor: pointer;
     box-sizing: border-box;
     border-radius: 3px;
     width: 100%;
-    height: 35px;
+    height: 39px;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -542,7 +595,6 @@ cursor: pointer;
     box-sizing: border-box;
     cursor: pointer;
     border-bottom: 1px solid #E0E0E0;
-    
   }
   .select .selectDropdown .option:hover {
     background: #f8f8f8;
