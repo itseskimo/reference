@@ -123,16 +123,14 @@ button.classList.add('button-On');
   }
   // -----------------------------------------------------------------------
 
-  window.addEventListener('load',()=>{
+  
 	var x = document.querySelector(".deleteIcon");
+	let num=0
 	console.log(x)
-	if (counter === 1) {
+	if (num === 0) {
 	  x.style.display = "none";
-	} else {
-	  x.style.display = "block";
-	}
-  }
-)
+	} 
+ 
 
   // -----------------------------------------------------------------------
 
@@ -145,7 +143,7 @@ button.classList.add('button-On');
 	
 	tenantPlus.addEventListener('click',()=>{
     if(counter<4){
-
+		x.style.display = "flex";
 		const underLine = document.createElement('div');
 		underLine.classList.add('row-underLinemid');
 		underLine.setAttribute('id', `cancel${++idSetter}`)
