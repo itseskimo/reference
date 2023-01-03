@@ -46,6 +46,7 @@ position: relative;
 }
 
 .request{
+    box-sizing: border-box;
     margin-right: 50px;
     height: 48px;
     width: 596px;
@@ -55,6 +56,13 @@ position: relative;
     border: 1px solid #082346;
     border-radius: 4px;
     font-size: 15px;
+    padding: 10px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #242424;
     }
 
 .request-fadetitle{
@@ -66,13 +74,6 @@ position: relative;
     color: #808080;
     }
 
-.left{
-    margin-left: 20px;
-    }
-        
-.right{
-    margin-right: 20px;
-    }
         
 .requestheadings{
     color: #808080;
@@ -82,6 +83,10 @@ position: relative;
     left: 30px;
     white-space: nowrap;
     bottom: -75px;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
     }
 
 .editIcon{
@@ -111,7 +116,13 @@ color: #082346;
 cursor: pointer;
 }
 
+.fa-arrow-right{
+margin-left: 20px;
+}
 
+.fa-arrow-left{
+    margin-right: 10px;
+}
 /* ----------------------------------- */
 .requestUnderLine{
 margin-top: 50px;
@@ -151,7 +162,6 @@ cursor: pointer;
 display: flex;
 justify-content: flex-start;
 align-items: center;
-border: 1px solid #082346;
 background: #FFFFFF;
 border-radius: 12px;
 padding: 16px 24px;
@@ -161,10 +171,11 @@ font-weight: 600;
 font-size: 20px;
 line-height: 30px;
 position: absolute;
-right: 207px;
+right: 220px;
 font-family: 'Poppins';
 font-style: normal;
 color: #082346;
+border-width: 0;
 }
 
 .buttonContinue{
@@ -173,7 +184,8 @@ color: #082346;
     align-items: center; 
     border: 1px solid #082346; 
     border-radius: 12px;
-    background: #082346;padding: 16px 24px;
+    background: #082346;
+    padding: 16px 24px;
     width: 185px;
     height: 62px;
     color: #FFFFFF;
