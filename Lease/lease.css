@@ -60,13 +60,22 @@ color: #000000;
             white-space: nowrap;
             }
 
-        .inputWidth{  
-            height: 30px;  
-            font-size: 15px;
-            width: 340px ;
-            position: absolute;
-            bottom: -15px;
-            }
+            .inputWidth{  
+                box-sizing: border-box;
+                padding: 10px;
+                gap: 12px;
+                height: 41px;  
+                font-size: 15px;
+                width: 340px ;
+                position: absolute;
+                bottom: -20px;
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                border: 1px solid #082346;
+                border-radius: 4px;
+                }
 
         /* ------------------------------------ */
         .specialDiv{
@@ -80,16 +89,16 @@ color: #000000;
 
         .secondDiv{
             position: absolute;
-            left: 665px;    
+            left: 655px;    
         }
         .thirdDiv{
             position: absolute;
-            left: 830px;   
+            left: 820px;   
         }
 
         .forthDiv{
             position: absolute;
-            left: 995px;  
+            left: 985px;  
         }
         .secondrowAbsolute{
             position: absolute;
@@ -109,26 +118,37 @@ color: #000000;
             height: 36px;
             width: 141px;
         }
-        .lease-companyText{
-            margin-right: 30px;
-            height: 36px;
-            width: 141px;
-            position: absolute;
-            bottom: -15px;
-        }
+    
         .lease-companyNoText{
             margin-right: 30px;
-            height: 36px;
+            height: 40px;
             width: 141px;
             position: absolute;
-            bottom: -85px;
+            bottom: -90px;
+            border: 1px solid #082346;
+            border-radius: 4px;
+            padding: 10px;
         }
+
         .lease-input{
             margin-right: 30px;
-            height: 30px;
             width: 121px;
             position: absolute;
-            bottom: -85px;
+            bottom: -90px;
+
+
+                box-sizing: border-box;
+                padding: 10px;
+                gap: 12px;
+                height: 41px;  
+                font-size: 15px;
+               
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                border: 1px solid #082346;
+                border-radius: 4px;
         }
 
         .buttonInactive{
@@ -162,97 +182,115 @@ color: #000000;
             height: 310px;
         }
 
-        .selector{ 
-            position: absolute;
-            bottom: -15px;
-        }
+        
 
 
         /* ----------------------------------- */
-        .select {
-            position: relative;
-            width: 345px;
-            border: 1px solid grey ;
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 14px;
-            color: #424242;
-            line-height: 20px;
-        }
-        
-          .select .selectBtn {
-            background: var(--bg1);
-            padding: 10px;
-            box-sizing: border-box;
-            border-radius: 3px;
-            width: 100%;
-            height: 35px;
-            display: flex;
-            align-items: center;
-            cursor: pointer;
-            position: relative;
-            -webkit-user-select: none;
-               -moz-user-select: none;
-                -ms-user-select: none;
-                    user-select: none;
-            background: #fff;
-          }
-          .select .selectBtn:after {
-            content: "";
+        .selector{
             position: absolute;
-            top: 45%;
-            right: 15px;
-            width: 6px;
-            height: 6px;
-            -webkit-transform: translateY(-50%) rotate(45deg);
-                    transform: translateY(-50%) rotate(45deg);
-            border-right: 2px solid #666;
-            border-bottom: 2px solid #666;
-            transition: 0.2s ease;
-          }
-          .select .selectBtn.toggle {
-            border-radius: 3px 3px 0 0;
-          }
-          .select .selectBtn.toggle:after {
-            -webkit-transform: translateY(-50%) rotate(-135deg);
-                    transform: translateY(-50%) rotate(-135deg);
-          }
-          .select .selectDropdown {
-            position: absolute;
-            top: 100%;
-            width: 100%;
-            border-radius: 0 0 3px 3px;
-            overflow: hidden;
-            background: var(--bg1);
-            border-top: 1px solid #eee;
-            z-index: 1;
-            background: #fff;
-            -webkit-transform: scale(1, 0);
-                    transform: scale(1, 0);
-            -webkit-transform-origin: top center;
-                    transform-origin: top center;
-            visibility: hidden;
-            transition: 0.2s ease;
-            box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-          }
-          .select .selectDropdown .option {
-            padding: 10px;
-            box-sizing: border-box;
-            cursor: pointer;
-            border-bottom: 1px solid #E0E0E0;
-            
-          }
-          .select .selectDropdown .option:hover {
-            background: #f8f8f8;
-          }
-          .select .selectDropdown.toggle {
-            visibility: visible;
-            -webkit-transform: scale(1, 1);
-                    transform: scale(1, 1);
+            bottom: -20px;
           }
           
+          .select {
+              border-radius: 4px;
+              border: 1px solid #082346;
+              box-sizing: border-box;
+              position: relative;
+              width: 340px;
+              height: 41px;
+              background: #F2F2F2;
+              font-family: 'Inter';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              color: #424242;
+              line-height: 20px;
+            }
+          
+            .select .selectBtn {
+              background: var(--bg1);
+              padding: 10px;
+              box-sizing: border-box;
+              border-radius: 3px;
+              width: 100%;
+              height: 39px;
+              display: flex;
+              align-items: center;
+              cursor: pointer;
+              position: relative;
+              -webkit-user-select: none;
+                 -moz-user-select: none;
+                  -ms-user-select: none;
+                      user-select: none;
+              background: #fff;
+            }
+          
+            .select .selectBtn:after {
+              content: "";
+              position: absolute;
+              top: 45%;
+              right: 15px;
+              width: 6px;
+              height: 6px;
+              -webkit-transform: translateY(-50%) rotate(45deg);
+                      transform: translateY(-50%) rotate(45deg);
+              border-right: 2px solid #666;
+              border-bottom: 2px solid #666;
+              transition: 0.2s ease;
+            }
+          
+            .select .selectBtn.toggle {
+              border-radius: 3px 3px 0 0;
+            }
+          
+            .select .selectBtn.toggle:after {
+              -webkit-transform: translateY(-50%) rotate(-135deg);
+                      transform: translateY(-50%) rotate(-135deg);
+            }
+          
+            .select .selectDropdown {
+              position: absolute;
+              top: 100%;
+              width: 100%;
+              border-radius: 0 0 3px 3px;
+              overflow: hidden;
+              background: var(--bg1);
+              border-top: 1px solid #eee;
+              z-index: 1;
+              background: #fff;
+              -webkit-transform: scale(1, 0);
+                      transform: scale(1, 0);
+              -webkit-transform-origin: top center;
+                      transform-origin: top center;
+              visibility: hidden;
+              transition: 0.2s ease;
+              box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+            }
+            .select .selectDropdown .option {
+              padding: 10px;
+              box-sizing: border-box;
+              cursor: pointer;
+              border-bottom: 1px solid #E0E0E0;
+            }
+            .select .selectDropdown .option:hover {
+              background: #f8f8f8;
+            }
+            .select .selectDropdown.toggle {
+              visibility: visible;
+              -webkit-transform: scale(1, 1);
+                      transform: scale(1, 1);
+            }
         /* ----------------------------------- */
+        .fa-arrow-right{
+            margin-left: 20px;
+            }
+            
+            .fa-arrow-left{
+                margin-right: 10px;
+            }
+
+
+
         .underLine{
         margin-top: 50px;
         height: 1px;
@@ -287,41 +325,41 @@ color: #000000;
         }
         
         .buttonMid{
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        border: 1px solid #082346;
-        background: #FFFFFF;
-        border-radius: 12px;
-        padding: 16px 24px;
-        width: 144px;
-        height: 62px;
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 30px;
-        position: absolute;
-        right: 207px;
-        font-family: 'Poppins';
-        font-style: normal;
-        color: #082346;
-        cursor: pointer;
-        }
-    
-        .buttonContinue{
+            cursor: pointer;
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
-            border: 1px solid #082346;
+            background: #FFFFFF;
             border-radius: 12px;
-            background: #082346;
-            padding: 16px 24px;
-            width: 185px;
+            padding: 16px 0px 16px 16px;
+            width: 144px;
             height: 62px;
-            color: #FFFFFF;
             font-weight: 600;
             font-size: 20px;
             line-height: 30px;
-            cursor: pointer;
+            position: absolute;
+            right: 220px;
+            font-family: 'Poppins';
+            font-style: normal;
+            color: #082346;
+            border-width: 0;
+            }
+            
+            .buttonContinue{
+                display: flex;
+                justify-content: center; 
+                align-items: center; 
+                border: 1px solid #082346; 
+                border-radius: 12px;
+                background: #082346;
+                padding: 16px 24px 16px 32px;
+                width: 185px;
+                height: 62px;
+                color: #FFFFFF;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 30px;
+                cursor: pointer;
             }
 
         input::placeholder{
