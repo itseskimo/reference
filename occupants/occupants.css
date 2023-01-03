@@ -319,6 +319,15 @@ white-space: nowrap;
             border-radius: 4px;
         }
         /* ----------------------------------- */
+        .fa-arrow-right{
+            margin-left: 20px;
+            }
+            
+            .fa-arrow-left{
+                margin-right: 10px;
+            }
+
+
         .underLine{
         margin-top: 50px;
         height: 1px;
@@ -353,42 +362,43 @@ white-space: nowrap;
         }
         
         .buttonMid{
+            cursor: pointer;
             display: flex;
             justify-content: flex-start;
             align-items: center;
-            border: 1px solid #082346;
             background: #FFFFFF;
             border-radius: 12px;
-            padding: 16px 24px;
+            padding: 16px 0px 16px 16px;
             width: 144px;
             height: 62px;
             font-weight: 600;
             font-size: 20px;
             line-height: 30px;
             position: absolute;
-            right: 207px;
+            right: 220px;
             font-family: 'Poppins';
             font-style: normal;
             color: #082346;
-            cursor: pointer;
-        }
-    
-        .buttonContinue{
-            cursor: pointer;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid #082346;
-            border-radius: 12px;
-            background: #082346;
-            padding: 16px 24px;
-            width: 185px;
-            height: 62px;
-            color: #FFFFFF;
-            font-weight: 600;
-            font-size: 20px;
-            line-height: 30px;
+            border-width: 0;
             }
+            
+            .buttonContinue{
+                display: flex;
+                justify-content: center; 
+                align-items: center; 
+                border: 1px solid #082346; 
+                border-radius: 12px;
+                background: #082346;
+                padding: 16px 24px 16px 32px;
+                width: 185px;
+                height: 62px;
+                color: #FFFFFF;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 30px;
+                cursor: pointer;
+            }
+
 
             .selector{
                 position: absolute;
