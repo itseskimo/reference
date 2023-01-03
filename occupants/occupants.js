@@ -70,7 +70,7 @@ function update(){
     //console.log(occupantNTimes)
     const occupantPlus = document.getElementById("new-occupant");
 	const occupantList = document.querySelector("#occupantDynamic");
-  
+    let occupantCount=1
 //   occupantPlus.addEventListener('click',()=>{
 // 	const h6 = document.createElement('h6');
 // 	h6.innerText='jjjjjjj'
@@ -84,7 +84,7 @@ function update(){
 	occupantList.appendChild(subTitle)
 
     let h4=document.createElement('h4');
-	h4.innerText='OCCUPANT 1'
+	h4.innerText=`OCCUPANT ${++occupantCount}`
 	subTitle.appendChild(h4)
 
 	let alignCheckbox=document.createElement('div');
