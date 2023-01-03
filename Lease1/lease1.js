@@ -123,6 +123,19 @@ button.classList.add('button-On');
   }
   // -----------------------------------------------------------------------
 
+  window.addEventListener('load',()=>{
+	var x = document.querySelector(".deleteIcon");
+	console.log(x)
+	if (counter === 1) {
+	  x.style.display = "none";
+	} else {
+	  x.style.display = "block";
+	}
+  }
+)
+
+  // -----------------------------------------------------------------------
+
     let counter=1;
     let idSetter=0;
     
