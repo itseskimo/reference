@@ -108,13 +108,13 @@ height: 37px;
 
 .formScroll{
 display: flex;
+align-items: center;
 position: absolute;
+padding: 16px;
 bottom:-270px;
 left: 240px;
 width: 500px;
 height: 150px;
-padding: 16px;
-margin-top: 0;
 background: #F1F5F7;
 border-radius: 12px;
 font-family: 'Inter';
