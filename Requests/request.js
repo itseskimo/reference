@@ -23,7 +23,7 @@ window.addEventListener('load',()=>{
 		inputElement.type = 'text';
 		inputElement.value = task;
 		inputElement.setAttribute('readonly', 'readonly');
-		inputCircle.appendChild(inputElement);
+		section.appendChild(inputElement);
 
 		const img = document.createElement('img');
 		img.classList.add('editIcon');
