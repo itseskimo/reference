@@ -93,6 +93,7 @@ function update(){
 
 	let checkbox=document.createElement('input');
 	checkbox.type='checkbox'
+	checkbox.setAttribute('checked', 'checked');
 	alignCheckbox.appendChild(checkbox)
 
 	let h6=document.createElement('h6');
