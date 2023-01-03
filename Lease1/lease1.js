@@ -154,6 +154,7 @@ button.classList.add('button-On');
 
 		deleteIcon.onclick= function removeFunctionDyamic() {
 			const deletedElem = document.querySelectorAll('.lessGap');
+			--counter
 			console.log(deletedElem)
 			deletedElem.forEach((del)=>{
 				del.addEventListener('click',(e)=>{
