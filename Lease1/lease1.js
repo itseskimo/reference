@@ -124,11 +124,10 @@ button.classList.add('button-On');
   // -----------------------------------------------------------------------
 
   
-	var x = document.querySelector(".deleteIcon");
+	var deleteLogo = document.querySelector(".deleteIcon");
 	let num=0
-	console.log(x)
 	if (num === 0) {
-	  x.style.display = "none";
+	  deleteLogo.style.display = "none";
 	} 
  
 
@@ -143,7 +142,7 @@ button.classList.add('button-On');
 	
 	tenantPlus.addEventListener('click',()=>{
     if(counter<4){
-		x.style.display = "flex";
+		deleteLogo.style.display = "flex";
 		const underLine = document.createElement('div');
 		underLine.classList.add('row-underLinemid');
 		underLine.setAttribute('id', `cancel${++idSetter}`)
