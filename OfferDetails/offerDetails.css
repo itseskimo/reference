@@ -436,13 +436,14 @@ align-items: center;
 border: 1px solid #082346;
 border-radius: 12px;
 background: #FFFFFF;
-padding: 16px 24px;
+padding: 16px 24px 16px 32px;
+font-family: 'Poppins';
+font-style: normal;
 width: 185px;
 height: 62px;
 color: #082346;
 font-weight: 600;
 font-size: 20px;
-line-height: 30px;
 cursor: pointer;
 }
 
@@ -453,13 +454,14 @@ cursor: pointer;
     border: 1px solid #082346;
     border-radius: 12px;
     background: #082346;
-    padding: 16px 24px;
+    padding: 16px 24px 16px 32px;
+    font-family: 'Poppins';
+    font-style: normal;
     width: 185px;
     height: 62px;
     color: #FFFFFF;
     font-weight: 600;
     font-size: 20px;
-    line-height: 30px;
     cursor: pointer;
     }
 
