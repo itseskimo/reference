@@ -153,20 +153,28 @@ color: #000000;
 
         .buttonInactive{
             margin-right: 16px;
-            height: 36px;
+            height: 41px;
             width: 87px;
             cursor: pointer;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
         }
 
         .buttonActive{
             cursor: pointer;
             margin-right: 16px;
-            height: 36px;     
+            height: 41px;     
             background: #082346;
             border: 1px solid #082346;
             border-radius: 4px;
             color: #FFFFFF;
             width: 87px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
         }
         
         .leaseBackground3{
