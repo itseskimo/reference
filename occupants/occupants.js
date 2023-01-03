@@ -344,6 +344,112 @@ function update(){
 		 optionn.dataset.type='secondOption'
          selectDropdown.appendChild(optionn)
 
+        // -------------------------------------------
+		 const thirdrowAbsolute=document.createElement('div');
+        thirdrowAbsolute.classList.add('thirdrowAbsolute');
+        moreGap.appendChild(thirdrowAbsolute)
+
+
+		firstDiv=document.createElement('div');
+		firstDiv.classList.add('firstDiv');
+		thirdrowAbsolute.appendChild(firstDiv)
+
+	   firstTitle = document.createElement('h6');
+	   firstTitle.classList.add('firstTitle');
+	   firstTitle.innerText='Passport Size Photo*'
+	   firstDiv.appendChild(firstTitle)
+
+	    let inputLabelWide=document.createElement('label');
+        inputLabelWide.classList.add('inputLabelWide');
+		inputLabelWide.innerText='Upload document'
+        firstDiv.appendChild(inputLabelWide)
+
+	    select = document.createElement('input');
+		select.classList.add('select');
+		select.type='file'
+		select.accept="image/png, application/pdf"
+		inputLabelWide.appendChild(select)
+
+
+		let labelIconWide=document.createElement('img');
+        labelIconWide.classList.add('labelIconWide');
+		labelIconWide.src="https://icons-for-free.com/download-icon-box+document+outline+share+top+upload+icon-1320195323221671611_256.png"
+        inputLabelWide.appendChild(labelIconWide)
+
+		// ----------------------------------------------
+		secondDiv=document.createElement('div');
+		secondDiv.classList.add('secondDiv');
+		thirdrowAbsolute.appendChild(secondDiv)
+
+	   firstTitle = document.createElement('h6');
+	   firstTitle.classList.add('firstTitle');
+	   firstTitle.innerText='Aadhaar Card*'
+	   secondDiv.appendChild(firstTitle)
+
+	    let inputLabel=document.createElement('label');
+        inputLabel.classList.add('inputLabel');
+		inputLabel.innerText='Upload document'
+        secondDiv.appendChild(inputLabel)
+
+	    select = document.createElement('input');
+		select.classList.add('select');
+		select.type='file'
+		select.accept="image/png, application/pdf"
+		inputLabel.appendChild(select)
+
+
+	    let labelIcon=document.createElement('img');
+        labelIcon.classList.add('labelIcon');
+		labelIcon.src="https://icons-for-free.com/download-icon-box+document+outline+share+top+upload+icon-1320195323221671611_256.png"
+        inputLabel.appendChild(labelIcon)
+
+
+		// -------------------------------------------------
+		const forthrowAbsolute=document.createElement('div');
+        forthrowAbsolute.classList.add('forthrowAbsolute');
+        moreGap.appendChild(forthrowAbsolute)
+
+
+	    firstDiv=document.createElement('div');
+		firstDiv.classList.add('firstDiv');
+        forthrowAbsolute.appendChild(firstDiv)
+
+	    firstTitle = document.createElement('h6');
+		firstTitle.classList.add('firstTitle');
+		firstTitle.innerText='PAN Number*'
+		firstDiv.appendChild(firstTitle)
+
+	    inputWidth = document.createElement('input');
+		inputWidth.classList.add('inputWidthMore');
+		inputWidth.placeholder='Enter PAN Number'
+		firstDiv.appendChild(inputWidth)
+
+		// -----------------------------------------------------
+		secondDiv=document.createElement('div');
+		secondDiv.classList.add('secondDiv');
+		forthrowAbsolute.appendChild(secondDiv)
+
+	   firstTitle = document.createElement('h6');
+	   firstTitle.classList.add('firstTitle');
+	   firstTitle.innerText='Aadhaar Card*'
+	   secondDiv.appendChild(firstTitle)
+
+	    inputLabel=document.createElement('label');
+        inputLabel.classList.add('inputLabel');
+		inputLabel.innerText='Upload document'
+        secondDiv.appendChild(inputLabel)
+
+	    select = document.createElement('input');
+		select.classList.add('select');
+		select.type='file'
+		select.accept="image/png, application/pdf"
+		inputLabel.appendChild(select)
+
+
+	    labelIcon=document.createElement('img');
+        labelIcon.classList.add('labelIcon');
+		labelIcon.src="https://icons-for-free.com/download-icon-box+document+outline+share+top+upload+icon-1320195323221671611_256.png"
+        inputLabel.appendChild(labelIcon)
 	}
 
   })
