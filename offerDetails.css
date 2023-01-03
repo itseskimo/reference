@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+ @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
  @import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap'); 
 .heading{
 width:100%;
@@ -476,7 +476,9 @@ color: #141414;
     height: 250px;
 }
 
-
+.fa-arrow-right{
+  margin-left: 20px;
+  }
 /* ----------------------------------- */
 .underLine1{
     margin-top: 30px;

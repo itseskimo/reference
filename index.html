@@ -5,20 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="offerDetails.css">
+    <script src="https://kit.fontawesome.com/1e4ed88738.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
 
     <div class='heading'>
 
+
       <div class='formHeader'>
-        
         <div class='formProgress'>           
                 <div class='formRow'>
                 <h1  class='formCircle'>1</h1>
                 <h5  class='formHeading'>Commercials</h5>
                 <div class='formUnderline'></div> 
                 </div>
+
                 <div class='formRow'>
                 <h1  class='formCircle'>2</h1>
                 <h5  class='formHeading'>Requests</h5>
@@ -73,12 +75,12 @@
 
         <div class='firstDiv1'>
           <h6 class='firstTitle'>Monthly Rent*</h6>
-          <input autoFocus class='inputWidth' value="₹ 450000"></input>
+          <input class='inputWidth' value="₹ 450000" readonly></input>
           <h6 class='placeholderTitle'>Per Month</h6>
         </div>
 
         <div class='secondDiv1'>
-          <input class='inputWidth' value="₹ 450000"></input>
+          <input class='inputWidth' value="₹ 450000" readonly></input>
           <h6 class='firstTitle'>Security Deposit*</h6>
         </div>
     </div>
@@ -109,6 +111,9 @@
             <div class="option" data-type="thirdOption">1 year 6 months</div>
             <div class="option" data-type="thirdOption">2 year</div>
             <div class="option" data-type="thirdOption">2 year 6 months</div>
+            <div class="option" data-type="thirdOption">3 year </div>
+            <div class="option" data-type="thirdOption">3 year 6 months</div>
+            <div class="option" data-type="thirdOption">4 year</div>
           </div>
         </div>
       </div>
@@ -128,7 +133,7 @@
         <h5>Rent Escalation</h5>
 
         <div class='firstDiv-Calculator'>
-          <h6 class='firstTitle'>Monthly Rent*</h6>
+          <h6 class='firstTitle'>Current Rent*</h6>
           <input placeholder="Enter Amount" class='inputWidth' ></input>
           <h6 class='placeholderTitle'>Per Month</h6>
         </div>
@@ -266,7 +271,7 @@
     <div class='underLine1'></div>
     <div class='buttonSet'>
         <button class='buttonReset1' id="prev">Reset</button>
-        <button class='buttonContinue1'id='next'>Continue <ArrowForwardIcon class='left'/></button>
+        <button class='buttonContinue1'id='next'>Continue <i class="fa-solid fa-arrow-right" ></i></button>
     </div>
         </div>
     

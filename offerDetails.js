@@ -27,17 +27,21 @@ on('click', '.option', item => {
 const prev= document.getElementById('prev')
 const next= document.getElementById('next')
 const circles= document.querySelectorAll('.formCircle')
-
+const formHeading= document.querySelectorAll('.formHeading, .formHeadingLast')
+const formUnderline=document.querySelectorAll('.formUnderline')
 let currentActive=0
 
 next.addEventListener('click',()=>{
 	++currentActive
     window.location.href='/Requests/request.html?value=1'
+	//sessionStorage.setItem('value',currentActive)
 
 	if(currentActive>circles.length){
 		currentActive=circles.length
 	}
     update()
+	titleUpdate()
+	underlineUpdate()
 })
 
 prev.addEventListener('click',()=>{
@@ -46,6 +50,8 @@ prev.addEventListener('click',()=>{
 		currentActive = 0
 	}
 	update()
+	titleUpdate()
+	underlineUpdate()
 })
 
 function update(){
@@ -59,8 +65,29 @@ function update(){
 		circle.classList.remove('greenCircle')
     }else{
 		circle.classList.remove('activeCircle')
+	 }
+	})
+}
+
+
+function titleUpdate(){
+	formHeading.forEach((title,idx)=>{
+     if(idx===currentActive){
+		title.classList.add('activeWord')
+    }else{
+		title.classList.remove('activeWord')
 	}
 	})
 }
 
+
+function underlineUpdate(){
+	formUnderline.forEach((line,idx)=>{
+     if(idx===currentActive){
+		line.classList.add('active')
+    }else{
+		line.classList.remove('active')
+	}
+	})
+}
 // --------------------------------------------------------------------
