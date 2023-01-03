@@ -30,7 +30,7 @@ const circles= document.querySelectorAll('.formCircle')
 
     next.addEventListener('click',()=>{
 	++currentActive
-     window.location.href='/OccupantAdded/OccupantAdded.html'
+     window.location.href='/Submit/submit.html'
 	 
 	if(currentActive>circles.length){
 		currentActive=circles.length
@@ -39,7 +39,7 @@ const circles= document.querySelectorAll('.formCircle')
 })
 
     prev.addEventListener('click',()=>{
-	window.location.href='/Lease1/Lease1.html'
+	window.location.href='/occupants/occupants.html'
 
 	currentActive--
 	if(currentActive < 0){
@@ -64,24 +64,3 @@ function update(){
 }
 
 // --------------------------------------------------------------------
-  const urlParams = new URLSearchParams(window.location.search);
-  const greetingValue = urlParams.get('value');
-  let occupantNTimes=parseInt(greetingValue)
-    //console.log(occupantNTimes)
-    const occupantPlus = document.getElementById("new-occupant");
-	const occupantList = document.querySelector("#occupantDynamic");
-  
-//   occupantPlus.addEventListener('click',()=>{
-// 	const h6 = document.createElement('h6');
-// 	h6.innerText='jjjjjjj'
-// 	occupantList.appendChild(h6)
-//   })
-  window.addEventListener('DOMContentLoaded',()=>{
-  
-	for(let i=0; i<occupantNTimes-1;i++){
-	const h6 = document.createElement('h6');
-	h6.innerText='......'
-	occupantList.appendChild(h6)
-	}
-
-  })
