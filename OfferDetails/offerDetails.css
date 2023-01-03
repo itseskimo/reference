@@ -146,6 +146,8 @@ font-family: 'Poppins';
 font-style: normal;
 font-weight: 500;
 font-size: 14px;
+border: 1px solid #082346;
+border-radius: 4px;
 }
 
 input::placeholder{
@@ -238,6 +240,7 @@ font-size: 12px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
+  border: 1px solid #082346;
 }
 
 .lockin{
@@ -261,6 +264,7 @@ font-family: 'Inter';
 font-style: normal;
 font-weight: 400;
 font-size: 14px;
+border: 1px solid #082346;
 }
 
 
@@ -317,6 +321,8 @@ font-family: 'Inter';
 font-style: normal;
 font-weight: 400;
 font-size: 14px;
+border: 1px solid #082346;
+
 }
 
 .rentMonth{
@@ -330,6 +336,8 @@ font-family: 'Inter';
 font-style: normal;
 font-weight: 400;
 font-size: 14px;
+border: 1px solid #082346;
+
 }
 
 .rentYear{
@@ -343,6 +351,7 @@ font-family: 'Inter';
 font-style: normal;
 font-weight: 400;
 font-size: 14px;
+border: 1px solid #082346;
 }
 
 .rent-endDate{
@@ -356,6 +365,7 @@ font-family: 'Inter';
 font-style: normal;
 font-weight: 400;
 font-size: 14px;
+border: 1px solid #082346;
 }
 
 .rentCalculator-title{
@@ -391,6 +401,11 @@ color: #141414;
     width: 78px;
     border-radius: 4px;
     padding: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    border: 1px solid #082346;
 }
 
 .rentCalculator-input{  
@@ -399,6 +414,8 @@ color: #141414;
     font-size: 14px;
     width: 100px ;
     padding-left: 5px;
+    border-radius: 4px;
+    border: 1px solid #082346;
 }
 
 .rentCalculator-inputLength{
@@ -407,6 +424,8 @@ color: #141414;
     font-size: 14px;
     width: 186px ;
     padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #082346;
 }
 
 .none-Available{
@@ -518,11 +537,13 @@ cursor: pointer;
 }
 
 .select {
-  box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #082346;
+    box-sizing: border-box;
     position: relative;
     width: 340px;
     height: 41px;
-    border: 1px solid grey ;
+    background: #F2F2F2;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
