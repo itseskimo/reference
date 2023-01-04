@@ -39,7 +39,7 @@ const circles= document.querySelectorAll('.formCircle')
 })
 
     prev.addEventListener('click',()=>{
-	window.location.href='/occupants/occupants.html'
+	window.location.href='/OccupantAdded/OccupantAdded.html'
 
 	currentActive--
 	if(currentActive < 0){

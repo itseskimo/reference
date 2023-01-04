@@ -22,7 +22,7 @@ next.addEventListener('click',()=>{
 })
 
 prev.addEventListener('click',()=>{
-	window.location.href='/occupants/occupants.html'
+	window.location.href='/OccupantLease/OccupantLease.html'
 
 	currentActive--
 	if(currentActive < 0){
