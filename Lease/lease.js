@@ -92,7 +92,7 @@ button.classList.add('buttonActive');
 	            element.style.height = "200px";
 			  } else{
 				GSTNWrapper.style.display = "none";
-				element.style.height = "85px";
+				element.style.height = "100px";
 			  }
 			  styles=e.currentTarget.innerText
 			  console.log(styles)	  
