@@ -49,13 +49,13 @@ height: 20px;
 width: 20px;
 object-fit: contain;
 color: #000;
-margin-top: 12px;
+margin-top: 15px;
 margin-left: 5px;
 }
 
 .formAlign{
-margin-top: -48px;
-padding-left: 70px;
+margin-top: -54px;
+padding-left: 60px;
 line-height: 0;
 
 }
@@ -63,18 +63,20 @@ line-height: 0;
 font-family: 'Inter';
 font-style: normal;
 font-weight: 400;
-font-size: 11px;
+font-size: 14px;
 }
 
 /*--------------------------------------------- */
 
 .formBox{
-height: 40px;
-width: 247px;
+height: 71px;
+width: 277px;
+box-sizing: border-box;
+padding: 12px 24px;
 position: absolute;
 left: 240px;
 background: #F1F5F7;
-border-radius: 4px;
+border-radius: 12px;
 padding: 10px;
 }
 
@@ -82,7 +84,7 @@ padding: 10px;
 font-family: 'Inter';
 font-style: normal;
 font-weight: 500;
-font-size: 16px;
+font-size: 20px;
 color: #000000;
 }
 
@@ -127,22 +129,27 @@ position: absolute;
 padding: 16px;
 bottom:-270px;
 left: 240px;
-width: 500px;
-height: 150px;
+width: 625px;
+height: 152px;
 background: #F1F5F7;
 border-radius: 12px;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-color: #424242;
+
 }
+
+.formScroll h6{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #424242;
+    }
+    
 
 .terms{
 position: absolute;
 bottom:-350px;
 left: 240px;
-width: 500px;
+width: 625px;
 font-weight: 400;
 font-size: 14px;
 line-height: 20px;
