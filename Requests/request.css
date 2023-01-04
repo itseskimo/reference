@@ -96,12 +96,11 @@ position: absolute;
 left:600px ;
 }
 
-
-
-
 .selectButton{
-width: 176px;
+box-sizing: border-box;
+width: 179px;
 height: 37px;
+padding: 8px 12px;
 margin-top: 70px;
 margin-left: 30px;
 background: #FFFFFF;

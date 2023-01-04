@@ -225,6 +225,9 @@ white-space: nowrap;
         } 
 
          .specialButton{
+            box-sizing: border-box;
+            width: 200px;
+            height: 45px;
             background: #FFFFFF;            
             border: 1px solid #082346;
             border-radius: 4px;
@@ -236,6 +239,12 @@ white-space: nowrap;
             gap: 8px;
             margin-right: 25px;
             cursor: pointer;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            white-space: nowrap;
+            color: #082346;
          }
 
         .first-occupantBackground{
