@@ -29,7 +29,7 @@ window.addEventListener('load',()=>{
 		img.classList.add('editIcon');
 		img.src="https://cdn-icons-png.flaticon.com/512/61/61456.png"
 		img.alt='edit'
-        inputCircle.appendChild(img)
+        section.appendChild(img)
 
 		list.appendChild(section)
 
