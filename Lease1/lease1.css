@@ -169,7 +169,7 @@ color: #FE6161;
         }
         .secondrowAbsolute{
             position: absolute;
-            bottom: -25px;
+            bottom: -15px;
         }
         .specialrowAbsolute{
             position: absolute;
@@ -177,7 +177,7 @@ color: #FE6161;
         }
         .thirdrowAbsolute{
             position: absolute;
-            bottom: -118px;
+            bottom: -108px;
         }
       
         .selectLength{
@@ -196,7 +196,7 @@ color: #FE6161;
         }
 
         .button-Off{
-            margin-right: 16px;
+            margin-right: 10px;
             height: 41px;
             width: 87px;
             cursor: pointer;
@@ -209,7 +209,7 @@ color: #FE6161;
         }
         .button-On{
             cursor: pointer;
-            margin-right: 16px;
+            margin-right: 10px;
             height: 41px;
             background: #082346;
             border: 1px solid #082346;
@@ -248,7 +248,7 @@ color: #FE6161;
         }
         .leaseBackground2{
             background-color: #FAFAFA;
-            height: 230px;
+            height: 218px;
             width: 1080px;
         }
         .leaseBackground{
@@ -262,7 +262,7 @@ color: #FE6161;
             background-color: #D9D9D9;
             width: 1080px;
             height: 1px;
-            margin-top: 20px;
+            margin-top: 40px;
         }
 
         .row-underLinemid{
