@@ -30,7 +30,7 @@ const circles= document.querySelectorAll('.formCircle')
 
     next.addEventListener('click',()=>{
 	++currentActive
-     window.location.href='/OccupantLease/OccupantLease.html'
+     window.location.href='/Submit/submit.html'
 	 
 	if(currentActive>circles.length){
 		currentActive=circles.length

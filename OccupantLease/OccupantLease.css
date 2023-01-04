@@ -1,0 +1,594 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap'); 
+
+.heading{
+width:100%;
+max-width: 1180px;
+margin: auto;
+}
+    
+.heading-textt h1{
+margin-bottom: 20px;
+font-weight: 600;
+font-size: 32px;
+color: #082346;
+line-height: 48px;
+font-family: 'Poppins';
+font-style: normal;
+}
+    
+.subTitle{
+margin-top: -10px ;
+display: flex;
+align-items: center;
+position: relative;
+}
+        
+.subTitle h4{
+white-space: nowrap;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+color: #082346;
+}
+
+.alignCheckbox{
+position: absolute;
+bottom: -35px;
+display: flex;
+}
+
+.alignCheckbox h6{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+margin-left: 5px;
+color: #082346;
+}
+
+.occupantDate{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+height: 40px;
+width: 61px;
+border: 1px solid #082346;
+border-radius: 4px;
+padding: 7px;
+position: absolute;
+bottom: -20px;
+left: 0;
+}
+
+.occupantMonth{
+position: absolute;
+bottom: -20px;
+left: 80px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+height: 40px;
+width: 61px;
+border: 1px solid #082346;
+border-radius: 4px;
+padding: 6px;
+}
+
+.occupantYear{
+position: absolute;
+bottom: -20px;
+left:160px ;
+height: 40px;
+width: 86px;
+border: 1px solid #082346;
+border-radius: 4px;
+padding: 7px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+}
+
+
+.row-Gap{
+margin-top: 40px;
+display: flex;
+align-items: center;
+position: relative;
+}
+
+.more-Gap{
+margin-top: 70px;
+display: flex;
+align-items: center;
+position: relative;
+}
+
+.more-Gap h5{
+padding-right: 150px;
+margin-left: 40px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+color: #000000;
+}
+        
+.firstTitle{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+color: #141414;
+white-space: nowrap;
+}
+
+.inputWidth{  
+    box-sizing: border-box;
+    padding: 10px;
+    gap: 12px;
+    height: 41px;  
+    font-size: 15px;
+    width: 340px ;
+    position: absolute;
+    bottom: -20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    border: 1px solid #082346;
+    border-radius: 4px;
+    }    
+
+.inputWidthMore{  
+    box-sizing: border-box;
+    padding: 10px;
+    gap: 12px;
+    height: 44px;  
+    font-size: 15px;
+    width: 340px ;
+    position: absolute;
+    bottom: -23px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    border: 1px solid #082346;
+    border-radius: 4px;
+    }           
+        /* ------------------------------------ */
+        .specialDiv{
+            position: absolute;
+            left: 240px; 
+        }
+        .firstDiv{
+            position: absolute;
+            left: 290px;    
+        }
+
+        .secondDiv{
+            position: absolute;
+            left: 655px;    
+        }
+        .thirdDiv{
+            position: absolute;
+            left: 830px;   
+        }
+
+        .forthDiv{
+            position: absolute;
+            left: 995px;  
+        }
+        .secondrowAbsolute{
+            position: absolute;
+            bottom: -25px;
+        }
+        .specialrowAbsolute{
+            position: absolute;
+            bottom: 5px;
+        }
+        .thirdrowAbsolute{
+            position: absolute;
+            bottom: -118px;
+        }
+
+        .forthrowAbsolute{
+            position: absolute;
+            bottom: -210px;
+        }
+      
+        .fifthrowAbsolute{
+            position: absolute;
+            bottom: -300px;
+        }
+
+        .selectLength{
+            height: 36px;  
+            font-size: 15px;
+            width: 350px ;
+            position: absolute;
+            bottom: -15px;
+        } 
+
+         .specialButton{
+            background: #FFFFFF;            
+            border: 1px solid #082346;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 12px 23px;
+            gap: 8px;
+            margin-right: 25px;
+            cursor: pointer;
+         }
+
+        .first-occupantBackground{
+            margin-top: -40px;
+            background-color: #FAFAFA;
+            height: 500px;
+            margin-bottom: 32px;
+        }
+        .second-occupantBackground{
+            margin-top: -40px;
+            background-color: #FAFAFA;
+            height: 420px;
+            margin-bottom: 32px;
+        }
+
+        .select{ 
+            display: none;
+        }
+        
+        input[type="file"] {
+            display: none;
+        }
+        
+        .labelIcon{
+        display: flex;
+        justify-content: flex-end;
+        padding-left: 150px;
+        width: 16px;
+        height: 16px;
+        }
+        .labelIconWide{
+        display: flex;
+        justify-content: flex-end;
+        padding-left: 195px;
+        width: 16px;
+        height: 16px;
+        }
+        
+        
+        .inputLabel{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        cursor: pointer;
+        box-sizing: border-box;
+        position: absolute;
+        bottom: -23px;
+        height: 44px; 
+        width: 298px;
+        border: 1px solid #082346;
+        padding: 10px;
+        font-size: 13px;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: white;
+        border: 1px solid #082346;
+        border-radius: 4px;
+        } 
+
+        .inputLabelWide{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            cursor: pointer;
+            box-sizing: border-box;
+            position: absolute;
+            bottom: -23px;
+            height: 44px; 
+            width: 340px;
+            border: 1px solid #082346;
+            padding: 10px;
+            font-size: 13px;
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            background-color: white;
+            border: 1px solid #082346;
+            border-radius: 4px;
+        }
+        /* ----------------------------------- */
+        .fa-arrow-right{
+            margin-left: 20px;
+            }
+            
+            .fa-arrow-left{
+                margin-right: 10px;
+            }
+
+
+        .underLine{
+        margin-top: 50px;
+        height: 1px;
+        width: 1180px;
+        background-color: #D9D9D9;
+        }
+        
+        .button{
+        width: 1180px;
+        margin-top: 45px;
+        margin-bottom:50px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        }
+        
+        .buttonReset{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #082346;
+        border-radius: 12px;
+        background: #FFFFFF;
+        padding: 16px 24px;
+        width: 185px;
+        height: 62px;
+        color: #082346;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        cursor: pointer;
+        }
+        
+        .buttonMid{
+            cursor: pointer;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            background: #FFFFFF;
+            border-radius: 12px;
+            padding: 16px 0px 16px 16px;
+            width: 144px;
+            height: 62px;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 30px;
+            position: absolute;
+            right: 220px;
+            font-family: 'Poppins';
+            font-style: normal;
+            color: #082346;
+            border-width: 0;
+            }
+            
+            .buttonContinue{
+                display: flex;
+                justify-content: center; 
+                align-items: center; 
+                border: 1px solid #082346; 
+                border-radius: 12px;
+                background: #082346;
+                padding: 16px 24px 16px 32px;
+                width: 185px;
+                height: 62px;
+                color: #FFFFFF;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 30px;
+                cursor: pointer;
+            }
+
+
+            .selector{
+                position: absolute;
+                bottom: -20px;
+              }
+              
+              .select {
+                  border-radius: 4px;
+                  border: 1px solid #082346;
+                  box-sizing: border-box;
+                  position: relative;
+                  width: 340px;
+                  height: 41px;
+                  background: #F2F2F2;
+                  font-family: 'Inter';
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 14px;
+                  color: #424242;
+                  line-height: 20px;
+                  display: flex;
+                }
+              
+                .select .selectBtn {
+                  background: var(--bg1);
+                  padding: 10px;
+                  box-sizing: border-box;
+                  border-radius: 3px;
+                  width: 100%;
+                  height: 39px;
+                  display: flex;
+                  align-items: center;
+                  cursor: pointer;
+                  position: relative;
+                  -webkit-user-select: none;
+                     -moz-user-select: none;
+                      -ms-user-select: none;
+                          user-select: none;
+                  background: #fff;
+                }
+              
+                .select .selectBtn:after {
+                  content: "";
+                  position: absolute;
+                  top: 45%;
+                  right: 15px;
+                  width: 6px;
+                  height: 6px;
+                  -webkit-transform: translateY(-50%) rotate(45deg);
+                          transform: translateY(-50%) rotate(45deg);
+                  border-right: 2px solid #666;
+                  border-bottom: 2px solid #666;
+                  transition: 0.2s ease;
+                }
+              
+                .select .selectBtn.toggle {
+                  border-radius: 3px 3px 0 0;
+                }
+              
+                .select .selectBtn.toggle:after {
+                  -webkit-transform: translateY(-50%) rotate(-135deg);
+                          transform: translateY(-50%) rotate(-135deg);
+                }
+              
+                .select .selectDropdown {
+                  position: absolute;
+                  top: 100%;
+                  width: 100%;
+                  border-radius: 0 0 3px 3px;
+                  overflow: hidden;
+                  background: var(--bg1);
+                  border-top: 1px solid #eee;
+                  z-index: 1;
+                  background: #fff;
+                  -webkit-transform: scale(1, 0);
+                          transform: scale(1, 0);
+                  -webkit-transform-origin: top center;
+                          transform-origin: top center;
+                  visibility: hidden;
+                  transition: 0.2s ease;
+                  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+                }
+                .select .selectDropdown .option {
+                  padding: 10px;
+                  box-sizing: border-box;
+                  cursor: pointer;
+                  border-bottom: 1px solid #E0E0E0;
+                }
+                .select .selectDropdown .option:hover {
+                  background: #f8f8f8;
+                }
+                .select .selectDropdown.toggle {
+                  visibility: visible;
+                  -webkit-transform: scale(1, 1);
+                          transform: scale(1, 1);
+                }
+
+              input::placeholder{
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                }
+    
+    /* ----------------------------------------------------------------- */
+  .formHeader{
+    height: 60px;
+    width: 100%;
+    max-width: 1180px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #F1F5F7;
+}
+
+.formProgress{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.formRow{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    position: relative;
+}
+
+.formHeading{
+   font-family: 'Poppins';
+   font-style: normal;
+   margin-right: 30px;
+   font-weight: 500;
+   color: #6D6D6D;  
+   cursor: pointer;
+}
+.formHeadingLast{
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 500;
+   color: #6D6D6D;  
+   cursor: pointer;
+}
+
+.activeWord{
+    font-weight: 600;
+    color: #082346;
+}
+
+.activeCircle{
+    background: #082346;
+    color: white !important;
+    transition: 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #082346;
+    height: 20px;
+    width: 20px;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.greenCircle{
+    background: #42A54C;
+    border: 1px solid #42A54C;
+    color: white !important;
+    transition: 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.active{
+    height: 2.7px !important;  
+  }
+
+.formCircle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #082346;
+    height: 20px;
+    width: 20px;
+    font-weight: 700;
+    font-size: 13px;
+    color: #082346;
+}
+
+.formUnderline{
+    height: 1.4px;
+    width: 60px;
+    background-color: #6D6D6D;
+}
