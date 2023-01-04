@@ -33,7 +33,8 @@ let currentActive=0
 
 next.addEventListener('click',()=>{
 	++currentActive
-    window.location.href='/Requests/request.html?value=1'
+    // window.location.href='/Requests/request.html?value=1'
+	window.location.href='/OfferDetails/offerDetails.html'
 	//sessionStorage.setItem('value',currentActive)
 
 	if(currentActive>circles.length){
@@ -46,6 +47,7 @@ next.addEventListener('click',()=>{
 
 prev.addEventListener('click',()=>{
 	currentActive--
+	//window.location.href='/index.html'
 	if(currentActive < 0){
 		currentActive = 0
 	}
