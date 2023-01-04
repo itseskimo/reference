@@ -33,7 +33,7 @@ let currentActive=0
 
 next.addEventListener('click',()=>{
 	++currentActive
-    window.location.href='/Requests/request.html?value=1'
+    //window.location.href='/Requests/request.html?value=1'
 	//sessionStorage.setItem('value',currentActive)
 
 	if(currentActive>circles.length){
