@@ -24,10 +24,13 @@ on('click', '.option', item => {
 const prev= document.getElementById('prev')
 const next= document.getElementById('next')
 const circles= document.querySelectorAll('.formCircle')
+const formHeading= document.querySelectorAll('.formHeading, .formHeadingLast')
+const formUnderline=document.querySelectorAll('.formUnderline')
 
-// const value=parseInt(localStorage.getItem('value'))
-var currentActive=0;
-
+  const urlParams = new URLSearchParams(window.location.search);
+  const greetingValue = urlParams.get('value');
+  let currentActive=parseInt(greetingValue)
+  console.log(currentActive)
 
 next.addEventListener('click',()=>{
 	currentActive++
@@ -49,6 +52,12 @@ prev.addEventListener('click',()=>{
 	update()
 })
 
+window.addEventListener('DOMContentLoaded',()=>{
+	update()
+	titleUpdate()
+	underlineUpdate()
+})
+
 function update(){
 	circles.forEach((circle,idx)=>{
 		
@@ -60,6 +69,26 @@ function update(){
 		circle.classList.remove('greenCircle')
     }else{
 		circle.classList.remove('activeCircle')
+	}
+	})
+}
+
+function titleUpdate(){
+	formHeading.forEach((title,idx)=>{
+     if(idx===currentActive){
+		title.classList.add('activeWord')
+    }else{
+		title.classList.remove('activeWord')
+	}
+	})
+}
+
+function underlineUpdate(){
+	formUnderline.forEach((line,idx)=>{
+     if(idx===currentActive){
+		line.classList.add('active')
+    }else{
+		line.classList.remove('active')
 	}
 	})
 }

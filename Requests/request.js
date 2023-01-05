@@ -61,13 +61,14 @@ const circles= document.querySelectorAll('.formCircle')
 const formHeading= document.querySelectorAll('.formHeading, .formHeadingLast')
 const formUnderline=document.querySelectorAll('.formUnderline')
 
+
   const urlParams = new URLSearchParams(window.location.search);
   const greetingValue = urlParams.get('value');
   let currentActive=parseInt(greetingValue)
-
+  console.log(currentActive)
     next.addEventListener('click',()=>{
 	++currentActive
-    window.location.href='/Lease/lease.html'
+    window.location.href='/Lease/lease.html?value=2'
 	 
 	if(currentActive>circles.length){
 		currentActive=circles.length
@@ -89,6 +90,11 @@ const formUnderline=document.querySelectorAll('.formUnderline')
 	underlineUpdate()
 })
 
+window.addEventListener('DOMContentLoaded',()=>{
+	update()
+	titleUpdate()
+	underlineUpdate()
+})
 
     function update(){
 	circles.forEach((circle,idx)=>{
@@ -102,8 +108,6 @@ const formUnderline=document.querySelectorAll('.formUnderline')
     }else{
 		circle.classList.remove('activeCircle')
 	}
-// const actives=document.querySelectorAll('.greenCircle')
-// console.log(currentActive,actives.length,circles.length)
 	})
 }
 

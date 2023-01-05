@@ -54,6 +54,13 @@ prev.addEventListener('click',()=>{
 	underlineUpdate()
 })
 
+window.addEventListener('DOMContentLoaded',()=>{
+	update()
+	titleUpdate()
+	underlineUpdate()
+})
+
+
 function update(){
 	circles.forEach((circle,idx)=>{
 
@@ -69,7 +76,6 @@ function update(){
 	})
 }
 
-
 function titleUpdate(){
 	formHeading.forEach((title,idx)=>{
      if(idx===currentActive){
@@ -79,7 +85,6 @@ function titleUpdate(){
 	}
 	})
 }
-
 
 function underlineUpdate(){
 	formUnderline.forEach((line,idx)=>{
