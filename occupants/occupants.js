@@ -90,15 +90,19 @@ function update(){
 	
 		let checkbox=document.createElement('input');
 		checkbox.type='checkbox'
+		checkbox.classList.add('checkDynamic')
 		checkbox.setAttribute('checked', 'checked');
 		checkbox.setAttribute('id',`checkbox${occupantCount}`)
 
 		checkbox.onclick=function checkboxDynamic(){
-			const checkbox= document.getElementById(`checkbox${occupantCount}`)
-			var FourthrowAbsolute = document.getElementById(`fourthrowAbsolute${occupantCount}`);
-			var occupantBackground = document.getElementById(`firstOccupantBackground${occupantCount}`);
-		//console.log(checkbox,FourthrowAbsolute,occupantBackground,'kkkkkkkk')
-				checkbox.addEventListener('click',()=>{
+			const checkbox= document.querySelectorAll('.checkDynamic');
+
+			checkbox.forEach((chk)=>{
+            chk.addEventListener('click',(e)=>{
+
+				const occupantBackground =  document.getElementById(`firstOccupantBackground${e.currentTarget.id[8]}`);
+				var FourthrowAbsolute = document.getElementById(`fourthrowAbsolute${e.currentTarget.id[8]}`);
+
 					if (FourthrowAbsolute.style.display==='none') {
 						FourthrowAbsolute.style.display = "block";
 						occupantBackground.style.height = "500px";
@@ -107,6 +111,8 @@ function update(){
 						occupantBackground.style.height = "330px";
 					  }	  
 				   })
+			})
+				
 		}
 
 		alignCheckbox.appendChild(checkbox)
@@ -468,8 +474,6 @@ function update(){
 			labelIcon.classList.add('labelIcon');
 			labelIcon.src="https://icons-for-free.com/download-icon-box+document+outline+share+top+upload+icon-1320195323221671611_256.png"
 			inputLabel.appendChild(labelIcon)
-
-			console.log(checkbox,forthrowAbsolute,firstoccupantBackground)
 
 	}else{
 		console.log('4 Occupants added')
