@@ -39,7 +39,7 @@ const formUnderline=document.querySelectorAll('.formUnderline')
 
 next.addEventListener('click',()=>{
 	currentActive++
-	 window.location.href=`/occupants/occupants.html?occupantReplicate=${counter}?value=${currentActive}`
+	 window.location.href=`/occupants/occupants.html?occupantReplicate=${counter}&value=${currentActive}`
 	 //window.location.href=`/occupants/occupants.html?value=${currentActive}`
 	if(currentActive>circles.length){
 		currentActive=circles.length
