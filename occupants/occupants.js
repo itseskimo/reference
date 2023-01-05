@@ -91,6 +91,23 @@ function update(){
 		let checkbox=document.createElement('input');
 		checkbox.type='checkbox'
 		checkbox.setAttribute('checked', 'checked');
+		checkbox.setAttribute('id','checkboxx')
+		checkbox.onclick=function checkboxDynamic(){
+			const checkbox= document.getElementById('checkboxx')
+			var FourthrowAbsolute = document.getElementById('fourthrowAbsolutee');
+			var occupantBackground = document.getElementById('firstOccupantBackgroundd');
+		console.log(checkbox,FourthrowAbsolute,occupantBackground,'kkkkkkkk')
+				checkbox.addEventListener('click',()=>{
+					if (FourthrowAbsolute.style.display==='none') {
+						FourthrowAbsolute.style.display = "block";
+						occupantBackground.style.height = "500px";
+					  } else{
+						FourthrowAbsolute.style.display = "none";
+						occupantBackground.style.height = "330px";
+					  }	  
+				   })
+		}
+
 		alignCheckbox.appendChild(checkbox)
 	
 		let h6=document.createElement('h6');
@@ -100,8 +117,9 @@ function update(){
 		// ------------------------------------------------------
 		const firstoccupantBackground = document.createElement('div');
 		firstoccupantBackground.classList.add('first-occupantBackground')
+		firstoccupantBackground.setAttribute('id',"firstOccupantBackgroundd")
 		occupantList.appendChild(firstoccupantBackground)
-	
+
 		let moreGap=document.createElement('div');
 		moreGap.classList.add('more-Gap')
 		firstoccupantBackground.appendChild(moreGap)
@@ -405,6 +423,7 @@ function update(){
 			// -------------------------------------------------
 			const forthrowAbsolute=document.createElement('div');
 			forthrowAbsolute.classList.add('forthrowAbsolute');
+			forthrowAbsolute.setAttribute('id','fourthrowAbsolutee')
 			moreGap.appendChild(forthrowAbsolute)
 	
 	
@@ -429,7 +448,7 @@ function update(){
 	
 		   firstTitle = document.createElement('h6');
 		   firstTitle.classList.add('firstTitle');
-		   firstTitle.innerText='Aadhaar Card*'
+		   firstTitle.innerText='PAN Card*'
 		   secondDiv.appendChild(firstTitle)
 	
 			inputLabel=document.createElement('label');
@@ -816,7 +835,7 @@ function update(){
 
 	   firstTitle = document.createElement('h6');
 	   firstTitle.classList.add('firstTitle');
-	   firstTitle.innerText='Aadhaar Card*'
+	   firstTitle.innerText='PAN Card*'
 	   secondDiv.appendChild(firstTitle)
 
 	    inputLabel=document.createElement('label');
@@ -838,3 +857,20 @@ function update(){
 	}
 
   })
+
+//   ------------------------------------------------------------
+
+    const checkbox= document.getElementById('checkbox')
+	var FourthrowAbsolute = document.getElementById('fourthrowAbsolute');
+	var occupantBackground = document.getElementById('firstOccupantBackground');
+
+		checkbox.addEventListener('click',()=>{
+			if (FourthrowAbsolute.style.display==='none') {
+				FourthrowAbsolute.style.display = "block";
+	            occupantBackground.style.height = "500px";
+			  } else{
+				FourthrowAbsolute.style.display = "none";
+				occupantBackground.style.height = "330px";
+			  }	  
+		   })
+		
