@@ -68,7 +68,7 @@ const formUnderline=document.querySelectorAll('.formUnderline')
   console.log(currentActive)
     next.addEventListener('click',()=>{
 	++currentActive
-    window.location.href='/Lease/lease.html?value=2'
+    window.location.href=`/Lease/lease.html?value=${currentActive}`
 	 
 	if(currentActive>circles.length){
 		currentActive=circles.length

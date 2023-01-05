@@ -34,7 +34,7 @@ const formUnderline=document.querySelectorAll('.formUnderline')
 
 next.addEventListener('click',()=>{
 	currentActive++
-	 window.location.href='/Lease1/Lease1.html'
+	 window.location.href=`/Lease1/Lease1.html?value=${currentActive}`
 	localStorage.setItem('value',currentActive)
 	if(currentActive>circles.length){
 		currentActive=circles.length

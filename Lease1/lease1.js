@@ -29,17 +29,18 @@ on('click', '.option', item => {
 const prev= document.getElementById('prev')
 const next= document.getElementById('next')
 const circles= document.querySelectorAll('.formCircle')
+const formHeading= document.querySelectorAll('.formHeading, .formHeadingLast')
+const formUnderline=document.querySelectorAll('.formUnderline')
 
+  const urlParams = new URLSearchParams(window.location.search);
+  const greetingValue = urlParams.get('value');
+  let currentActive=parseInt(greetingValue)
+  console.log(currentActive)
 
- let value=parseInt(localStorage.getItem('value'))
- currentActive=value
-
-
-    next.addEventListener('click',()=>{
-	window.location.href=`/occupants/occupants.html?value=${counter}`
-
-	 currentActive++
-	 localStorage.setItem('value',currentActive)
+next.addEventListener('click',()=>{
+	currentActive++
+	 window.location.href=`/occupants/occupants.html?occupantReplicate=${counter}?value=${currentActive}`
+	 //window.location.href=`/occupants/occupants.html?value=${currentActive}`
 	if(currentActive>circles.length){
 		currentActive=circles.length
 	}
@@ -47,7 +48,7 @@ const circles= document.querySelectorAll('.formCircle')
 })
 
 prev.addEventListener('click',()=>{
-	window.location.href='/Lease/lease.html'
+	window.location.href='/Requests/request.html'
 
 	currentActive--
 	if(currentActive < 0){
@@ -56,9 +57,15 @@ prev.addEventListener('click',()=>{
 	update()
 })
 
+window.addEventListener('DOMContentLoaded',()=>{
+	update()
+	titleUpdate()
+	underlineUpdate()
+})
+
 function update(){
 	circles.forEach((circle,idx)=>{
-	
+		
     if(idx<currentActive){
     	circle.classList.add('greenCircle')
 		circle.classList.remove('activeCircle')
@@ -70,6 +77,27 @@ function update(){
 	}
 	})
 }
+
+function titleUpdate(){
+	formHeading.forEach((title,idx)=>{
+     if(idx===currentActive){
+		title.classList.add('activeWord')
+    }else{
+		title.classList.remove('activeWord')
+	}
+	})
+}
+
+function underlineUpdate(){
+	formUnderline.forEach((line,idx)=>{
+     if(idx===currentActive){
+		line.classList.add('active')
+    }else{
+		line.classList.remove('active')
+	}
+	})
+}
+
  // -----------------------------------------------------------------------
 
 
