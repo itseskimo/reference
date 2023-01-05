@@ -905,7 +905,7 @@ function update(){
 	            occupantBackground.style.height = "500px";
 			  } else{
 				FourthrowAbsolute.style.display = "none";
-				occupantBackground.style.height = "330px";
+				occupantBackground.style.height = "325px";
 			  }	  
 		   })
 		
