@@ -203,6 +203,7 @@ border-width: 0;
     margin-left: auto;
     margin-right: auto;
     background-color: #F1F5F7;
+    border-radius: 12px;
 }
 
 .formProgress{
