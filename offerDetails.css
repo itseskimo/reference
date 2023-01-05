@@ -19,6 +19,7 @@ font-style: normal;
 .property-details{
 display: flex;
 background-color: #FAFAFA;
+border-radius: 4px;
 }
 
 .property-image{
