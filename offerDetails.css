@@ -92,6 +92,7 @@ color: #000000;
 .background-colour{
 background-color: #FAFAFA;
 height: 340px;
+border-radius: 4px;
 }
 /* ------------------------------- */
 .row-Gap{
@@ -489,11 +490,13 @@ color: #141414;
 .rent-BackgroundColorr{
    background-color: #FAFAFA;
    height:390px;
+   border-radius: 4px;
 }
 
 .rent-BackgroundColor{
    background-color: #FAFAFA;
    height: 240px;
+   border-radius: 4px;
 }
 
 .fa-arrow-right{

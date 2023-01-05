@@ -189,16 +189,22 @@ color: #000000;
             background-color: #FAFAFA;
             height: 194px;
             width: 1134px;
+            border-radius: 4px;
+
         }
         .leaseBackground2{
             background-color: #FAFAFA;
             height: 218px;
             width: 1134px;
+            border-radius: 4px;
+
         }
         .leaseBackground{
             background-color: #FAFAFA;
             height: 310px;
             width: 1134px;
+            border-radius: 4px;
+
         }
 
         

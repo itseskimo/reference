@@ -252,12 +252,15 @@ white-space: nowrap;
             background-color: #FAFAFA;
             height: 500px;
             margin-bottom: 32px;
+            border-radius: 4px;
+
         }
         .second-occupantBackground{
             margin-top: -40px;
             background-color: #FAFAFA;
             height: 420px;
             margin-bottom: 32px;
+            border-radius: 4px;
         }
 
         .select{ 
