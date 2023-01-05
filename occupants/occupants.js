@@ -25,8 +25,15 @@ on('click', '.option', item => {
 const prev= document.getElementById('prev')
 const next= document.getElementById('next')
 const circles= document.querySelectorAll('.formCircle')
+const formHeading= document.querySelectorAll('.formHeading, .formHeadingLast')
+const formUnderline=document.querySelectorAll('.formUnderline')
 
- let currentActive=0
+  const urlParam = new URLSearchParams(window.location.search);
+  const greetingVal = urlParam.get('value');
+  let currentActive=parseInt(greetingVal)
+  console.log(currentActive)
+
+ 
 
     next.addEventListener('click',()=>{
 	++currentActive
@@ -36,6 +43,8 @@ const circles= document.querySelectorAll('.formCircle')
 		currentActive=circles.length
 	}
     update()
+	titleUpdate()
+	underlineUpdate()
 })
 
     prev.addEventListener('click',()=>{
@@ -46,11 +55,19 @@ const circles= document.querySelectorAll('.formCircle')
 		currentActive = 0
 	}
 	update()
+	titleUpdate()
+	underlineUpdate()
+})
+
+window.addEventListener('DOMContentLoaded',()=>{
+	update()
+	titleUpdate()
+	underlineUpdate()
 })
 
 function update(){
 	circles.forEach((circle,idx)=>{
-
+		
     if(idx<currentActive){
     	circle.classList.add('greenCircle')
 		circle.classList.remove('activeCircle')
@@ -63,9 +80,30 @@ function update(){
 	})
 }
 
+function titleUpdate(){
+	formHeading.forEach((title,idx)=>{
+     if(idx===currentActive){
+		title.classList.add('activeWord')
+    }else{
+		title.classList.remove('activeWord')
+	}
+	})
+}
+
+function underlineUpdate(){
+	formUnderline.forEach((line,idx)=>{
+     if(idx===currentActive){
+		line.classList.add('active')
+    }else{
+		line.classList.remove('active')
+	}
+	})
+}
+
+
 // --------------------------------------------------------------------
   const urlParams = new URLSearchParams(window.location.search);
-  const greetingValue = urlParams.get('value');
+  const greetingValue = urlParams.get('occupantReplicate');
   let occupantNTimes=parseInt(greetingValue)
     
     const occupantPlus = document.getElementById("new-occupant");
