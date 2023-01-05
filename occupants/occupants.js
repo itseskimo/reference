@@ -91,12 +91,13 @@ function update(){
 		let checkbox=document.createElement('input');
 		checkbox.type='checkbox'
 		checkbox.setAttribute('checked', 'checked');
-		checkbox.setAttribute('id','checkboxx')
+		checkbox.setAttribute('id',`checkbox${occupantCount}`)
+
 		checkbox.onclick=function checkboxDynamic(){
-			const checkbox= document.getElementById('checkboxx')
-			var FourthrowAbsolute = document.getElementById('fourthrowAbsolutee');
-			var occupantBackground = document.getElementById('firstOccupantBackgroundd');
-		console.log(checkbox,FourthrowAbsolute,occupantBackground,'kkkkkkkk')
+			const checkbox= document.getElementById(`checkbox${occupantCount}`)
+			var FourthrowAbsolute = document.getElementById(`fourthrowAbsolute${occupantCount}`);
+			var occupantBackground = document.getElementById(`firstOccupantBackground${occupantCount}`);
+		//console.log(checkbox,FourthrowAbsolute,occupantBackground,'kkkkkkkk')
 				checkbox.addEventListener('click',()=>{
 					if (FourthrowAbsolute.style.display==='none') {
 						FourthrowAbsolute.style.display = "block";
@@ -117,7 +118,7 @@ function update(){
 		// ------------------------------------------------------
 		const firstoccupantBackground = document.createElement('div');
 		firstoccupantBackground.classList.add('first-occupantBackground')
-		firstoccupantBackground.setAttribute('id',"firstOccupantBackgroundd")
+		firstoccupantBackground.setAttribute('id',`firstOccupantBackground${occupantCount}`)
 		occupantList.appendChild(firstoccupantBackground)
 
 		let moreGap=document.createElement('div');
@@ -421,9 +422,9 @@ function update(){
 	
 	
 			// -------------------------------------------------
-			const forthrowAbsolute=document.createElement('div');
+			let forthrowAbsolute=document.createElement('div');
 			forthrowAbsolute.classList.add('forthrowAbsolute');
-			forthrowAbsolute.setAttribute('id','fourthrowAbsolutee')
+			forthrowAbsolute.setAttribute('id',`fourthrowAbsolute${occupantCount}`)
 			moreGap.appendChild(forthrowAbsolute)
 	
 	
@@ -467,6 +468,9 @@ function update(){
 			labelIcon.classList.add('labelIcon');
 			labelIcon.src="https://icons-for-free.com/download-icon-box+document+outline+share+top+upload+icon-1320195323221671611_256.png"
 			inputLabel.appendChild(labelIcon)
+
+			console.log(checkbox,forthrowAbsolute,firstoccupantBackground)
+
 	}else{
 		console.log('4 Occupants added')
 	}
