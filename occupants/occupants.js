@@ -134,9 +134,9 @@ function underlineUpdate(){
 		checkbox.setAttribute('id',`checkbox${occupantCount}`)
 
 		checkbox.onclick=function checkboxDynamic(){
-			const checkbox= document.querySelectorAll('.checkDynamic');
+			const checkboxx= document.querySelectorAll('.checkDynamic');
 
-			checkbox.forEach((chk)=>{
+			checkboxx.forEach((chk)=>{
             chk.addEventListener('click',(e)=>{
 
 				const occupantBackground =  document.getElementById(`firstOccupantBackground${e.currentTarget.id[8]}`);
