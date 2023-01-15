@@ -46,7 +46,7 @@ next.addEventListener('click',()=>{
 	if(currentActive>circles.length){
 		currentActive=circles.length
 	}
-    update()
+    
 })
 
 prev.addEventListener('click',()=>{
@@ -55,7 +55,7 @@ prev.addEventListener('click',()=>{
 	if(currentActive < 0){
 		currentActive = 0
 	}
-	update()
+	
 })
 
 window.addEventListener('DOMContentLoaded',()=>{
@@ -99,8 +99,10 @@ function underlineUpdate(){
 	})
 }
 
- // -----------------------------------------------------------------------
+// -----------------------------------------------------------------------
 
+//Hide max no. of components when the page loads.
+//Set the margin-top for the underline and buttons as 190 when the page loads.
 
  window.addEventListener('DOMContentLoaded',()=>{
 	var x = document.getElementById("LeaseHide");
@@ -114,8 +116,11 @@ function underlineUpdate(){
   }
 )
 
-  // -----------------------------------------------------------------------
+// -----------------------------------------------------------------------
   
+//Dynamically showing all the components on selecting Multiple button
+//Dynamic margin adjusting functionality on clicking button
+
   var toggleHide = document.getElementById("LeaseHide");
   const dynamicBtns= document.querySelectorAll('#tenantCount')
   
@@ -133,11 +138,11 @@ function underlineUpdate(){
 	})
 
 
-  // -----------------------------------------------------------------------
+// -----------------------------------------------------------------------
 
+//Dynamic Colour Changing functionality on clicking button
 
 const leaseButtons= document.querySelectorAll('#tenantCount')
-
 
 leaseButtons.forEach(button=>{
 button.addEventListener('click',()=>{
@@ -149,13 +154,18 @@ button.classList.add('button-On');
 })
 })
 
-  // -----------------------------------------------------------------------
+// -----------------------------------------------------------------------
+
+// Deleting Tenant1 on clicking Clear Button
+
   function removeFunction() {
 	const element = document.getElementById("removeComponent");
 	element.remove();
   }
-  // -----------------------------------------------------------------------
 
+// -----------------------------------------------------------------------
+
+//Clear Hidden when the page loads.
   
 	var deleteLogo = document.querySelector(".deleteIcon");
 	let num=0
@@ -164,7 +174,9 @@ button.classList.add('button-On');
 	} 
  
 
-  // -----------------------------------------------------------------------
+// -----------------------------------------------------------------------
+
+// Max 4 Tenants can be generated on Clicking Add another Tenant
 
     let counter=1;
     let idSetter=0;

@@ -43,7 +43,7 @@ next.addEventListener('click',()=>{
 	if(currentActive>circles.length){
 		currentActive=circles.length
 	}
-    update()
+    
 })
 
 prev.addEventListener('click',()=>{
@@ -53,7 +53,7 @@ prev.addEventListener('click',()=>{
 	if(currentActive < 0){
 		currentActive = 0
 	}
-	update()
+	
 })
 
 window.addEventListener('DOMContentLoaded',()=>{

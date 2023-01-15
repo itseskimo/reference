@@ -37,13 +37,10 @@ let currentActive=0
 next.addEventListener('click',()=>{
 	++currentActive
     window.location.href=`/Requests/request.html?value=${currentActive}`
-
+	
 	if(currentActive>circles.length){
 		currentActive=circles.length
 	}
-    update()
-	titleUpdate()
-	underlineUpdate()
 })
 
 prev.addEventListener('click',()=>{
@@ -51,9 +48,6 @@ prev.addEventListener('click',()=>{
 	if(currentActive < 0){
 		currentActive = 0
 	}
-	update()
-	titleUpdate()
-	underlineUpdate()
 })
 
 window.addEventListener('DOMContentLoaded',()=>{

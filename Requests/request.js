@@ -77,9 +77,7 @@ const formUnderline=document.querySelectorAll('.formUnderline')
 	if(currentActive>circles.length){
 		currentActive=circles.length
 	}
-    update()
-	titleUpdate()
-	underlineUpdate()
+	
     })
 
     prev.addEventListener('click',()=>{
