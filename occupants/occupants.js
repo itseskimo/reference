@@ -132,7 +132,7 @@ function underlineUpdate(){
 		checkbox.setAttribute('checked', 'checked');
 		checkbox.setAttribute('id',`checkbox${occupantCount}`)
 
-		//Dynamic height Toggling & hiding PAN section
+		//Dynamic height Toggling & hiding PAN section on clicking checkox
 
 		checkbox.onclick=function checkboxDynamic(){
 			const checkboxx= document.querySelectorAll('.checkDynamic');
