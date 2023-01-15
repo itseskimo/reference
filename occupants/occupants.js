@@ -1,3 +1,5 @@
+//Dynamic Dropdown functionality
+
 let index = 1;
 
 const on = (listener, query, fn) => {
@@ -22,6 +24,8 @@ on('click', '.option', item => {
 })
 // --------------------------------------------------------------------
 
+//Dynamic Navbar functionality
+
 const prev= document.getElementById('prev')
 const next= document.getElementById('next')
 const circles= document.querySelectorAll('.formCircle')
@@ -31,34 +35,26 @@ const formUnderline=document.querySelectorAll('.formUnderline')
   const urlParam = new URLSearchParams(window.location.search);
   const greetingVal = urlParam.get('value');
   let currentActive=parseInt(greetingVal)
-  console.log(currentActive)
-
  
-
     next.addEventListener('click',()=>{
 	++currentActive
-     window.location.href='/OccupantAdded/OccupantAdded.html'
+    window.location.href='/OccupantAdded/OccupantAdded.html'
 	 
 	if(currentActive>circles.length){
 		currentActive=circles.length
 	}
-    update()
-	titleUpdate()
-	underlineUpdate()
-})
+ 
+    })
 
     prev.addEventListener('click',()=>{
 	--currentActive
 	window.location.href=`/Lease1/Lease1.html?value=${currentActive}`
 
-	
 	if(currentActive < 0){
 		currentActive = 0
 	}
-	update()
-	titleUpdate()
-	underlineUpdate()
-})
+	
+    })
 
 window.addEventListener('DOMContentLoaded',()=>{
 	update()
@@ -103,6 +99,9 @@ function underlineUpdate(){
 
 
 // --------------------------------------------------------------------
+
+//Max 4 Occupants can be generated on Clicking Add another occupants
+
   const urlParams = new URLSearchParams(window.location.search);
   const greetingValue = urlParams.get('occupantReplicate');
   let occupantNTimes=parseInt(greetingValue)
@@ -132,6 +131,8 @@ function underlineUpdate(){
 		checkbox.classList.add('checkDynamic')
 		checkbox.setAttribute('checked', 'checked');
 		checkbox.setAttribute('id',`checkbox${occupantCount}`)
+
+		//Dynamic height Toggling & hiding PAN section
 
 		checkbox.onclick=function checkboxDynamic(){
 			const checkboxx= document.querySelectorAll('.checkDynamic');
@@ -519,12 +520,9 @@ function underlineUpdate(){
 	}
   })
 
+// ----------------------------------------------------------------------------------
 
-
-
-
-
-
+// Occupants will be generated on based on number of Tenants added in the prev page
 
   window.addEventListener('DOMContentLoaded',()=>{
   
@@ -546,6 +544,8 @@ function underlineUpdate(){
 		checkbox.classList.add('checkDynamic')
 		checkbox.setAttribute('checked', 'checked');
 		checkbox.setAttribute('id',`checkbox${occupantCount}`)
+
+        //Dynamic height Toggling & hiding PAN section
 
 		checkbox.onclick=function checkboxDynamic(){
 			const checkbox= document.querySelectorAll('.checkDynamic');
