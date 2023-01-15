@@ -1,3 +1,4 @@
+//Dynamic Dropdown functionality
 let index = 1;
 
 const on = (listener, query, fn) => {
@@ -21,6 +22,9 @@ on('click', '.option', item => {
 	parent.innerText = item.target.innerText;
 })
 // -----------------------------------------------------------------------
+
+//Dynamic Navbar functionality
+
 const prev= document.getElementById('prev')
 const next= document.getElementById('next')
 const circles= document.querySelectorAll('.formCircle')
@@ -34,8 +38,8 @@ const formUnderline=document.querySelectorAll('.formUnderline')
 
 next.addEventListener('click',()=>{
 	currentActive++
-	 window.location.href=`/Lease1/Lease1.html?value=${currentActive}`
-	localStorage.setItem('value',currentActive)
+
+	window.location.href=`/Lease1/Lease1.html?value=${currentActive}`
 	if(currentActive>circles.length){
 		currentActive=circles.length
 	}
@@ -46,7 +50,6 @@ prev.addEventListener('click',()=>{
 	--currentActive
 	window.location.href=`/Requests/request.html?value=${currentActive}`
 
-	
 	if(currentActive < 0){
 		currentActive = 0
 	}
@@ -95,9 +98,9 @@ function underlineUpdate(){
 }
 
 // -----------------------------------------------------------------------
+//Dynamic Colour Changing functionality on clicking button
 
 const buttons= document.querySelectorAll('#btnColor')
- 
 
 buttons.forEach(button=>{
 button.addEventListener('click',()=>{
@@ -111,11 +114,15 @@ button.classList.add('buttonActive');
 
 
 // -----------------------------------------------------------------------
-	const GSTN= document.querySelectorAll('#btnColor')
+
+//Dynamic GSTN Number width toggling functionality on clicking button
+//Dynamic Enter GST Number width Hide functionality on clicking button
+
+	const GSTN = document.querySelectorAll('#btnColor')
 	var GSTNWrapper = document.getElementById("myDIV");
 	var element = document.getElementById("backgroundHeight");
 
-	GSTN.forEach((item)=>{
+    GSTN.forEach((item)=>{
 		item.addEventListener('click',(e)=>{
 			if (e.currentTarget.innerText==='Yes') {
 				GSTNWrapper.style.display = "block";
@@ -123,28 +130,32 @@ button.classList.add('buttonActive');
 			  } else{
 				GSTNWrapper.style.display = "none";
 				element.style.height = "100px";
-			  }
-			  styles=e.currentTarget.innerText
-			  console.log(styles)	  
+			  }	  
 		   })
 		})
   
 
 
   // -----------------------------------------------------------------------
-
+//Hide max no. of components when the page loads.
+//Set the margin-top for the underline and buttons as 280 when the page loads.
 
   window.addEventListener('DOMContentLoaded',()=>{
 	var x = document.getElementById("DIV");
+	let initialMargin=document.getElementById("initialMargin");
+
 	if (x.style.display === "none") {
 	  x.style.display = "block";
 	} else {
 	  x.style.display = "none";
+	  initialMargin.style.marginTop='280px'
 	}
   }
 )
 
   // -----------------------------------------------------------------------
+//Dynamic margin adjusting functionality on clicking button
+//Dynamically showing all the components on selecting a value in button
 
 
   var x = document.getElementById("DIV");
@@ -154,6 +165,7 @@ button.classList.add('buttonActive');
 	id.addEventListener('click',(e)=>{
 		if (e.currentTarget.innerText!==undefined) {
 			x.style.display = "block";
+			initialMargin.style.marginTop='40px'
 		  } else {
 			x.style.display = "none";
 		  }  

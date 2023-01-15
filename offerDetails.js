@@ -1,3 +1,5 @@
+//Dynamic Dropdown functionality
+
 let index = 1;
 
 const on = (listener, query, fn) => {
@@ -23,6 +25,7 @@ on('click', '.option', item => {
 
 
 // --------------------------------------------------------------------
+//Dynamic Navbar functionality
 
 const prev= document.getElementById('prev')
 const next= document.getElementById('next')
@@ -34,7 +37,6 @@ let currentActive=0
 next.addEventListener('click',()=>{
 	++currentActive
     window.location.href=`/Requests/request.html?value=${currentActive}`
-	//sessionStorage.setItem('value',currentActive)
 
 	if(currentActive>circles.length){
 		currentActive=circles.length

@@ -1,5 +1,5 @@
-
-	let index = 1;
+//Dynamic Dropdown functionality
+let index = 1;
 
 const on = (listener, query, fn) => {
 	document.querySelectorAll(query).forEach(item => {
@@ -26,6 +26,8 @@ on('click', '.option', item => {
 
 //---------------------------------------------------------------------
 
+//Dynamic Navbar functionality
+
 const prev= document.getElementById('prev')
 const next= document.getElementById('next')
 const circles= document.querySelectorAll('.formCircle')
@@ -35,12 +37,12 @@ const formUnderline=document.querySelectorAll('.formUnderline')
   const urlParams = new URLSearchParams(window.location.search);
   const greetingValue = urlParams.get('value');
   let currentActive=parseInt(greetingValue)
-  console.log(currentActive)
 
 next.addEventListener('click',()=>{
 	currentActive++
 	 window.location.href=`/occupants/occupants.html?occupantReplicate=${counter}&value=${currentActive}`
-	 //window.location.href=`/occupants/occupants.html?value=${currentActive}`
+	 //currentActive value is for Navbar
+	 //counter value is for the number of components we need to replicate in the next page.
 	if(currentActive>circles.length){
 		currentActive=circles.length
 	}
@@ -102,10 +104,12 @@ function underlineUpdate(){
 
  window.addEventListener('DOMContentLoaded',()=>{
 	var x = document.getElementById("LeaseHide");
+	var initialGap = document.getElementById("initialGap");
 	if (x.style.display === "none") {
 	  x.style.display = "block";
 	} else {
 	  x.style.display = "none";
+	  initialGap.style.marginTop='190px'
 	}
   }
 )
@@ -120,8 +124,10 @@ function underlineUpdate(){
 		console.log( e.currentTarget.innerText)
 		if (e.currentTarget.innerText==='Multiple') {
 			toggleHide.style.display = "block";
+			initialGap.style.marginTop='40px'
 		  } else {
 			toggleHide.style.display = "none";
+			initialGap.style.marginTop='190px'
 		  }  
 	   })
 	})
