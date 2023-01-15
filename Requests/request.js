@@ -1,3 +1,5 @@
+//Dynamic Adding Component functionality after clicking on 'Add Request'
+
 let count=1
 window.addEventListener('load',()=>{
 	const form = document.querySelector("#new-task-form");
@@ -55,6 +57,8 @@ window.addEventListener('load',()=>{
 
 //------------------------------------------------------------------------------------------------------
 
+//Dynamic Navbar functionality
+
 const prev= document.getElementById('prev')
 const next= document.getElementById('next')
 const circles= document.querySelectorAll('.formCircle')
@@ -65,7 +69,7 @@ const formUnderline=document.querySelectorAll('.formUnderline')
   const urlParams = new URLSearchParams(window.location.search);
   const greetingValue = urlParams.get('value');
   let currentActive=parseInt(greetingValue)
-  console.log(currentActive)
+
     next.addEventListener('click',()=>{
 	++currentActive
     window.location.href=`/Lease/lease.html?value=${currentActive}`
@@ -76,26 +80,23 @@ const formUnderline=document.querySelectorAll('.formUnderline')
     update()
 	titleUpdate()
 	underlineUpdate()
-})
+    })
 
     prev.addEventListener('click',()=>{
     --currentActive
 	window.location.href=`/index.html?value=${currentActive}`
 
-	
 	if(currentActive < 0){
 		currentActive = 0
 	}
-	update()
-	titleUpdate()
-	underlineUpdate()
-})
+	
+    })
 
-window.addEventListener('DOMContentLoaded',()=>{
+    window.addEventListener('DOMContentLoaded',()=>{
 	update()
 	titleUpdate()
 	underlineUpdate()
-})
+    })
 
     function update(){
 	circles.forEach((circle,idx)=>{
@@ -110,20 +111,20 @@ window.addEventListener('DOMContentLoaded',()=>{
 		circle.classList.remove('activeCircle')
 	}
 	})
-}
+    }
 
-
-function titleUpdate(){
+    function titleUpdate(){
 	formHeading.forEach((title,idx)=>{
+
      if(idx===currentActive){
 		title.classList.add('activeWord')
     }else{
 		title.classList.remove('activeWord')
 	}
 	})
-}
+    }
 
-function underlineUpdate(){
+    function underlineUpdate(){
 	formUnderline.forEach((line,idx)=>{
      if(idx===currentActive){
 		line.classList.add('active')
@@ -131,5 +132,5 @@ function underlineUpdate(){
 		line.classList.remove('active')
 	}
 	})
-}
+    }
 // --------------------------------------------------------------------
