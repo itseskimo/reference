@@ -214,7 +214,9 @@ font-size: 12px;
 
 .secondDiv-Calculator{
  position: absolute;
- left: 468px;    
+ /* left: 468px;     */
+ left: 230px;
+
 }
 .thirdDiv-Calculator{
  position: absolute;

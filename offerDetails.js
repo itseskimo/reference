@@ -154,8 +154,6 @@ let output;
 
 		//console.log( parseInt(output) *12 )
 	}
-
-	//rentCalculatorInputLength.value=`${parseInt(inputAmountCalculator.value) +10000}`
 		
 	}
 
@@ -165,30 +163,7 @@ let output;
 		})
 
 
-// calculator.forEach((cal)=>{
-// 	cal.addEventListener('input', (e)=>{
-// 		console.log(e.currentTarget.id)
 
-
-// 	})
-// 	})
-
-// hideBoxes.forEach((id)=>{
-// 	id.addEventListener('click',(e)=>{
-// 		if(e.currentTarget.innerText[0] !== undefined){
-// 			firstCalculator.style.display='block'
-// 			calculator.forEach((cal)=>{
-// 				cal.style.display='none'
-// 				})
-// 		}else{
-// 			firstCalculator.style.display='none'
-// 			calculator.forEach((cal)=>{
-// 				cal.style.display='block'
-// 				})
-// 		}
-// 		console.log(e.currentTarget.id)
-// 	   })
-// 	})
 			
   
 
