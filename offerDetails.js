@@ -103,19 +103,22 @@ inputAmountSetter.value= `₹${inputAmountCalculator.value}`
 
 // --------------------------------------------------------------------
 
-// const secondCalculator= document.querySelector('.secondDiv-Calculator')
-// secondCalculator.style.display='none'
+const secondCalculator= document.querySelector('.secondDiv-Calculator')
+secondCalculator.style.display='none'
 
 // // --------------------------------------------------------------------
 
 const hideBoxes= document.querySelectorAll('.option')
 const firstCalculator= document.getElementById('firstDiv-Calculator')
+
+const rentCalculatorTitle= document.getElementById('rentCalculator-title')
+
 let output;
   hideBoxes.forEach((id)=>{
 	id.addEventListener('click',(e)=>{
 		if( firstCalculator.style.display ==='none'){
-			firstCalculator.style.display='block'
-			secondCalculator.style.display='none'
+			//firstCalculator.style.display='block'
+			//secondCalculator.style.display='none'
 
 		}else{
 			firstCalculator.style.display='none'
@@ -129,12 +132,12 @@ let output;
 // --------------------------------------------------------------------
 
 function yeartoMonths(){
-if(output.charAt(parseInt(output[0]) === '6')){
-	console.log('6')
-}
+
 	if(output.includes('6')){
+		rentCalculatorTitle.textContent=`${ Math.floor((parseInt(output) *12 +  parseInt(output[2]))/12)}`
 		console.log( parseInt(output) *12 +  parseInt(output[2]) )
 	}else{
+		rentCalculatorTitle.textContent=`${parseInt(output) *12 /12}`
 		console.log( parseInt(output) *12 )
 	}
 		
