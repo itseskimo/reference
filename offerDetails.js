@@ -112,6 +112,7 @@ const hideBoxes= document.querySelectorAll('.option')
 const firstCalculator= document.getElementById('firstDiv-Calculator')
 
 const rentCalculatorTitle= document.getElementById('rentCalculator-title')
+const rentCalculatorFade= document.getElementById('rentCalculator-fade')
 
 let output;
   hideBoxes.forEach((id)=>{
@@ -131,14 +132,20 @@ let output;
 
 // --------------------------------------------------------------------
 
-function yeartoMonths(){
-
+    function yeartoMonths(){
+    let ans1;
+	
 	if(output.includes('6')){
-		rentCalculatorTitle.textContent=`${ Math.floor((parseInt(output) *12 +  parseInt(output[2]))/12)}`
-		console.log( parseInt(output) *12 +  parseInt(output[2]) )
+
+		ans1=parseInt(output) *12 +  parseInt(output[2])
+		rentCalculatorTitle.textContent=`${ Math.floor(ans1/12)}`
+		rentCalculatorFade.textContent=`Month (${ans1-6}-${ans1+6})`
+
+		//console.log( parseInt(output) *12 +  parseInt(output[2]) )
+
 	}else{
 		rentCalculatorTitle.textContent=`${parseInt(output) *12 /12}`
-		console.log( parseInt(output) *12 )
+		//console.log( parseInt(output) *12 )
 	}
 		
 	}
