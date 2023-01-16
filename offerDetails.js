@@ -108,23 +108,23 @@ inputAmountSetter.value= `₹${inputAmountCalculator.value}`
 
 // // --------------------------------------------------------------------
 
-// const hideBoxes= document.querySelectorAll('.option')
-// const firstCalculator= document.getElementById('firstDiv-Calculator')
-// let output;
-//   hideBoxes.forEach((id)=>{
-// 	id.addEventListener('click',(e)=>{
-// 		if( firstCalculator.style.display ==='none'){
-// 			firstCalculator.style.display='block'
-// 			secondCalculator.style.display='none'
+const hideBoxes= document.querySelectorAll('.option')
+const firstCalculator= document.getElementById('firstDiv-Calculator')
+let output;
+  hideBoxes.forEach((id)=>{
+	id.addEventListener('click',(e)=>{
+		if( firstCalculator.style.display ==='none'){
+			firstCalculator.style.display='block'
+			secondCalculator.style.display='none'
 
-// 		}else{
-// 			firstCalculator.style.display='none'
-// 			secondCalculator.style.display='block'
-// 		}
-// 		output=`${e.currentTarget.innerText[0]} ${e.currentTarget.innerText[7]}`
-// 		yeartoMonths()
-// 	   })
-// 	})
+		}else{
+			firstCalculator.style.display='none'
+			secondCalculator.style.display='block'
+		}
+		output=`${e.currentTarget.innerText[0]} ${e.currentTarget.innerText[7]}`
+		yeartoMonths()
+	   })
+	})
 
 // --------------------------------------------------------------------
 
