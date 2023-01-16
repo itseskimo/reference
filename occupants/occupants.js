@@ -48,7 +48,7 @@ const formUnderline=document.querySelectorAll('.formUnderline')
 
     prev.addEventListener('click',()=>{
 	--currentActive
-	window.location.href=`/Lease1/Lease1.html?value=${currentActive}`
+	window.location.href=`/Lease/lease.html?value=${currentActive}`
 
 	if(currentActive < 0){
 		currentActive = 0
