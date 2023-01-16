@@ -37,8 +37,8 @@ const formUnderline=document.querySelectorAll('.formUnderline')
   let currentActive=parseInt(greetingVal)
  
     next.addEventListener('click',()=>{
-	++currentActive
-    window.location.href='/OccupantAdded/OccupantAdded.html'
+	//++currentActive
+    window.location.href=`/OccupantAdded/OccupantAdded.html?value=${currentActive}`
 	 
 	if(currentActive>circles.length){
 		currentActive=circles.length

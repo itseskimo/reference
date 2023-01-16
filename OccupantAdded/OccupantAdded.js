@@ -22,33 +22,46 @@ on('click', '.option', item => {
 })
 // --------------------------------------------------------------------
 
+//Dynamic Navbar functionality
+
 const prev= document.getElementById('prev')
 const next= document.getElementById('next')
 const circles= document.querySelectorAll('.formCircle')
+const formHeading= document.querySelectorAll('.formHeading, .formHeadingLast')
+const formUnderline=document.querySelectorAll('.formUnderline')
 
- let currentActive=0
+
+  const urlParams = new URLSearchParams(window.location.search);
+  const greetingValue = urlParams.get('value');
+  let currentActive=parseInt(greetingValue)
 
     next.addEventListener('click',()=>{
-	++currentActive
-     window.location.href='/OccupantLease/OccupantLease.html'
+	//++currentActive
+    window.location.href=`/OccupantLease/OccupantLease.html?value=${currentActive}`
 	 
 	if(currentActive>circles.length){
 		currentActive=circles.length
 	}
-    update()
-})
+	
+    })
 
     prev.addEventListener('click',()=>{
-	window.location.href='/occupants/occupants.html'
+    --currentActive
+	window.location.href=`/index.html?value=${currentActive}`
 
-	currentActive--
 	if(currentActive < 0){
 		currentActive = 0
 	}
-	update()
-})
+	
+    })
 
-function update(){
+    window.addEventListener('DOMContentLoaded',()=>{
+	update()
+	titleUpdate()
+	underlineUpdate()
+    })
+
+    function update(){
 	circles.forEach((circle,idx)=>{
 
     if(idx<currentActive){
@@ -61,6 +74,26 @@ function update(){
 		circle.classList.remove('activeCircle')
 	}
 	})
-}
+    }
 
+    function titleUpdate(){
+	formHeading.forEach((title,idx)=>{
+
+     if(idx===currentActive){
+		title.classList.add('activeWord')
+    }else{
+		title.classList.remove('activeWord')
+	}
+	})
+    }
+
+    function underlineUpdate(){
+	formUnderline.forEach((line,idx)=>{
+     if(idx===currentActive){
+		line.classList.add('active')
+    }else{
+		line.classList.remove('active')
+	}
+	})
+    }
 // --------------------------------------------------------------------

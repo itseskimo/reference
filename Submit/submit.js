@@ -1,37 +1,44 @@
 
+//Dynamic Navbar functionality
+
 const prev= document.getElementById('prev')
 const next= document.getElementById('next')
 const circles= document.querySelectorAll('.formCircle')
+const formHeading= document.querySelectorAll('.formHeading, .formHeadingLast')
+const formUnderline=document.querySelectorAll('.formUnderline')
 
 
-var value=parseInt(sessionStorage.getItem('value'))
+  const urlParams = new URLSearchParams(window.location.search);
+  const greetingValue = urlParams.get('value');
+  let currentActive=parseInt(greetingValue)
 
-currentActive=value
-
-// let currentActive=0
-
-next.addEventListener('click',()=>{
-	++currentActive
-	 sessionStorage.setItem('value',currentActive)
-    //  localStorage.clear()
+    next.addEventListener('click',()=>{
+	//++currentActive
+    //window.location.href=`/OccupantLease/OccupantLease.html?value=${currentActive}`
 	 
 	if(currentActive>circles.length){
 		currentActive=circles.length
 	}
-    update()
-})
+	
+    })
 
-prev.addEventListener('click',()=>{
-	window.location.href='/OccupantLease/OccupantLease.html'
+    prev.addEventListener('click',()=>{
+    --currentActive
+	window.location.href=`/index.html?value=${currentActive}`
 
-	currentActive--
 	if(currentActive < 0){
 		currentActive = 0
 	}
-	update()
-})
+	
+    })
 
-function update(){
+    window.addEventListener('DOMContentLoaded',()=>{
+	update()
+	titleUpdate()
+	underlineUpdate()
+    })
+
+    function update(){
 	circles.forEach((circle,idx)=>{
 
     if(idx<currentActive){
@@ -43,9 +50,28 @@ function update(){
     }else{
 		circle.classList.remove('activeCircle')
 	}
-// const actives=document.querySelectorAll('.greenCircle')
-// console.log(currentActive,actives.length,circles.length)
 	})
-}
+    }
+
+    function titleUpdate(){
+	formHeading.forEach((title,idx)=>{
+
+     if(idx===currentActive){
+		title.classList.add('activeWord')
+    }else{
+		title.classList.remove('activeWord')
+	}
+	})
+    }
+
+    function underlineUpdate(){
+	formUnderline.forEach((line,idx)=>{
+     if(idx===currentActive){
+		line.classList.add('active')
+    }else{
+		line.classList.remove('active')
+	}
+	})
+    }
 
 // --------------------------------------------------------------------
