@@ -129,15 +129,16 @@ let output;
 // --------------------------------------------------------------------
 
 function yeartoMonths(){
-//parseInt(output) *12
-if(output.includes('6')){
-	console.log( parseInt(output) *12 +  parseInt(output[2]) )
-}else{
-	console.log( parseInt(output) *12 )
+if(output.charAt(parseInt(output[0]) === '6')){
+	console.log('6')
 }
-
-	
-}
+	if(output.includes('6')){
+		console.log( parseInt(output) *12 +  parseInt(output[2]) )
+	}else{
+		console.log( parseInt(output) *12 )
+	}
+		
+	}
 
 
 // calculator.forEach((cal)=>{
