@@ -141,7 +141,7 @@ let output;
 	if(output.includes('6')){
 
 		ans1=parseInt(output) *12 +  parseInt(output[2])
-		rentCalculatorTitle.textContent=`${ Math.floor(ans1/12)}`
+		rentCalculatorTitle.textContent=`Year ${ Math.floor(ans1/12)}`
 		rentCalculatorFade.textContent=`Month (${ans1-6}-${ans1+6})`
 
 		//console.log( parseInt(output) *12 +  parseInt(output[2]) )
@@ -149,7 +149,7 @@ let output;
 	}else{
 		time2=parseInt(output) *12 ;
 		console.log(time2)
-		rentCalculatorTitle.textContent=`${parseInt(output) *12/12}`
+		rentCalculatorTitle.textContent=`Year ${parseInt(output) *12/12}`
 		rentCalculatorFade.textContent=`Month (${time2-6}-${time2})`
 
 		//console.log( parseInt(output) *12 )
