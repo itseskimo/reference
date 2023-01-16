@@ -142,12 +142,16 @@ function underlineUpdate(){
 
 				const occupantBackground =  document.getElementById(`firstOccupantBackground${e.currentTarget.id[8]}`);
 				var FourthrowAbsolute = document.getElementById(`fourthrowAbsolute${e.currentTarget.id[8]}`);
+				var FifththrowAbsolute = document.getElementById(`fifthrowAbsolute${e.currentTarget.id[8]}`);
 
 					if (FourthrowAbsolute.style.display==='none') {
 						FourthrowAbsolute.style.display = "block";
+						FifththrowAbsolute.style.display = "block";
+
 						occupantBackground.style.height = "500px";
 					  } else{
 						FourthrowAbsolute.style.display = "none";
+						FifththrowAbsolute.style.display = "none";
 						occupantBackground.style.height = "330px";
 					  }	  
 				   })
@@ -468,7 +472,7 @@ function underlineUpdate(){
 			forthrowAbsolute.classList.add('forthrowAbsolute');
 			forthrowAbsolute.setAttribute('id',`fourthrowAbsolute${occupantCount}`)
 			moreGap.appendChild(forthrowAbsolute)
-	
+
 	
 			firstDiv=document.createElement('div');
 			firstDiv.classList.add('firstDiv');
@@ -515,8 +519,8 @@ function underlineUpdate(){
 
 			const fifthrowAbsolute=document.createElement('div');
 			fifthrowAbsolute.classList.add('fifthrowAbsolute');
-        moreGap.appendChild(fifthrowAbsolute)
-
+			fifthrowAbsolute.setAttribute('id',`fifthrowAbsolute${occupantCount}`)
+            moreGap.appendChild(fifthrowAbsolute)
 
 	    firstDiv=document.createElement('div');
 		firstDiv.classList.add('firstDiv');
@@ -594,12 +598,16 @@ function underlineUpdate(){
 
 				const occupantBackground =  document.getElementById(`firstOccupantBackground${e.currentTarget.id[8]}`);
 				var FourthrowAbsolute = document.getElementById(`fourthrowAbsolute${e.currentTarget.id[8]}`);
+				var FifththrowAbsolute = document.getElementById(`fifthrowAbsolute${e.currentTarget.id[8]}`);
 
 					if (FourthrowAbsolute.style.display==='none') {
 						FourthrowAbsolute.style.display = "block";
+						FifththrowAbsolute.style.display = "block";
+
 						occupantBackground.style.height = "500px";
 					  } else{
 						FourthrowAbsolute.style.display = "none";
+						FifththrowAbsolute.style.display = "none";
 						occupantBackground.style.height = "330px";
 					  }	  
 				   })
@@ -920,7 +928,7 @@ function underlineUpdate(){
 			forthrowAbsolute.classList.add('forthrowAbsolute');
 			forthrowAbsolute.setAttribute('id',`fourthrowAbsolute${occupantCount}`)
 			moreGap.appendChild(forthrowAbsolute)
-	
+
 	
 			firstDiv=document.createElement('div');
 			firstDiv.classList.add('firstDiv');
@@ -967,8 +975,8 @@ function underlineUpdate(){
 
 			const fifthrowAbsolute=document.createElement('div');
 			fifthrowAbsolute.classList.add('fifthrowAbsolute');
-        moreGap.appendChild(fifthrowAbsolute)
-
+			fifthrowAbsolute.setAttribute('id',`fifthrowAbsolute${occupantCount}`)
+            moreGap.appendChild(fifthrowAbsolute)
 
 	    firstDiv=document.createElement('div');
 		firstDiv.classList.add('firstDiv');
@@ -1004,14 +1012,18 @@ function underlineUpdate(){
 
     const checkbox= document.getElementById('checkbox')
 	var FourthrowAbsolute = document.getElementById('fourthrowAbsolute');
+	var FifthrowAbsolute = document.getElementById('fifthrowAbsolute');
 	var occupantBackground = document.getElementById('firstOccupantBackground');
 
 		checkbox.addEventListener('click',()=>{
 			if (FourthrowAbsolute.style.display==='none') {
 				FourthrowAbsolute.style.display = "block";
+				FifthrowAbsolute.style.display = "block";
 	            occupantBackground.style.height = "500px";
 			  } else{
 				FourthrowAbsolute.style.display = "none";
+				FifthrowAbsolute.style.display = "none";
+
 				occupantBackground.style.height = "325px";
 			  }	  
 		   })
