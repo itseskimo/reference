@@ -345,7 +345,7 @@ function underlineUpdate(){
 	
 			firstTitle = document.createElement('h6');
 			firstTitle.classList.add('firstTitle');
-			firstTitle.innerText='Staying or Visiting*'
+			firstTitle.innerText='Occupancy Type *'
 			secondDiv.appendChild(firstTitle)
 	
 			selector=document.createElement('div');
@@ -397,18 +397,26 @@ function underlineUpdate(){
 	
 			 optionn=document.createElement('div');
 			 optionn.classList.add('option');
-			 optionn.innerText='Staying'
+			 optionn.innerText='Single'
 			 optionn.dataset.type='firstOption'
 			 selectDropdown.appendChild(optionn)
 	
 			 optionn=document.createElement('div');
 			 optionn.classList.add('option');
-			 optionn.innerText='Visiting'
+			 optionn.innerText='Family'
+			 optionn.dataset.type='secondOption'
+			 selectDropdown.appendChild(optionn)
+
+			 optionn=document.createElement('div');
+			 optionn.classList.add('option');
+			 optionn.innerText='Sharing'
 			 optionn.dataset.type='secondOption'
 			 selectDropdown.appendChild(optionn)
 	
 			// -------------------------------------------
-			 const thirdrowAbsolute=document.createElement('div');
+
+
+			const thirdrowAbsolute=document.createElement('div');
 			thirdrowAbsolute.classList.add('thirdrowAbsolute');
 			moreGap.appendChild(thirdrowAbsolute)
 	
@@ -419,26 +427,15 @@ function underlineUpdate(){
 	
 		   firstTitle = document.createElement('h6');
 		   firstTitle.classList.add('firstTitle');
-		   firstTitle.innerText='Passport Size Photo*'
+		   firstTitle.innerText='Aadhaar/Passport Number*'
 		   firstDiv.appendChild(firstTitle)
 	
-			let inputLabelWide=document.createElement('label');
-			inputLabelWide.classList.add('inputLabelWide');
-			inputLabelWide.innerText='Upload document'
-			firstDiv.appendChild(inputLabelWide)
+			
 	
-			select = document.createElement('input');
-			select.classList.add('select');
-			select.type='file'
-			select.accept="image/png, application/pdf"
-			inputLabelWide.appendChild(select)
-	
-	
-			let labelIconWide=document.createElement('img');
-			labelIconWide.classList.add('labelIconWide');
-			labelIconWide.src="https://icons-for-free.com/download-icon-box+document+outline+share+top+upload+icon-1320195323221671611_256.png"
-			inputLabelWide.appendChild(labelIconWide)
-	
+		   let inputWidthMore = document.createElement('input');
+		   inputWidthMore.classList.add('inputWidthMore');
+		   inputWidthMore.placeholder='Enter Name'
+		   firstDiv.appendChild(inputWidthMore)
 			// ----------------------------------------------
 			secondDiv=document.createElement('div');
 			secondDiv.classList.add('secondDiv');
@@ -446,7 +443,7 @@ function underlineUpdate(){
 	
 		   firstTitle = document.createElement('h6');
 		   firstTitle.classList.add('firstTitle');
-		   firstTitle.innerText='Aadhaar Card*'
+		   firstTitle.innerText='Aadhaar Card /Passport Upload*'
 		   secondDiv.appendChild(firstTitle)
 	
 			let inputLabel=document.createElement('label');
@@ -465,7 +462,6 @@ function underlineUpdate(){
 			labelIcon.classList.add('labelIcon');
 			labelIcon.src="https://icons-for-free.com/download-icon-box+document+outline+share+top+upload+icon-1320195323221671611_256.png"
 			inputLabel.appendChild(labelIcon)
-	
 	
 			// -------------------------------------------------
 			let forthrowAbsolute=document.createElement('div');
@@ -495,7 +491,7 @@ function underlineUpdate(){
 	
 		   firstTitle = document.createElement('h6');
 		   firstTitle.classList.add('firstTitle');
-		   firstTitle.innerText='PAN Card*'
+		   firstTitle.innerText='PAN Card Upload*'
 		   secondDiv.appendChild(firstTitle)
 	
 			inputLabel=document.createElement('label');
@@ -514,6 +510,39 @@ function underlineUpdate(){
 			labelIcon.classList.add('labelIcon');
 			labelIcon.src="https://icons-for-free.com/download-icon-box+document+outline+share+top+upload+icon-1320195323221671611_256.png"
 			inputLabel.appendChild(labelIcon)
+
+			// ----------------------------------------------------------
+
+			const fifthrowAbsolute=document.createElement('div');
+			fifthrowAbsolute.classList.add('fifthrowAbsolute');
+        moreGap.appendChild(fifthrowAbsolute)
+
+
+	    firstDiv=document.createElement('div');
+		firstDiv.classList.add('firstDiv');
+        fifthrowAbsolute.appendChild(firstDiv)
+
+	    firstTitle = document.createElement('h6');
+		firstTitle.classList.add('firstTitle');
+		firstTitle.innerText='Passport Size Photo*'
+		firstDiv.appendChild(firstTitle)
+
+        inputLabel=document.createElement('label');
+        inputLabel.classList.add('inputLabel');
+		inputLabel.innerText='Upload document'
+        firstDiv.appendChild(inputLabel)
+
+	    select = document.createElement('input');
+		select.classList.add('select');
+		select.type='file'
+		select.accept="image/png, application/pdf"
+		inputLabel.appendChild(select)
+
+
+	    labelIcon=document.createElement('img');
+        labelIcon.classList.add('labelIcon');
+		labelIcon.src="https://icons-for-free.com/download-icon-box+document+outline+share+top+upload+icon-1320195323221671611_256.png"
+        inputLabel.appendChild(labelIcon)
 
 	}else{
 		console.log('4 Occupants added')

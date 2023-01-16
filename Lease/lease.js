@@ -34,12 +34,12 @@ const formUnderline=document.querySelectorAll('.formUnderline')
   const urlParams = new URLSearchParams(window.location.search);
   const greetingValue = urlParams.get('value');
   let currentActive=parseInt(greetingValue)
-  console.log(currentActive)
 
 next.addEventListener('click',()=>{
 	currentActive++
-
-	window.location.href=`/Lease1/Lease1.html?value=${currentActive}`
+	 window.location.href=`/occupants/occupants.html?occupantReplicate=${counter}&value=${currentActive}`
+	 //currentActive value is for Navbar
+	 //counter value is for the number of components we need to replicate in the next page.
 	if(currentActive>circles.length){
 		currentActive=circles.length
 	}
@@ -48,8 +48,7 @@ next.addEventListener('click',()=>{
 
 prev.addEventListener('click',()=>{
 	--currentActive
-	window.location.href=`/Requests/request.html?value=${currentActive}`
-
+	window.location.href=`/Lease/lease.html?value=${currentActive}`
 	if(currentActive < 0){
 		currentActive = 0
 	}
@@ -96,7 +95,6 @@ function underlineUpdate(){
 	}
 	})
 }
-
 // -----------------------------------------------------------------------
 //Dynamic Colour Changing functionality on clicking button
 
