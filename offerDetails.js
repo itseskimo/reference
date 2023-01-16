@@ -127,7 +127,7 @@ let output;
 			secondCalculator.style.display='block'
 		}
 		output=`${e.currentTarget.innerText[0]} ${e.currentTarget.innerText[7]}`
-
+console.log(output)
 		yeartoMonths()
 	   })
 	})
