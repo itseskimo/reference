@@ -113,6 +113,7 @@ const firstCalculator= document.getElementById('firstDiv-Calculator')
 
 const rentCalculatorTitle= document.getElementById('rentCalculator-title')
 const rentCalculatorFade= document.getElementById('rentCalculator-fade')
+const rentCalculatorInputLength= document.getElementById('rentCalculator-inputLength')
 
 let output;
   hideBoxes.forEach((id)=>{
@@ -126,6 +127,7 @@ let output;
 			secondCalculator.style.display='block'
 		}
 		output=`${e.currentTarget.innerText[0]} ${e.currentTarget.innerText[7]}`
+
 		yeartoMonths()
 	   })
 	})
@@ -152,8 +154,15 @@ let output;
 
 		//console.log( parseInt(output) *12 )
 	}
+
+	//rentCalculatorInputLength.value=`${parseInt(inputAmountCalculator.value) +10000}`
 		
 	}
+
+
+	inputAmountCalculator.addEventListener('input',()=>{
+		rentCalculatorInputLength.value= `${parseInt(inputAmountCalculator.value) +10000}` 
+		})
 
 
 // calculator.forEach((cal)=>{
