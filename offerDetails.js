@@ -134,6 +134,7 @@ let output;
 
     function yeartoMonths(){
     let ans1;
+	let time2;
 	
 	if(output.includes('6')){
 
@@ -144,7 +145,10 @@ let output;
 		//console.log( parseInt(output) *12 +  parseInt(output[2]) )
 
 	}else{
-		rentCalculatorTitle.textContent=`${parseInt(output) *12 /12}`
+		time2=parseInt(output) *12 /12;
+		rentCalculatorTitle.textContent=`${time2}`
+		rentCalculatorFade.textContent=`Month (${time2-6}-${time2+6})`
+
 		//console.log( parseInt(output) *12 )
 	}
 		
