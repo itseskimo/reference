@@ -103,13 +103,69 @@ inputAmountSetter.value= `₹${inputAmountCalculator.value}`
 
 // --------------------------------------------------------------------
 
-const hideBoxes= document.querySelectorAll('.option')
-  
+const secondCalculator= document.querySelector('.secondDiv-Calculator')
+secondCalculator.style.display='none'
 
+// --------------------------------------------------------------------
+
+const hideBoxes= document.querySelectorAll('.option')
+const firstCalculator= document.getElementById('firstDiv-Calculator')
+let output;
   hideBoxes.forEach((id)=>{
 	id.addEventListener('click',(e)=>{
-		console.log(e.currentTarget.innerText[0])
-		  
+		if( firstCalculator.style.display ==='none'){
+			firstCalculator.style.display='block'
+			secondCalculator.style.display='none'
+
+		}else{
+			firstCalculator.style.display='none'
+			secondCalculator.style.display='block'
+		}
+		output=`${e.currentTarget.innerText[0]} ${e.currentTarget.innerText[7]}`
+		yeartoMonths()
 	   })
 	})
+
+// --------------------------------------------------------------------
+
+function yeartoMonths(){
+//parseInt(output) *12
+if(output.includes('6')){
+	console.log( parseInt(output) *12 +  parseInt(output[2]) )
+}else{
+	console.log( parseInt(output) *12 )
+}
+
+	
+}
+
+
+// calculator.forEach((cal)=>{
+// 	cal.addEventListener('input', (e)=>{
+// 		console.log(e.currentTarget.id)
+
+
+// 	})
+// 	})
+
+// hideBoxes.forEach((id)=>{
+// 	id.addEventListener('click',(e)=>{
+// 		if(e.currentTarget.innerText[0] !== undefined){
+// 			firstCalculator.style.display='block'
+// 			calculator.forEach((cal)=>{
+// 				cal.style.display='none'
+// 				})
+// 		}else{
+// 			firstCalculator.style.display='none'
+// 			calculator.forEach((cal)=>{
+// 				cal.style.display='block'
+// 				})
+// 		}
+// 		console.log(e.currentTarget.id)
+// 	   })
+// 	})
+			
+  
+
+
 
