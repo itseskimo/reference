@@ -11,6 +11,7 @@ window.addEventListener('load',()=>{
 		e.preventDefault();
 
 	    const task = input.value;
+		console.log(task)
 		
 		const section = document.createElement('section');
 		section.classList.add('requestInputt');

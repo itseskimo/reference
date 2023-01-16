@@ -92,3 +92,24 @@ function underlineUpdate(){
 	})
 }
 // --------------------------------------------------------------------
+
+
+const inputAmountCalculator= document.getElementById('inputAmountCalculator')
+const inputAmountSetter= document.getElementById('inputAmountSetter')
+
+inputAmountCalculator.addEventListener('input',()=>{
+inputAmountSetter.value= `₹${inputAmountCalculator.value}` 
+})
+
+// --------------------------------------------------------------------
+
+const hideBoxes= document.querySelectorAll('.option')
+  
+
+  hideBoxes.forEach((id)=>{
+	id.addEventListener('click',(e)=>{
+		console.log(e.currentTarget.innerText[0])
+		  
+	   })
+	})
+
