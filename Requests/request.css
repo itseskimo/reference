@@ -1,247 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap'); 
 .heading{
-width:100%;
-max-width: 1180px;
-margin: auto;
-}
-
-.heading-text h1{
-margin-bottom: 40px;
-font-weight: 600;
-font-size: 32px;
-color: #082346;
-line-height: 48px;
-font-family: 'Poppins';
-font-style: normal;
-}
-
-.requestInputt{
-margin-top: 115px;
-display: flex;
-align-items: center;
-position: relative;
-}
-
-.requestInput{
-margin-top: 75px;
-display: flex;
-align-items: center;
-position: relative;
-}
-
-
-.inputCircle{
-    border-radius: 50%;
-    border: 1px solid black;
-    height: 20px;
-    width: 20px;
-    font-size: 13px;
-    text-align: center;
-    position: absolute;
-    bottom: -20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.request{
-    box-sizing: border-box;
-    margin-right: 50px;
-    height: 48px;
-    width: 596px;
-    position: absolute;
-    left: 30px;
-    background: #FFFFFF;
-    border: 1px solid #082346;
-    border-radius: 4px;
-    font-size: 15px;
-    padding: 10px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    color: #242424;
-    }
-
-.request-fadetitle{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    margin-top: -20px;
-    color: #808080;
-    }
-
-        
-.requestheadings{
-    color: #808080;
-    font-weight: 500;
-    font-size: 12px;
-    position: absolute;
-    left: 30px;
-    white-space: nowrap;
-    bottom: -75px;
-    font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-    }
-
-.editIcon{
-width: 17px;
-height: 17px;
-position: absolute;
-left:600px ;
-}
-
-.selectButton{
-box-sizing: border-box;
-width: 179px;
-height: 37px;
-padding: 8px 12px;
-margin-top: 70px;
-margin-left: 30px;
-background: #FFFFFF;
-border: 1px solid #082346;
-border-radius: 4px;
-font-weight: 500;
-font-size: 14px;
-line-height: 21px;
-font-family: 'Poppins';
-font-style: normal;
-color: #082346;
-cursor: pointer;
-}
-
-.fa-arrow-right{
-margin-left: 20px;
-}
-
-.fa-arrow-left{
-    margin-right: 10px;
-}
-/* ----------------------------------- */
-.requestUnderLine{
-margin-top: 40px;
-height: 1px;
-background-color: #D9D9D9;
-width: 1180px;
-}
-
-.button{
-width: 1180px;
-margin-top: 45px;
-margin-bottom:50px;
-display: flex;
-justify-content: space-between;
-position: relative;
-}
-
-.buttonReset{
-display: flex;
-justify-content: center;
-align-items: center;
-border: 1px solid #082346;
-border-radius: 12px;
-background: #FFFFFF;
-padding: 16px 24px;
-width: 185px;
-height: 62px;
-color: #082346;
-font-weight: 600;
-font-size: 20px;
-line-height: 30px;
-cursor: pointer;
-}
-
-.buttonMid{
-cursor: pointer;
-display: flex;
-justify-content: flex-start;
-align-items: center;
-background: #FFFFFF;
-border-radius: 12px;
-padding: 16px 0px 16px 16px;
-width: 144px;
-height: 62px;
-font-weight: 600;
-font-size: 20px;
-line-height: 30px;
-position: absolute;
-right: 220px;
-font-family: 'Poppins';
-font-style: normal;
-color: #082346;
-border-width: 0;
-}
-
-.buttonContinue{
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    border: 1px solid #082346; 
-    border-radius: 12px;
-    background: #082346;
-    padding: 16px 24px 16px 32px;
-    width: 185px;
-    height: 62px;
-    color: #FFFFFF;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 30px;
-    cursor: pointer;
-}
-
-/* ----------------------------------------------------------------- */
-.formHeader{
+   width: 100%;
+   max-width: 1180px;
+   margin: auto;
+ }
+ 
+ 
+ .formHeader{
     height: 60px;
     width: 100%;
-    max-width: 1180px;
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
     background-color: #F1F5F7;
     border-radius: 12px;
-}
-
-.formProgress{
+ }
+ 
+ .formProgress{
     display: flex;
     text-align: center;
     justify-content: space-evenly;
-}
-
-.formRow{
+ }
+ 
+ .formRow{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     gap: 10px;
-    position: relative;
-}
-
-.formHeading{
+ }
+ 
+ .formHeading{
    font-family: 'Poppins';
    font-style: normal;
    margin-right: 30px;
    font-weight: 500;
    color: #6D6D6D;  
    cursor: pointer;
-}
-.formHeadingLast{
+ }
+ 
+ .formHeadingLast{
    font-family: 'Poppins';
    font-style: normal;
    font-weight: 500;
    color: #6D6D6D;  
    cursor: pointer;
-}
-
-.activeWord{
+ }
+ 
+ .activeWord{
     font-weight: 600;
     color: #082346;
-}
-
-.activeCircle{
+ }
+ 
+ .activeCircle{
     background: #082346;
     color: white !important;
     transition: 0.4s ease;
@@ -254,9 +65,9 @@ border-width: 0;
     width: 20px;
     font-weight: 700;
     font-size: 13px;
-}
-
-.greenCircle{
+ }
+ 
+ .greenCircle{
     background: #42A54C;
     border: 1px solid #42A54C;
     color: white !important;
@@ -269,13 +80,13 @@ border-width: 0;
     width: 20px;
     font-weight: 700;
     font-size: 13px;
-}
-
-.active{
+ }
+ 
+ .active{
     height: 2.7px !important;  
   }
-
-.formCircle{
+ 
+ .formCircle{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -286,10 +97,197 @@ border-width: 0;
     font-weight: 700;
     font-size: 13px;
     color: #082346;
-}
-
-.formUnderline{
+ }
+ 
+ .formUnderline{
     height: 1.4px;
     width: 60px;
     background-color: #6D6D6D;
-}
+ }
+ 
+ /* -------------------------------------- */
+ 
+   
+   .heading-text h1{
+   margin-bottom: 40px;
+   font-weight: 600;
+   font-size: 32px;
+   color: #082346;
+   line-height: 48px;
+   font-family: 'Poppins';
+   font-style: normal;
+   }
+   
+   .request-fadetitle{
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   margin-top: -20px;
+   color: #808080;
+   width: 55%;
+   }
+   
+   .requestInput{
+   margin-top: 35px;
+   display: flex;
+   align-items: flex-end;
+   }
+   
+   .inputRelative{
+   position: relative;
+   display: flex;
+   width: 50.3%;
+   }
+   
+   .inputCircle{
+   border-radius: 50%;
+   border: 1px solid black;
+   height: 20px;
+   width: 20px;
+   font-size: 13px;
+   margin-right: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   }
+   
+   .request{
+       box-sizing: border-box;
+       height: 48px;
+       width: 100%;
+       background: #FFFFFF;
+       border: 1px solid #082346;
+       border-radius: 4px;
+       font-size: 15px;
+       padding: 10px;
+       outline: none;
+       font-family: 'Inter';
+       font-style: normal;
+       font-weight: 500;
+       font-size: 16px;
+       color: #242424;
+       }
+           
+   .requestheadings{
+       margin-top: 12px;
+       margin-left: 30px;
+       color: #808080;
+       font-weight: 500;
+       font-size: 12px;
+       font-family: 'Poppins';
+       font-style: normal;
+       font-weight: 400;
+       font-size: 12px;
+       }
+   
+   .editIcon{
+   width: 17px;
+   height: 17px;
+   position: absolute;
+   right: 10px;
+   top: 16px;
+   }
+   
+   .selectButton{
+   box-sizing: border-box;
+   width: 179px;
+   height: 37px;
+   padding: 8px 12px;
+   margin-top: -6px;
+   margin-left: 32px;
+   background: #FFFFFF;
+   border: 1px solid #082346;
+   border-radius: 4px;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 21px;
+   font-family: 'Poppins';
+   font-style: normal;
+   color: #082346;
+   cursor: pointer;
+   }
+   
+   .fa-arrow-right{
+   margin-left: 20px;
+   }
+   
+   .fa-arrow-left{
+       margin-right: 10px;
+   }
+   /* ----------------------------------- */
+   .requestUnderLine{
+   margin-top: 40px;
+   height: 1px;
+   background-color: #D9D9D9;
+   width: 100%;
+   }
+   
+   .button{
+   width: 100%;
+   margin-top: 45px;
+   margin-bottom:50px;
+   display: flex;
+   justify-content: space-between;
+   }
+   
+   .buttonReset{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid #082346;
+   border-radius: 12px;
+   background: #FFFFFF;
+   padding: 16px 24px;
+   width: 185px;
+   height: 62px;
+   color: #082346;
+   font-weight: 600;
+   font-size: 20px;
+   line-height: 30px;
+   cursor: pointer;
+   }
+   
+   .flexBtns{
+   display: flex;
+   gap: 35px;
+   }
+
+   .buttonMid{
+   cursor: pointer;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   background: #FFFFFF;
+   border-radius: 12px;
+   padding: 16px 0px 16px 16px;
+   width: 144px;
+   height: 62px;
+   font-weight: 600;
+   font-size: 20px;
+   line-height: 30px;
+   font-family: 'Poppins';
+   font-style: normal;
+   color: #082346;
+   border-width: 0;
+   }
+   
+   .buttonContinue{
+       display: flex;
+       justify-content: center; 
+       align-items: center; 
+       border: 1px solid #082346; 
+       border-radius: 12px;
+       background: #082346;
+       padding: 16px 24px 16px 32px;
+       width: 185px;
+       height: 62px;
+       color: #FFFFFF;
+       font-weight: 600;
+       font-size: 20px;
+       line-height: 30px;
+       cursor: pointer;
+   }
+   
+ 
+   

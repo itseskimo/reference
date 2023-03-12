@@ -103,13 +103,14 @@ inputAmountSetter.value= `₹${inputAmountCalculator.value}`
 
 // --------------------------------------------------------------------
 
-const secondCalculator= document.querySelector('.secondDiv-Calculator')
-secondCalculator.style.display='none'
+const dynamicRentBoxes= document.getElementById('dynamicRentBoxes')
+dynamicRentBoxes.style.display='none'
 
 // // --------------------------------------------------------------------
 
 const hideBoxes= document.querySelectorAll('.option')
 const firstCalculator= document.getElementById('firstDiv-Calculator')
+const noneAvailable= document.getElementById('noneAvailable')
 
 const rentCalculatorTitle= document.getElementById('rentCalculator-title')
 const rentCalculatorFade= document.getElementById('rentCalculator-fade')
@@ -121,13 +122,11 @@ const rentCalculatorDynamic= document.getElementById('rentCalculator-dynamic')
 let output;
   hideBoxes.forEach((id)=>{
 	id.addEventListener('click',(e)=>{
-		if( firstCalculator.style.display ==='none'){
-			//firstCalculator.style.display='block'
-			//secondCalculator.style.display='none'
+		if( noneAvailable.style.display ==='none'){
 
 		}else{
-			firstCalculator.style.display='none'
-			secondCalculator.style.display='block'
+			noneAvailable.style.display='none'
+			dynamicRentBoxes.style.display='block'
 		}
 		output=`${e.currentTarget.innerText[0]} ${e.currentTarget.innerText[7]}`
         console.log(output)
@@ -169,6 +168,3 @@ let output;
 
 			
   
-
-
-

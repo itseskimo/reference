@@ -10,7 +10,7 @@
 </head>
 <body>
 
-    <div class='heading'>
+    <main class='heading'>
 
       <div class='formHeader'>
         <div class='formProgress'>           
@@ -44,25 +44,26 @@
 
   <form class='heading-text' id="new-task-form">
   <h1>Requests</h1>
-  <h5 class="request-fadetitle">This page is to capture requests from the tenants in relation to furniture fixtures,<br> Painting, Cleaning, etc. for the purpose of Move-In.</h5>
+  <h5 class="request-fadetitle">This page is to capture requests from the tenants in relation to furniture fixtures, Painting, Cleaning, etc. for the purpose of Move-In.</h5>
 
-  <div class='requestInput'  >
-      <h5 class='inputCircle'>1</h5>
+  <section class='requestInput'>
+    <h5 class='inputCircle'>1</h5>
+
+    <div class="inputRelative">
       <input class='request' id="new-task-input"></input>
       <img class="editIcon" src="https://cdn-icons-png.flaticon.com/512/61/61456.png"/>
+    </div>
 
-      <h5 class='requestheadings'>Limit an individual request to 100 words You can ad mulitple requests to cover different points.</h5>
-  </div>
+  </section>
+
+  <h5 class='requestheadings'>Limit an individual request to 100 words You can ad mulitple requests to cover different points.</h5>
+  <input type="submit"  class='selectButton' value="Add Request +" id="new-task-submit" />
 
   <div id="tasks">
-   <!-- <section class='requestInputt' >
-        <h5 class='inputCircle'>2</h5>
-       <input class='request' type="text"></input>
-       <img class="editIcon" src="https://cdn-icons-png.flaticon.com/512/61/61456.png"/>
-   </section> -->
+   
   </div>
-
-  <input type="submit"  class='selectButton' value="Add Request +" id="new-task-submit" />
+<!-- ---------------------------------------- -->
+  <!-- <input type="submit"  class='selectButton' value="Add Request +" id="new-task-submit" /> -->
    
   </form>
 
@@ -71,11 +72,15 @@
    
    <div class='button'>
      <button class='buttonReset'>Reset</button>
-     <button class='buttonMid' id="prev"><i class="fa-solid fa-arrow-left"></i>Previous</button>
-     <button class='buttonContinue' id="next">Continue <i class="fa-solid fa-arrow-right" ></i></button>
+
+     <section class="flexBtns">
+      <button class='buttonMid' id="prev"><i class="fa-solid fa-arrow-left"></i>Previous</button>
+      <button class='buttonContinue' id="next">Continue <i class="fa-solid fa-arrow-right" ></i></button>
+     </section>
+     
    </div> 
    
-  </div>
+  </main>
   <script src="request.js"></script>
 </body>
 </html>

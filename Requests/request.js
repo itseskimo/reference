@@ -14,25 +14,30 @@ window.addEventListener('load',()=>{
 		console.log(task)
 		
 		const section = document.createElement('section');
-		section.classList.add('requestInputt');
+		section.classList.add('requestInput');
 
 		const inputCircle = document.createElement('h5');
 		inputCircle.classList.add('inputCircle');
         inputCircle.innerText=++count
 		section.appendChild(inputCircle);
 
+		const inputRelative = document.createElement('div');
+		inputRelative.classList.add('inputRelative');
+		section.appendChild(inputRelative);
+
+		
 		const inputElement = document.createElement('input');
 		inputElement.classList.add('request');
 		inputElement.type = 'text';
 		inputElement.value = task;
 		inputElement.setAttribute('readonly', 'readonly');
-		section.appendChild(inputElement);
+		inputRelative.appendChild(inputElement);
 
 		const img = document.createElement('img');
 		img.classList.add('editIcon');
 		img.src="https://cdn-icons-png.flaticon.com/512/61/61456.png"
 		img.alt='edit'
-        section.appendChild(img)
+        inputRelative.appendChild(img)
 
 		list.appendChild(section)
 
