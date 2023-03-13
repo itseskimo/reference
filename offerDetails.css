@@ -349,7 +349,7 @@
          }
 
    .rentSubInput{
-      /* margin-top: -25px; */
+      margin-top: -25px;
       margin-right: 25px;
       width: 186px;
       }
@@ -428,9 +428,9 @@
          margin-bottom: 23px;
       }
    
-      /* .rentEscalation{
+      .rentEscalation{
          margin-top: -25px;
-      } */
+      }
       
       .rentCalculator-inputLength{
          box-sizing: border-box;
@@ -749,7 +749,9 @@
     @media(max-width:700px){
       
       
-
+      .rentEscalation{
+         margin-top: 0;
+      } 
 
       .property-info{ 
       margin-top: 0px;
