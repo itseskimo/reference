@@ -571,7 +571,7 @@ padding-left: 12px;
       width: 140px;
       /* height: 40px; */
       background-color: white;
-      padding: 12px 20px;
+      padding: 11px 20px;
       /* padding-top: 12px;
       padding-bottom: 12px; */
       border-radius: 4px;
@@ -647,7 +647,7 @@ padding-left: 12px;
    border: 1px solid #082346;
    border-radius: 12px;
    background: #FFFFFF;
-   padding: 16px 24px 16px 32px;
+   /* padding: 16px 24px 16px 32px; */
    font-family: 'Poppins';
    font-style: normal;
    width: 185px;
@@ -775,6 +775,20 @@ padding-left: 12px;
     
 
     @media(max-width:700px){
+
+      .buttonReset1{
+        
+         width: 180px;
+         height: 51px;
+         border-radius: 8px;
+         }
+
+         .buttonContinue1{
+            
+            width: 180px;
+            height: 51px;
+            border-radius: 8px;
+            }
 
       .dateSelector{
          width: 100%;
