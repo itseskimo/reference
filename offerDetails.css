@@ -233,7 +233,10 @@
    white-space: nowrap;
    }
 
+.columnAlign{
+   grid-column: 2/-1;
 
+}
 
 
    .borderDivider{
@@ -488,7 +491,11 @@
 
    /* ------------------------------- */
 
-
+   .selectorFlexFirst{
+      display: flex;
+      align-items: flex-start;
+      gap: 90px;
+   }
 
 
    .selectorFlex{
@@ -498,7 +505,7 @@
    }
 
    .selectorMargin{
-    margin-top: 50px;
+    margin-top: 30px;
    }
 
 
@@ -747,7 +754,18 @@
     
 
     @media(max-width:700px){
-      
+      .selectorMargin{
+         margin-top: 0px;
+        }
+
+
+      .selectorFlexFirst{
+         flex-direction: column;
+         gap: 0px;
+      }
+      .selectorFlex{
+      gap: 35px;
+      }
       
       .rentEscalation{
          margin-top: 0;
@@ -817,6 +835,13 @@
             margin-top: -15px;
 
            }
+
+
+           .columnAlign{
+            grid-column: 1/-1;
+            
+           }
+     
      
 
          .borderDivider{
