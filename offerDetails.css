@@ -5,6 +5,7 @@
   width: 100%;
   max-width: 1180px;
   margin: auto;
+ 
 }
 
 
@@ -248,10 +249,10 @@
   .flex{
    display: flex;
    align-items: flex-start;
+   gap: 25px;
   }
 
    .firstInput{
-   margin-right: 25px;
    width: 36%;
    }
    
@@ -745,6 +746,10 @@
     
 
     @media(max-width:700px){
+      
+
+
+
       .property-info{ 
       margin-top: 0px;
       }
@@ -782,6 +787,7 @@
 
          .flex{
             flex-direction: column;
+            gap: 0;
          }
 
          .firstTitle{
@@ -804,6 +810,8 @@
          .selector{
             grid-column: 1/-1;
             width: 100%;
+            margin-top: -15px;
+
            }
      
 
@@ -820,8 +828,8 @@
             }
 
             .background-colour{
-               padding-left: 10px;
-               padding-right: 10px;
+               padding-left: 20px;
+               padding-right: 20px;
                
                }
 
@@ -832,5 +840,8 @@
                   gap: 40px;
                      }
 
+.firstInput{
+   margin-top: -15px;
 
+}
       }
