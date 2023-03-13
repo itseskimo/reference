@@ -352,11 +352,16 @@
          }
 
    .rentSubInput{
-      margin-top: -5px;
+      margin-top: -25px;
       margin-right: 25px;
       width: 186px;
       }
       
+#dynamicRentBoxes{
+   margin-bottom: 25px;
+}
+
+
       .rent-PlaceholderTitle{
          font-family: 'Poppins';
          font-style: normal;
