@@ -263,6 +263,11 @@
    margin-top: -20px;
    display: flex;
    }
+   .inputSetterRent{
+      position: relative; 
+      margin-top: -20px;
+      display: flex;
+   }
 
    .placeholderTitle{ 
    font-family: 'Poppins';
@@ -625,7 +630,10 @@
       }
    
    /* ------------------------------- */
-  
+  .selector{
+   grid-column: 2/-1;
+   width: 36%;
+  }
    
    .select {
       margin-top: -20px;
@@ -734,9 +742,7 @@
       }
 
       .inputSetter{
-         position: relative; 
          margin-top: -33px;
-         display: flex;
          }
 
          .select {
@@ -750,7 +756,6 @@
 
 
       .colgroupFirst{
-         display: grid;
          grid-template-columns: 1fr;
          }
          .colgroupSecond{
@@ -772,7 +777,10 @@
             font-size: 20px;
 
          }
-
+         .selector{
+            grid-column: 1/-1;
+            width: 100%;
+           }
      
 
          .borderDivider{
