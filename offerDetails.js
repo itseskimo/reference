@@ -53,6 +53,7 @@ prev.addEventListener('click',()=>{
 window.addEventListener('DOMContentLoaded',()=>{
 	update()
 	titleUpdate()
+	window.innerWidth  < 800 ? 	hiddenTitleUpdate() : titleUpdate() 
 	underlineUpdate()
 })
 
@@ -74,12 +75,25 @@ function update(){
 
 function titleUpdate(){
 	formHeading.forEach((title,idx)=>{
-     if(idx===currentActive){
-		title.classList.add('activeWord')
-    }else{
-		title.classList.remove('activeWord')
-	}
-	})
+		if(idx===currentActive){
+		   title.classList.add('activeWord')
+	   }else{
+		   title.classList.remove('activeWord')
+	   }
+	   })
+}
+
+function hiddenTitleUpdate(){
+	formHeading.forEach((title,idx)=>{
+		if(idx===currentActive){
+		   title.classList.add('activeWord')
+		   title.classList.remove('hiddenWord')
+   
+	   }else{
+		   title.classList.remove('activeWord')
+		   title.classList.add('hiddenWord')
+	   }
+	   })
 }
 
 function underlineUpdate(){
