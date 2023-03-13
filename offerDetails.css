@@ -233,8 +233,15 @@
    }
 
 
+
+
    .borderDivider{
       border: 1px solid #E5E5E5;
+      display: none;
+   }
+   .borderDividerRent{
+      border: 1px solid #E5E5E5;
+      margin-top: 35px;
       display: none;
    }
 
@@ -332,8 +339,15 @@
 
   
    /* ------------------------------- */
+   .rentColumnCore{
+      display: flex;
+      flex-direction: column;
+      /* align-items: flex-start;
+      gap: 40px; */
+         }
 
    .rentSubInput{
+      /* margin-top: -25px; */
       margin-right: 25px;
       width: 186px;
       }
@@ -412,6 +426,9 @@
          margin-bottom: 23px;
       }
    
+      /* .rentEscalation{
+         margin-top: -25px;
+      } */
       
       .rentCalculator-inputLength{
          box-sizing: border-box;
@@ -771,6 +788,13 @@
             font-size: 16px;
             
             }
+
+
+            .rentSubInput{
+                  
+                  width: 100%;
+                  }
+
          .rowTitle{
             text-transform: uppercase;
             padding-left: 0;
@@ -786,6 +810,11 @@
          .borderDivider{
             display: block;
          }
+
+         .borderDividerRent{
+            display: block;
+
+         }
          .firstInput{
             width: 100%;
             }
@@ -795,4 +824,13 @@
                padding-right: 10px;
                
                }
+
+
+               .rentColumnCore{
+                  flex-direction: row;
+                  align-items: flex-start;
+                  gap: 40px;
+                     }
+
+
       }
