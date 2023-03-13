@@ -7,16 +7,54 @@ max-width: 1180px;
 margin: auto;
 }
     
-.heading-text h1{
-margin-bottom: 40px;
-font-weight: 600;
-font-size: 32px;
-color: #082346;
-line-height: 48px;
+
+
+.leaseColumn{
+display: grid;
+grid-template-columns: 240px auto;
+align-items: center;
+}
+
+
+.leaseTitle{
 font-family: 'Poppins';
 font-style: normal;
+font-weight: 600;
+font-size: 16px;
+color: #000000;
+background-color: #42A54C;
+white-space: nowrap;
+}
+
+
+.leaseBackground{
+background-color: #FAFAFA;
+height: 310px;
+width: 1134px;
+border-radius: 4px;
 }
     
+.leaseColumnLarge{
+display: grid;
+grid-template-columns: 290px auto;
+align-items: flex-start;
+}
+
+.leaseSubTitle{
+    margin-top: 38px;
+    
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+color: #141414;
+white-space: nowrap;
+}
+
+.relative{
+position: relative;
+}
+
 .lessGap{
 margin-top: 10px ;
 display: flex;
@@ -24,14 +62,8 @@ align-items: center;
 position: relative;
 }
         
-.lessGap h5{
-padding-right: 150px;
-white-space: nowrap;
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-color: #000000;
+.columnAlign{
+    grid-column: 2 / -1;
 }
         
 .row-Gap{
@@ -41,14 +73,15 @@ align-items: center;
 position: relative;
 }
 
-.row-Gap h5{
-padding-right: 150px;
-margin-left: 40px;
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-color: #000000;
+.flex{
+    display: flex;
+    gap: 25px;
+}
+.flexSec{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    margin-top: 20px;
 }
         
         .firstTitle{
@@ -60,15 +93,14 @@ color: #000000;
             white-space: nowrap;
             }
 
-            .inputWidth{  
+            .leaseInput{  
+                margin-top: -13px;
                 box-sizing: border-box;
                 padding: 10px;
-                gap: 12px;
                 height: 41px;  
                 font-size: 15px;
                 width: 340px ;
-                position: absolute;
-                bottom: -20px;
+                outline: none;
                 font-family: 'Poppins';
                 font-style: normal;
                 font-weight: 500;
@@ -77,15 +109,37 @@ color: #000000;
                 border-radius: 4px;
                 }
 
+            .leaseInputSec{  
+                box-sizing: border-box;
+                padding: 10px;
+                height: 41px;  
+                font-size: 15px;
+                width: 340px ;
+                outline: none;
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                border: 1px solid #082346;
+                border-radius: 4px;
+                }
+
+                .flexColItem1{
+line-height: 0;
+                }
+
+                .flexColItem2{
+line-height: 0;
+                }
         /* ------------------------------------ */
-        .specialDiv{
+        /* .specialDiv{
             position: absolute;
             left: 240px; 
-        }
-        .firstDiv{
+        } */
+        /* .firstDiv{
             position: absolute;
             left: 290px;    
-        }
+        } */
 
         .paddingDiv{
             position: absolute;
@@ -93,10 +147,10 @@ color: #000000;
             padding-top: 22px; 
         }
 
-        .secondDiv{
+        /* .secondDiv{
             position: absolute;
             left: 655px;    
-        }
+        } */
         .thirdDivInitial{
             position: absolute;
             left: 820px;   
@@ -126,11 +180,9 @@ color: #000000;
         }
     
         .lease-companyNoText{
-            margin-right: 30px;
             height: 40px;
             width: 141px;
-            position: absolute;
-            bottom: -90px;
+            
             border: 1px solid #082346;
             border-radius: 4px;
             padding: 10px;
@@ -139,8 +191,7 @@ color: #000000;
         .lease-input{
             margin-right: 30px;
             width: 121px;
-            position: absolute;
-            bottom: -90px;
+           
 
 
                 box-sizing: border-box;
@@ -199,24 +250,20 @@ color: #000000;
             border-radius: 4px;
 
         }
-        .leaseBackgroundInitial{
-            background-color: #FAFAFA;
-            height: 310px;
-            width: 1134px;
-            border-radius: 4px;
-
-        }
+       
 
         
 
 
         /* ----------------------------------- */
-        .selector{
+        /* .selector{
             position: absolute;
             bottom: -20px;
-          }
+          } */
           
           .select {
+            margin-top: -13px;
+
               border-radius: 4px;
               border: 1px solid #082346;
               box-sizing: border-box;

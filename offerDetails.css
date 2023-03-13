@@ -120,13 +120,17 @@
    
    .property-details{
    display: flex;
+   align-items: center;
    background-color: #FAFAFA;
    border-radius: 4px;
+   border: 1px solid black;
+
    }
    
    .property-image{
-   width: 224px;
-   height: 224px;
+   /* width: 224px; */
+   width: clamp(141px, 30vw, 224px);
+   height: clamp(160px, 30vw, 224px);
    border-radius: 4px 0px 0px 4px;
    }
    
@@ -140,7 +144,8 @@
    font-family: 'Poppins';
    font-style: normal;
    font-weight: 600;
-   font-size: 32px;
+   font-size: clamp(18px, 4.8vw, 32px); 
+   /* font-size: 32px; */
    color: #121212;
    }
    
@@ -148,13 +153,16 @@
    font-family: 'Inter';
    font-style: normal;
    font-weight: 500;
-   font-size: 20px;
+   font-size: clamp(14px, 3vw, 20px); 
+
    margin-top: -14px;
    color: #484848;
    white-space: nowrap;
    }
    
    .landLord-details{
+      display: flex;
+      align-items: center;
    font-family: 'Poppins';
    font-style: normal;
    font-weight: 600;
@@ -171,6 +179,8 @@
    }
    
    .verify{
+      display: flex;
+      align-items: center;
    font-family: 'Poppins';
    font-style: normal;
    font-weight: 500;
@@ -699,3 +709,25 @@
               transform: scale(1, 1);
     }
     
+
+    @media(max-width:700px){
+      .property-info{
+         
+         margin-top: 0px;
+         }
+
+
+      .landLord-details{
+flex-direction: column;      
+align-items: flex-start;
+
+      }
+
+.verify{
+   margin-top: 15px;
+}
+      .verifyImage{
+        
+         margin-left: 0px;
+         }
+      }

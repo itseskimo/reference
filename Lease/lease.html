@@ -48,74 +48,84 @@
 
         <!-- ------------------------------------------------------------------------------------------ -->
 
-    <div class='lessGap'>
-        <h5>Type of Lease</h5>
-        <div class='specialDiv'>
-          
-          <div class="selector">
-            <div class="select" style="width: 141px;" >
+    <main class='leaseColumn'>
+        <h5 class="leaseTitle">Type of Lease</h5>
+              
+            <div class="select" style="width: 141px; margin-top: 0px;" >
                 <div class="selectBtn" data-type="firstOption">Select</div>
                 <div class="selectDropdown">
                   <div class="option" data-type="firstOption">Personal</div>
                   <div class="option" data-type="secondOption">Company</div>
                 </div>
             </div>
-          </div>
-
-        </div>
-    </div>
+         
+    </main>
         <!-- ------------------------------------------------------------------------------------------ -->
 <div id="DIV"> 
 
-    <div class="leaseBackgroundInitial">
-    <div class='row-Gap'>
-        <h5>Company</h5>
-        <div class='firstDiv'>
-          <h6 class='firstTitle'>Company Name*</h6>
-          <input placeholder="Enter Name.." autoFocus class='inputWidth' ></input>
+<main class="leaseBackground">
+<header class='leaseColumnLarge'>
+<!-- ------------------------------------------------------------------------------------------ -->
+
+    <h5 class="leaseTitle">Company</h5>
+
+      <section class="flex">
+
+        <div class="flexColItem1">
+          <h6 class='leaseSubTitle'>Company Name*</h6>
+          <input placeholder="Enter Name.." class="leaseInput"></input>
         </div>
 
-        <div class='secondDiv'>
-        <h6 class='firstTitle'>Company Type*</h6>
-            
-            <div class="selector">
-              <div class="select" style="width: 141px; font-size: 13px;">
-                  <div class="selectBtn" data-type="firstOption">Comany Type</div>
-                  <div class="selectDropdown">
-                    <div class="option" data-type="firstOption">LLP</div>
-                    <div class="option" data-type="secondOption">Partnership</div>
-                    <div class="option" data-type="thirdOption">Private Limited</div>
-                    <div class="option" data-type="thirdOption">Sole Proprietorship</div>
-                  </div>
-                </div>
+        <div class="flexColItem2">
+        <h6 class='leaseSubTitle'>Company Type*</h6>  
+          <div class="select" style="width: 141px; font-size: 13px;">
+              <div class="selectBtn" data-type="firstOption">Comany Type</div>
+              <div class="selectDropdown">
+                <div class="option" data-type="firstOption">LLP</div>
+                <div class="option" data-type="secondOption">Partnership</div>
+                <div class="option" data-type="thirdOption">Private Limited</div>
+                <div class="option" data-type="thirdOption">Sole Proprietorship</div>
               </div>
+          </div>
         </div>
 
+      </section>
+<!-- ------------------------------------------------------------------------------------------ -->
+<header class="columnAlign">
+<section class="flexSec">
 
-        <div class="secondrowAbsolute">
+  <div class="flexColItem1">
 
-            <div class='firstDiv'>
-                <h6 class='firstTitle'>Full Registered Address*</h6>
-                <input placeholder="Enter Address.." class='inputWidth' ></input>
-              </div>
-    
-              <div  class='secondDiv'>
-                  <select class='lease-companyNoText'>
-                      <option>City</option>
-                  </select>
-              </div>
+    <h6>Full Registered Address*</h6>
+      <input placeholder="Enter Address.." class='leaseInputSec' ></input>
+    </div>
 
-              <div class='thirdDivInitial'>
-                  <select class='lease-companyNoText'>
-                      <option>State</option>
-                  </select>
-              </div>
+    <div>
+        <select class='lease-companyNoText'>
+            <option>City</option>
+        </select>
+    </div>
 
-              <div class='forthDivInitial'>
-                    <input placeholder="Pin Code"  class='lease-input'></input>
-              </div>
+    <div>
+        <select class='lease-companyNoText'>
+            <option>State</option>
+        </select>
+    </div>
 
-        </div>
+    <div>
+          <input placeholder="Pin Code"  class='lease-input'></input>
+    </div>
+
+</section>
+</header>
+
+
+
+
+</header>
+</main>
+
+        
 
 
     <div class="thirdrowAbsolute">
@@ -127,8 +137,6 @@
 
     </div>
 
-    </div>
-    </div>
 
     <!-- ------------------------------------------------------------------------------------------ -->
 
