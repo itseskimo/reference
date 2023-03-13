@@ -21,6 +21,8 @@ window.addEventListener('load',()=>{
         inputCircle.innerText=++count
 		section.appendChild(inputCircle);
 
+
+		
 		const inputRelative = document.createElement('div');
 		inputRelative.classList.add('inputRelative');
 		section.appendChild(inputRelative);

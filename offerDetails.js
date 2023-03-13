@@ -52,7 +52,6 @@ prev.addEventListener('click',()=>{
 
 window.addEventListener('DOMContentLoaded',()=>{
 	update()
-	titleUpdate()
 	window.innerWidth  < 800 ? 	hiddenTitleUpdate() : titleUpdate() 
 	underlineUpdate()
 })

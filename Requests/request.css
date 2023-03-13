@@ -129,7 +129,7 @@
    }
    
    .requestInput{
-   margin-top: 35px;
+   margin-top: 30px;
    display: flex;
    align-items: flex-end;
    }
@@ -159,7 +159,7 @@
        background: #FFFFFF;
        border: 1px solid #082346;
        border-radius: 4px;
-       font-size: 15px;
+       font-size: 16px;
        padding: 10px;
        outline: none;
        font-family: 'Inter';
@@ -171,6 +171,7 @@
            
    .requestheadings{
        margin-top: 12px;
+       margin-bottom: 0;
        margin-left: 30px;
        color: #808080;
        font-weight: 500;
@@ -194,7 +195,7 @@
    width: 179px;
    height: 37px;
    padding: 8px 12px;
-   margin-top: -6px;
+   margin-top: 26px;
    margin-left: 32px;
    background: #FFFFFF;
    border: 1px solid #082346;

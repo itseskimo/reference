@@ -10,6 +10,9 @@
 
 
 .formHeader{
+   /* position: sticky;
+   top: 0;
+   z-index: 10; */
    height: 60px;
    width: 100%;
    margin-top: 50px;
@@ -264,6 +267,7 @@
 
    .firstInput{
    width: 36%;
+   min-width: 195px;
    }
    
    .firstTitle{
@@ -691,6 +695,8 @@ padding-left: 12px;
   .selector{
    grid-column: 2/-1;
    width: 36%;
+   min-width: 195px;
+
   }
    
    .select {
@@ -820,7 +826,7 @@ padding-left: 12px;
          gap: 0px;
       }
       .selectorFlex{
-      gap: 35px;
+      gap: 20px;
       }
       
       .rentEscalation{
@@ -922,7 +928,7 @@ padding-left: 12px;
                .rentColumnCore{
                   flex-direction: row;
                   align-items: flex-start;
-                  gap: 40px;
+                  gap: 20px;
                      }
 
 .firstInput{
