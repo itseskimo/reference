@@ -494,7 +494,7 @@
    .selectorFlexFirst{
       display: flex;
       align-items: flex-start;
-      gap: 90px;
+      gap: 50px;
    }
 
 
@@ -546,13 +546,34 @@
       border: 1px solid #082346;
       }
 
+      .dateSelector{
+width: max-content;
 
+      }
+
+      .dateFormat{
+padding-left: 10px;
+      }
+
+      .calendarIconArrow{
+padding-left: 12px;
+      }
+
+      .calendarIconAlign{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+      }
 
    .rentDate{
+      cursor: pointer;
       margin-right: 30px;
       width: 140px;
-      height: 40px;
-      padding: 7px;
+      /* height: 40px; */
+      background-color: white;
+      padding: 12px 20px;
+      /* padding-top: 12px;
+      padding-bottom: 12px; */
       border-radius: 4px;
       font-family: 'Inter';
       font-style: normal;
@@ -754,6 +775,16 @@
     
 
     @media(max-width:700px){
+
+      .dateSelector{
+         width: 100%;
+      }
+      .rentDate{
+        width: calc(100% - 40px);
+         
+         }
+
+
       .selectorMargin{
          margin-top: 0px;
         }
