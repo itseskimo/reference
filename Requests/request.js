@@ -35,29 +35,36 @@ window.addEventListener('load',()=>{
 		inputElement.setAttribute('readonly', 'readonly');
 		inputRelative.appendChild(inputElement);
 
-		const img = document.createElement('img');
-		img.classList.add('editIcon');
-		img.src="https://cdn-icons-png.flaticon.com/512/61/61456.png"
-		img.alt='edit'
-        inputRelative.appendChild(img)
+		const trashIcon = document.createElement('i');
+		trashIcon.classList.add('fa-solid');
+		trashIcon.classList.add('fa-trash');
+		inputRelative.appendChild(trashIcon);
+
+
+
+		// const img = document.createElement('img');
+		// img.classList.add('editIcon');
+		// img.src="https://cdn-icons-png.flaticon.com/512/61/61456.png"
+		// img.alt='edit'
+        // inputRelative.appendChild(img)
 
 		list.appendChild(section)
 
-        input.value=''
+        // input.value=''
         
-		img.addEventListener('click',()=>{
-			if(img.alt==='edit'){
-				img.src='https://www.pngfind.com/pngs/m/357-3570848_save-file-button-comments-save-file-icon-hd.png'
-				inputElement.removeAttribute("readonly");
-			    inputElement.focus();
-				img.alt='save'
-			}else{
-				img.src="https://cdn-icons-png.flaticon.com/512/61/61456.png"
-				img.alt='edit'
-				inputElement.setAttribute('readonly', 'readonly');
-			}
+		// img.addEventListener('click',()=>{
+		// 	if(img.alt==='edit'){
+		// 		img.src='https://www.pngfind.com/pngs/m/357-3570848_save-file-button-comments-save-file-icon-hd.png'
+		// 		inputElement.removeAttribute("readonly");
+		// 	    inputElement.focus();
+		// 		img.alt='save'
+		// 	}else{
+		// 		img.src="https://cdn-icons-png.flaticon.com/512/61/61456.png"
+		// 		img.alt='edit'
+		// 		inputElement.setAttribute('readonly', 'readonly');
+		// 	}
 			
-		})
+		// })
 
 	 });
 })
