@@ -29,8 +29,7 @@ margin-right: 20px;
 .form{
 margin-top: 40px;
 display: grid;
-grid-template-columns: 240px auto;
-    
+grid-template-columns: 240px auto; 
 }
     
 .form h5{
@@ -113,6 +112,10 @@ margin-left: 8px;
 
 .fa-eye{
 margin-left: 8px;
+}
+
+.submitGridCol{
+    grid-column: 2 /-1;
 }
 
 .formScroll{
@@ -336,4 +339,28 @@ margin-left: 20px;
     height: 1.4px;
     width: 60px;
     background-color: #6D6D6D;
+}
+
+@media(max-width:700px){
+    .form{
+        
+        grid-template-columns: 140px auto; 
+        }
+
+        .formScroll{
+            
+            width:calc(100% - 30px) ;
+            
+            
+            }
+
+.terms{
+    width: 100%;
+}
+
+
+
+    .submitGridCol{
+        grid-column: 1 /-1;
+    }
 }
